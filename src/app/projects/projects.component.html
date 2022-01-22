@@ -1,0 +1,28 @@
+<div class="page-container">
+  <h1 class="mat-display-3 page-title">Projects</h1>
+
+  <div class="grid-container">
+    <mat-card *ngFor="let project of projects" class="project-card">
+      <div class="project-image-container" mat-card-image>
+        <img src="{{ project.image }}" alt="{{ project.title }}" />
+      </div>
+      <mat-divider></mat-divider>
+      <div class="project-title-container" mat-card-title>
+        <a href="{{ project.url }}" target="_blank">{{ project.title }}</a>
+      </div>
+      <mat-card-content>
+        <p *ngFor="let line of project.description">{{ line }}</p>
+      </mat-card-content>
+      <!-- Need this to load the Chip CSS-->
+      <mat-chip-list></mat-chip-list>
+      <div class="mat-chip-list-wrapper">
+        <div
+          class="mat-chip mat-standard-chip"
+          *ngFor="let tech of project.tech"
+        >
+          {{ tech }}
+        </div>
+      </div>
+    </mat-card>
+  </div>
+</div>

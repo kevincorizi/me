@@ -1,0 +1,51 @@
+<div class="page-container">
+  <h1 class="mat-display-3 page-title">Work experience</h1>
+
+  <ng-container *ngFor="let exp of experiences; let last = last">
+    <div class="experience-wrapper">
+      <div class="exp-logo-container">
+        <div *ngFor="let logo of exp.icons; let l = index" class="exp-logo">
+          <img src="{{ logo }}" alt="{{ exp.companies[l] }}" />
+        </div>
+      </div>
+      <div class="exp-company-container">
+        <span class="mat-headline">{{ exp.companies.join(" + ") }}</span>
+      </div>
+      <div class="exp-role-container">
+        <span class="mat-title">{{ exp.title }}</span>
+      </div>
+      <div class="exp-date-container">
+        <span class="mat-subheading-2"
+          >{{ exp.startDate }} - {{ exp.endDate }}</span
+        >
+      </div>
+      <div class="exp-description-container">
+        <p *ngFor="let d of exp.description">{{ d }}</p>
+      </div>
+      <div class="exp-skills-container" *ngIf="exp.skills.length">
+        <p class="mat-subheading-1">What I learned</p>
+        <ul>
+          <li *ngFor="let s of exp.skills">{{ s }}</li>
+        </ul>
+      </div>
+      <div class="exp-achievements-container" *ngIf="exp.achievements.length">
+        <p class="mat-subheading-1">What I did</p>
+        <ul>
+          <li *ngFor="let a of exp.achievements">{{ a }}</li>
+        </ul>
+      </div>
+      <div class="exp-tech-container" *ngIf="exp.tech.length">
+        <p class="mat-subheading-1">What I used</p>
+        <!-- Need this to load the Chip CSS-->
+        <mat-chip-list></mat-chip-list>
+        <div class="mat-chip-list-wrapper">
+          <div class="mat-chip mat-standard-chip" *ngFor="let t of exp.tech">
+            {{ t }}
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <mat-divider *ngIf="!last" class="spacer"></mat-divider>
+  </ng-container>
+</div>
