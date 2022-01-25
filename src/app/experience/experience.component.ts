@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { EXPERIENCES } from '../model/data';
 
 @Component({
@@ -8,4 +9,8 @@ import { EXPERIENCES } from '../model/data';
 })
 export class ExperienceComponent {
   experiences = EXPERIENCES;
+
+  constructor(private readonly title: Title) {
+    this.title.setTitle(`${this.title.getTitle()} - Experience`);
+  }
 }
