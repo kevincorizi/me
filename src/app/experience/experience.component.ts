@@ -11,6 +11,6 @@ export class ExperienceComponent {
   experiences = EXPERIENCES;
 
   constructor(private readonly title: Title) {
-    this.title.setTitle(`${this.title.getTitle()} - Experience`);
+    this.title.setTitle(`Kevin Corizi - Experience`);
   }
 }

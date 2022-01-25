@@ -8,6 +8,6 @@ import { Title } from '@angular/platform-browser';
 })
 export class AboutComponent {
   constructor(private readonly title: Title) {
-    this.title.setTitle(`${this.title.getTitle()} - Home`);
+    this.title.setTitle(`Kevin Corizi - Home`);
   }
 }
