@@ -4,7 +4,11 @@
   <div class="grid-container">
     <mat-card *ngFor="let project of projects" class="project-card">
       <div class="project-image-container" mat-card-image>
-        <img src="{{ project.image }}" alt="{{ project.title }}" />
+        <img
+          src="{{ project.image }}"
+          alt="{{ project.title }}"
+          loading="lazy"
+        />
       </div>
       <mat-divider></mat-divider>
       <div class="project-title-container" mat-card-title>

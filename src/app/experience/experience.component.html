@@ -5,7 +5,7 @@
     <div class="experience-wrapper">
       <div class="exp-logo-container">
         <div *ngFor="let logo of exp.icons; let l = index" class="exp-logo">
-          <img src="{{ logo }}" alt="{{ exp.companies[l] }}" />
+          <img src="{{ logo }}" alt="{{ exp.companies[l] }}" loading="lazy" />
         </div>
       </div>
       <div class="exp-company-container">
