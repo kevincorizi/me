@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Title } from '@angular/platform-browser';
 import { PROJECTS } from '../model/data';
 
 @Component({
@@ -9,8 +8,4 @@ import { PROJECTS } from '../model/data';
 })
 export class ProjectsComponent {
   projects = PROJECTS;
-
-  constructor(private readonly title: Title) {
-    this.title.setTitle(`Kevin Corizi - Projects`);
-  }
 }

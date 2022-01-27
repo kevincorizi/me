@@ -9,15 +9,17 @@
           <h1 class="me-name mat-display-1">Kevin Corizi</h1>
           <mat-nav-list class="menu">
             <mat-list-item
-              *ngFor="let page of pages"
-              [routerLink]="page.url"
+              *ngFor="let route of routes"
+              [routerLink]="route.data?.['canonical']"
               [routerLinkActive]="'menu-active'"
               [routerLinkActiveOptions]="{ exact: true }"
             >
               <mat-icon mat-list-icon aria-hidden="false">{{
-                page.icon
+                route.data?.["icon"]
               }}</mat-icon>
-              <span class="menu-label" matLine>{{ page.text }}</span>
+              <span class="menu-label" matLine>{{
+                route.data?.["linkText"]
+              }}</span>
             </mat-list-item>
           </mat-nav-list>
         </div>
@@ -28,14 +30,14 @@
               href="https://github.com/kevincorizi"
               target="_blank"
             >
-              <img src="assets/github.png" loading="lazy" />
+              <img src="assets/github.png" alt="GitHub" loading="lazy" />
             </a>
             <a
               class="social-icon"
               href="https://www.linkedin.com/in/kevincorizi"
               target="_blank"
             >
-              <img src="assets/linkedin.png" loading="lazy" />
+              <img src="assets/linkedin.png" alt="LinkedIn" loading="lazy" />
             </a>
           </div>
           <a

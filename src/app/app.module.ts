@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule, Title } from '@angular/platform-browser';
+import { BrowserModule, Meta, Title } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -7,6 +7,7 @@ import { MaterialModule } from './material/material.module';
 import { AboutComponent } from './about/about.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { SEOService } from './seo.service';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,7 @@ import { ProjectsComponent } from './projects/projects.component';
     BrowserAnimationsModule,
     MaterialModule,
   ],
-  providers: [Title],
+  providers: [Title, Meta, SEOService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
