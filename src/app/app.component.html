@@ -1,6 +1,6 @@
 <div class="container">
   <mat-sidenav-container class="sidenav-container">
-    <mat-sidenav #snav mode="side" class="sidenav" opened>
+    <mat-sidenav mode="side" opened>
       <div class="menu-container">
         <div class="menu-top">
           <div class="me-logo">
@@ -8,19 +8,21 @@
           </div>
           <h1 class="me-name mat-display-1">Kevin Corizi</h1>
           <mat-nav-list class="menu">
-            <mat-list-item
-              *ngFor="let route of routes"
-              [routerLink]="route.data?.['canonical']"
-              [routerLinkActive]="'menu-active'"
-              [routerLinkActiveOptions]="{ exact: true }"
-            >
-              <mat-icon mat-list-icon aria-hidden="false">{{
+            <ng-container *ngFor="let route of routes">
+              <mat-list-item
+                *ngIf="route.data"
+                [routerLink]="route.data?.['canonical']"
+                [routerLinkActive]="'menu-active'"
+                [routerLinkActiveOptions]="{ exact: true }"
+              >
+                <mat-icon mat-list-icon aria-hidden="false">{{
                 route.data?.["icon"]
-              }}</mat-icon>
-              <span class="menu-label" matLine>{{
+                }}</mat-icon>
+                <span class="menu-label" matLine>{{
                 route.data?.["linkText"]
-              }}</span>
-            </mat-list-item>
+                }}</span>
+              </mat-list-item>
+            </ng-container>
           </mat-nav-list>
         </div>
         <div class="menu-bottom">
