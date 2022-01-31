@@ -2,6 +2,15 @@ import { DOCUMENT } from '@angular/common';
 import { Inject, Injectable } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 
+export interface SEOData {
+  title: string;
+  description: string;
+  keywords: string;
+  ogTitle: string;
+  ogSiteName: string;
+  canonical: string;
+}
+
 @Injectable()
 export class SEOService {
   private readonly BASE_URL = 'https://kevincorizi.com';
@@ -12,38 +21,49 @@ export class SEOService {
     private readonly meta: Meta
   ) {}
 
-  setTitle(title: string) {
+  setTags(data: SEOData) {
+    this.setTitle(data.title);
+    this.setDescription(data.description);
+    this.setKeywords(data.keywords);
+    this.setOgTitle(data.ogTitle);
+    this.setOgSiteName(data.ogSiteName);
+    this.setOgUrl(data.canonical);
+    this.setOgDescription(data.description);
+    this.setCanonical(data.canonical);
+  }
+
+  private setTitle(title: string) {
     this.title.setTitle(title);
   }
 
-  setDescription(description: string) {
+  private setDescription(description: string) {
     this.meta.updateTag({ property: 'description', content: description });
   }
 
-  setKeywords(keywords: string) {
+  private setKeywords(keywords: string) {
     this.meta.updateTag({ property: 'keywords', content: keywords });
   }
 
-  setOgTitle(ogTitle: string) {
+  private setOgTitle(ogTitle: string) {
     this.meta.updateTag({ property: 'og:title', content: ogTitle });
   }
 
-  setOgSiteName(ogSiteName: string) {
+  private setOgSiteName(ogSiteName: string) {
     this.meta.updateTag({ property: 'og:site_name', content: ogSiteName });
   }
 
-  setOgUrl(ogPath: string) {
+  private setOgUrl(ogPath: string) {
     this.meta.updateTag({
       property: 'og:url',
       content: `og:${this.BASE_URL}${ogPath}`,
     });
   }
 
-  setOgDescription(ogDescription: string) {
+  private setOgDescription(ogDescription: string) {
     this.meta.updateTag({ property: 'og:description', content: ogDescription });
   }
 
-  setCanonical(canonicalPath: string) {
+  private setCanonical(canonicalPath: string) {
     this.dom
       .querySelector(`link[rel='canonical']`)
       ?.setAttribute('href', `${this.BASE_URL}${canonicalPath}`);
