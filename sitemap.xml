@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://kevincorizi.com/</loc>
+        <loc>https://kevincorizi.github.io/me</loc>
     </url>
     <url>
-        <loc>https://kevincorizi.com/experience</loc>
+        <loc>https://kevincorizi.github.io/me/experience</loc>
     </url>
     <url>
-        <loc>https://kevincorizi.com/projects</loc>
+        <loc>https://kevincorizi.github.io/me/projects</loc>
     </url>
 </urlset>
