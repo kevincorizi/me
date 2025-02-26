@@ -15,48 +15,23 @@
                 [routerLinkActive]="'menu-active'"
                 [routerLinkActiveOptions]="{ exact: true }"
               >
-                <mat-icon mat-list-icon aria-hidden="false">{{
-                route.data?.["icon"]
-                }}</mat-icon>
-                <span class="menu-label" matLine>{{
-                route.data?.["linkText"]
-                }}</span>
+                <mat-icon mat-list-icon aria-hidden="false">{{ route.data?.['icon'] }}</mat-icon>
+                <span class="menu-label" matLine>{{ route.data?.['linkText'] }}</span>
               </mat-list-item>
             </ng-container>
           </mat-nav-list>
         </div>
         <div class="menu-bottom">
           <div class="social-container">
-            <a
-              class="social-icon"
-              href="https://github.com/kevincorizi"
-              target="_blank"
-            >
+            <a class="social-icon" href="https://github.com/kevincorizi" target="_blank">
               <img src="assets/github.png" alt="GitHub" loading="lazy" />
             </a>
-            <a
-              class="social-icon"
-              href="https://www.linkedin.com/in/kevincorizi"
-              target="_blank"
-            >
+            <a class="social-icon" href="https://www.linkedin.com/in/kevincorizi" target="_blank">
               <img src="assets/linkedin.png" alt="LinkedIn" loading="lazy" />
             </a>
           </div>
-          <a
-            mat-flat-button
-            href="mailto:me@kevincorizi.com"
-            target="_blank"
-            class="email-button"
-            color="primary"
-            >Let's get in touch!</a
-          >
-          <a
-            mat-mini-fab
-            href="mailto:me@kevincorizi.com"
-            target="_blank"
-            class="email-button-mobile"
-            color="primary"
-          >
+          <a mat-flat-button href="mailto:me@kevincorizi.com" target="_blank" class="email-button" color="primary">Let's get in touch!</a>
+          <a mat-mini-fab href="mailto:me@kevincorizi.com" target="_blank" class="email-button-mobile" color="primary">
             <mat-icon>email</mat-icon>
           </a>
         </div>

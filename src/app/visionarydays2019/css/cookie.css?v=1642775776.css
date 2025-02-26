@@ -1,0 +1,125 @@
+/*
+ * Copyright Davide Taddei (c) 2019.
+ */
+
+#section-privacy {
+  margin-bottom: 11rem;
+  margin-top: 8rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.privacy-row,
+.privacy-header-row {
+  margin-bottom: 4rem;
+}
+
+.privacy-row {
+  width: 45vw;
+  margin-left: 12vw;
+}
+
+.privacy-header-row h3 {
+  width: 58vw;
+}
+
+.privacy-header-row {
+  width: 100%;
+}
+
+h3 {
+  margin-bottom: 3.5rem;
+}
+
+h3.title {
+  color: #333;
+}
+
+p.text {
+  font-family: 'GTAmerica';
+  line-height: 1.6;
+  margin: 2rem 0;
+}
+
+ul,
+li,
+a {
+  color: #cccccc;
+}
+
+.privacy-header-row h3 {
+  margin-top: 3.5rem;
+}
+
+.privacy-row div:last-child {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.privacy-row p {
+  /* width: 36vw; */
+  width: 100%;
+}
+
+.privacy-row .line {
+  /* border-top: 1px solid #707070; */
+  display: none;
+
+  width: 17vw;
+  height: 1px;
+
+  margin-top: 1.6rem;
+}
+
+@media screen and (max-width: 1299px) {
+  .privacy-row,
+  .privacy-header-row h2 {
+    width: 780px;
+    margin-left: 0;
+  }
+
+  /*
+    .privacy-row p {
+        width: 482px;
+    }
+
+    .privacy-row .line {
+        width: 228px;
+    }
+    */
+}
+
+@media screen and (max-width: 1099px) {
+  .privacy-row,
+  .privacy-header-row h2 {
+    width: 75vw;
+  }
+
+  /*
+    .privacy-row p {
+        width: 46vw;
+    }
+
+    .privacy-row .line {
+        width: 22vw;
+    }
+     */
+}
+
+@media screen and (max-width: 650px) {
+  .privacy-row,
+  .privacy-row p,
+  .privacy-header-row,
+  .privacy-header-row h2 {
+    width: 100%;
+  }
+
+  .privacy-row .line {
+    display: none;
+  }
+}

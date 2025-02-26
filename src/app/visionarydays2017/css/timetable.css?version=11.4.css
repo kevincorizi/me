@@ -1,0 +1,342 @@
+/* Author: Kevin Corizi */
+/* kevincorizi@outlook.com */
+
+@media (min-width: 768px) and (max-width: 1499px) {
+  :root {
+    font-size: 10px !important;
+  }
+}
+
+body {
+  background-image: none;
+  background-color: #01085d;
+}
+
+aside {
+  display: inline-block;
+  width: 35%;
+  float: left;
+  height: 100vh;
+  position: fixed;
+  padding-left: 8rem;
+  padding-top: 13rem;
+  color: white;
+  font-family: 'Karla', sans-serif;
+}
+
+aside p {
+  margin: 0;
+}
+header nav {
+  background: linear-gradient(#250838, rgba(0, 0, 0, 0));
+  border: none !important;
+}
+header nav .container-fluid {
+  padding: 0;
+}
+header .partecipa {
+  display: none;
+}
+
+aside .partecipa {
+  display: block;
+  width: 10rem;
+  margin-top: 4rem;
+}
+
+.partecipa a {
+  color: white;
+  font-size: 3rem;
+}
+
+aside .partecipa a {
+  font-size: 2rem;
+  max-width: 100%;
+  display: block;
+}
+
+.partecipa a:hover,
+.partecipa a:active {
+  text-decoration: none;
+}
+
+.partecipa a img {
+  max-width: 100%;
+}
+
+.partecipa a span.partecipa-text {
+  margin: 0;
+}
+
+.partecipa a:hover span.partecipa-text,
+.partecipa a:hover span.partecipa-text {
+  text-decoration: underline;
+}
+
+#location {
+  font-size: 2rem;
+}
+
+#schedule {
+  font-size: 1.25rem;
+}
+
+#schedule ul {
+  list-style: none;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+#schedule .schedule-entry {
+  cursor: pointer;
+  color: gray;
+  margin: 0.75rem 0;
+  font-size: 1.25rem;
+}
+
+#schedule .schedule-entry a {
+  color: inherit;
+}
+
+#schedule .schedule-entry.active {
+  color: white;
+  pointer-events: none;
+}
+
+#schedule .schedule-entry-content {
+  display: flex;
+  align-items: center;
+}
+
+#schedule .schedule-entry-name {
+  flex-grow: 1;
+}
+
+#schedule .schedule-entry-name span {
+  display: block;
+}
+
+#schedule .schedule-entry-time {
+  float: right;
+}
+
+#schedule .schedule-break {
+  padding: 1rem 0;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+#schedule .schedule-break.active {
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+}
+
+main {
+  display: inline-block;
+  width: 65%;
+  float: right;
+  margin: 0;
+  padding: 0;
+  padding-right: 8rem;
+}
+
+.tab-container {
+  padding-top: 13rem;
+  padding-left: 10%;
+  padding-bottom: 60rem;
+}
+
+.tab {
+  margin-bottom: 5rem !important;
+}
+
+.tab * {
+  cursor: default !important;
+}
+
+.tab > a {
+  top: -13rem;
+}
+
+.tab-time {
+  font-family: 'Karla', sans-serif;
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
+  transition: opacity 1s;
+  text-align: left;
+}
+
+.tab-subtitle,
+.tab-time {
+  height: auto !important;
+  opacity: 1 !important;
+  margin-top: 0;
+}
+
+.tab-time {
+  display: none;
+}
+
+.tab .tab-title:after {
+  content: '';
+  display: inline-block;
+}
+
+.tab-collapse {
+  padding-left: 0;
+}
+
+.tab > div {
+  min-width: 100%;
+  display: block;
+}
+
+.tab-collapsed {
+  margin: 0;
+  width: 100%;
+  flex-direction: column;
+  pointer-events: none;
+}
+
+.tab-collapsed .tab-collapse {
+  margin: 0;
+}
+
+footer {
+  display: none;
+}
+
+#isMobile {
+  color: black;
+}
+
+@media (max-width: 1060px) {
+  header nav {
+    background-color: #01085d;
+  }
+  aside {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5rem;
+    float: none;
+    height: auto;
+    width: 100%;
+    margin-top: 20rem;
+  }
+  aside #location {
+    font-size: 3rem;
+    padding-left: 8rem;
+  }
+  aside #schedule,
+  aside .partecipa {
+    display: none;
+  }
+  main {
+    width: 100%;
+    padding: 0 8rem !important;
+  }
+  .tab-container {
+    padding: 0;
+  }
+  .tab {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .tab-main {
+    padding: 0 !important;
+  }
+  .tab-time {
+    display: block;
+  }
+  .tab-collapsed {
+    padding: 0;
+    margin-bottom: 3rem !important;
+  }
+  .tab-title {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+  #isMobile {
+    color: white;
+  }
+  footer {
+    display: block;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  header nav {
+    padding: 2rem;
+  }
+  header .navbar-right {
+    display: block !important;
+  }
+  header nav .container-fluid {
+    display: block;
+  }
+  aside {
+    margin-top: 15rem;
+  }
+  aside #location {
+    font-size: 3rem;
+    padding-left: 2rem;
+  }
+  main {
+    padding: 0 2rem !important;
+  }
+  .tab {
+    margin-bottom: 2rem !important;
+    padding: 0;
+  }
+  .tab-collapsed {
+    pointer-events: all;
+  }
+  .tab-content.tab-collapsed * {
+    cursor: pointer !important;
+  }
+  .tab-collapsed .tab-collapse {
+    max-height: 0;
+  }
+  .tab .tab-title {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .tab-content .tab-title:after {
+    font-size: 4rem;
+    line-height: 4rem;
+    padding-right: 1rem;
+    flex-grow: 1;
+    text-align: right;
+  }
+  .tab-content.tab .tab-title:after {
+    content: '\2573';
+    font-size: 2rem;
+  }
+  .tab-content.tab-collapsed .tab-title:after {
+    content: '\2c5';
+    font-size: 4rem;
+  }
+  .tab-collapse {
+    transition: max-height 0.5s linear;
+  }
+  .tab > .tab-collapse {
+    max-height: 400px;
+  }
+  .tab-collapsed > .tab-collapse {
+    max-height: 0px;
+    overflow: hidden;
+  }
+  .tab-description {
+    font-size: 3rem;
+  }
+  #isMobile {
+    color: white;
+  }
+}

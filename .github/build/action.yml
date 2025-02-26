@@ -1,9 +1,0 @@
-name: 'Build and deploy to OVH'
-description: 'Builds the Angular project and transfers the the output files via FTP'
-author: kevincorizi
-branding:
-  icon: 'truck'  
-  color: 'blue'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'

@@ -1,0 +1,370 @@
+/* Author: Kevin Corizi */
+/* kevincorizi@outlook.com */
+/*
+@media for
+- IPAD
+- NARROW DESKTOP
+*/
+@media (max-width: 1060px) {
+  body {
+    background-image: none;
+    background-color: #01085d;
+  }
+  header nav {
+    padding: 0;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background: linear-gradient(#250838, #01085d);
+    border: none !important;
+  }
+  header .navbar-header {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+  }
+  header .navbar-brand {
+    margin: auto !important;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+  header .navbar-brand > img {
+    margin: auto;
+  }
+  header .navbar-collapse {
+    text-align: center;
+    clear: both;
+  }
+  header .navbar-right {
+    float: none !important;
+    display: flex;
+    width: 100%;
+  }
+  header nav li {
+    min-height: 4rem;
+    margin: 0;
+    width: calc(100% / 4 - 1px);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+  header nav li:nth-child(5) {
+    display: none;
+  }
+  nav li > a {
+    font-size: 2rem;
+  }
+  main {
+    margin: 0 !important;
+    padding-top: 30rem !important;
+    width: 100%;
+    padding-bottom: 15rem;
+  }
+  .tab {
+    width: 85%;
+    margin: 3rem auto !important;
+    padding: 0 3rem;
+    min-height: 0px;
+    flex-direction: column;
+    position: relative;
+  }
+  .tab * {
+    text-align: left !important;
+    cursor: default;
+  }
+  .tab-main {
+    width: 100% !important;
+    position: initial !important;
+    padding-left: 0 !important;
+  }
+  .tab-collapse {
+    width: 100% !important;
+    padding: 0;
+  }
+  .tab-title {
+    font-size: 5rem;
+    line-height: 5.5rem;
+  }
+  .tab-subtitle {
+    font-size: 3rem;
+    line-height: 3.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.25rem;
+    height: auto !important;
+    opacity: 1 !important;
+    font-style: italic;
+  }
+  .tab-collapsed {
+    margin: 0;
+    padding-bottom: 0;
+  }
+  .tab-collapsed > .tab-collapse {
+    margin-left: 0;
+  }
+  .tab .tab-description {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 1rem;
+  }
+  .tab-action {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 4rem;
+    overflow: hidden;
+  }
+  .tab-arrow {
+    display: none !important;
+  }
+  .tab-description-navigators {
+    font-size: 3rem;
+  }
+  #isMobile {
+    color: white !important;
+  }
+  #isTablet {
+    color: white !important;
+  }
+}
+
+@media (max-width: 1199px) {
+  footer {
+    padding: 6rem 3rem;
+  }
+  footer > .navbar {
+    width: 100%;
+    margin: auto;
+  }
+  footer > .navbar > .container-fluid {
+    padding: 0;
+    flex-direction: column;
+  }
+  footer .navbar-header {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 6rem !important;
+  }
+  footer .navbar-right {
+    text-align: right;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    flex-grow: 0;
+  }
+}
+
+@media (max-width: 599px) {
+  footer .navbar-right {
+    display: block;
+    text-align: center;
+    width: 100%;
+  }
+  footer .footer-partner-wrapper {
+    width: 100%;
+    margin: 0;
+    padding: 0 2rem;
+  }
+  footer .footer-partner-group {
+    margin-top: 5rem !important;
+  }
+  footer #footer-items {
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0 2rem;
+  }
+  footer #footer-items > li > a {
+    font-size: 2rem;
+  }
+}
+/*
+@media for
+- MOBILE (PORTRAIT AND LANDSCAPE)
+- ULTRA NARROW DESKTOP
+*/
+@media (max-width: 767px) {
+  header .container-fluid {
+    padding: 0;
+  }
+  header .navbar-brand {
+    width: 30rem;
+    height: auto;
+  }
+  .navbar-header {
+    margin: 0 !important;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  header .navbar-toggle {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    color: white;
+    font-size: 6rem;
+    line-height: 5rem;
+    flex: 1 1 auto;
+    text-align: right;
+  }
+  header .navbar-collapse {
+    border: none;
+    box-shadow: none;
+    max-height: calc(100vh - 7rem) !important;
+  }
+  header .navbar-collapse.collapsing {
+    max-height: calc(100vh - 7rem) !important;
+  }
+  header .navbar-brand > img {
+    width: 100%;
+    height: auto;
+  }
+  header nav {
+    background-color: rgb(0, 11, 34);
+    text-align: center;
+    padding: 2rem;
+    border: none !important;
+    margin-bottom: 0 !important;
+  }
+  header .navbar-nav {
+    margin: 0;
+    padding-top: calc(50vh - 36rem);
+    height: calc(100vh - 47rem);
+    min-height: 48rem;
+    display: block;
+  }
+  header .nav li {
+    margin: 0;
+    width: auto;
+    height: 8rem;
+  }
+  header .nav li:nth-child(5) {
+    display: none;
+  }
+  header .nav li > a {
+    font-size: 3.5rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    display: inline-block;
+    max-height: 100%;
+  }
+  header nav li img {
+    max-width: 50% !important;
+  }
+  header .navbar-sub {
+    display: block;
+  }
+  header .navbar-sub li {
+    min-height: 0px;
+  }
+  header .navbar-sub li a {
+    margin: 0;
+    padding: 0 !important;
+    color: gray;
+  }
+  #menu-social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    height: 40rem;
+    list-style: none;
+  }
+  #menu-social > li {
+    width: 40%;
+  }
+  #menu-social > li > a {
+    display: block;
+    width: 100%;
+  }
+  #menu-social > li > a > img {
+    width: 100%;
+  }
+  main {
+    padding-top: 0rem !important;
+    padding-bottom: 10rem !important;
+  }
+  .tab-container {
+    padding-top: 25vh;
+  }
+  .tab {
+    width: 100%;
+    margin: 3rem auto 0 auto !important;
+    padding: 0 2rem;
+  }
+  .tab > a {
+    top: -25vh;
+  }
+  .tab .tab-main {
+    padding-left: 0;
+  }
+  .tab .tab-description {
+    font-size: 2rem;
+  }
+  #index-candidati {
+    display: block;
+    width: 100%;
+    margin-top: 9rem;
+    text-align: center;
+  }
+  #index-candidati > a {
+    display: inline-block;
+    margin: auto;
+    width: 20rem;
+  }
+
+  #index-candidati > a > img {
+    max-width: 100%;
+  }
+  footer {
+    display: block;
+  }
+  footer .navbar-right p {
+    flex-direction: column;
+    font-size: 2rem;
+  }
+  footer .navbar-right p > span {
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+  }
+  footer .navbar-right img {
+    margin: 0;
+    max-height: 15rem;
+  }
+  #isMobile {
+    color: white !important;
+  }
+  #isTablet {
+    color: black !important;
+  }
+}
+
+/* ADJUSTMENTS TO HEADER */
+@media (min-width: 1061px) {
+  header nav .container-fluid {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  header nav .navbar-header {
+    display: flex;
+    flex-grow: 1;
+  }
+  header .navbar-collapse {
+    width: calc(50% + 6rem);
+  }
+  header .navbar-collapse .nav {
+    width: 100%;
+    display: flex;
+  }
+  header nav li {
+    margin: 0;
+    display: flex !important;
+    flex-grow: 1;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 25%;
+  }
+  header nav li a {
+    text-align: center;
+    padding: 0 !important;
+  }
+}

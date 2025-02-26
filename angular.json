@@ -20,6 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/me/",
             "outputPath": "dist/kc",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -29,14 +30,35 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/.htaccess",
               "src/sitemap.xml",
-              "src/robots.txt"
+              "src/robots.txt",
+              {
+                "glob": "**/*.*",
+                "input": "src/app/qualefuturo/",
+                "output": "/qualefuturo"
+              },
+              {
+                "glob": "**/*.*",
+                "input": "src/app/visionarydays2017/",
+                "output": "/visionarydays2017"
+              },
+              {
+                "glob": "**/*.*",
+                "input": "src/app/visionarydays2018/",
+                "output": "/visionarydays2018"
+              },
+              {
+                "glob": "**/*.*",
+                "input": "src/app/visionarydays2019/",
+                "output": "/visionarydays2019"
+              },
+              {
+                "glob": "**/*.*",
+                "input": "src/app/visionarydays2020/",
+                "output": "/visionarydays2020"
+              }
             ],
-            "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss"
-            ],
+            "styles": ["./node_modules/@angular/material/prebuilt-themes/indigo-pink.css", "src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -99,10 +121,7 @@
             "karmaConfig": "karma.conf.js",
             "inlineStyleLanguage": "scss",
             "assets": ["src/favicon.ico", "src/assets"],
-            "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss"
-            ],
+            "styles": ["./node_modules/@angular/material/prebuilt-themes/indigo-pink.css", "src/styles.scss"],
             "scripts": []
           }
         }

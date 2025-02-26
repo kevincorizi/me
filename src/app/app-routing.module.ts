@@ -29,8 +29,7 @@ export const ROUTES: Routes = [
     component: AboutComponent,
     data: {
       title: 'Kevin Corizi - Home',
-      description:
-        "Hi, I'm Kevin! I'm a software engineer passionate about web development and making beautiful things happen. Check out my portfolio!",
+      description: "Hi, I'm Kevin! I'm a software engineer passionate about web development and making beautiful things happen. Check out my portfolio!",
       ogTitle: 'Kevin Corizi - Portfolio - Home',
       ogSiteName: 'Kevin Corizi - Portfolio',
       canonical: '/',

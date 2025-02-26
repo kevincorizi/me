@@ -1,4 +1,4 @@
-import { Project, Experience } from "./model";
+import { Project, Experience } from './model';
 
 export const PROJECTS: Project[] = [
   {
@@ -7,7 +7,7 @@ export const PROJECTS: Project[] = [
       '"QualeFuturo" is a web marathon, where 400 young men and women work together in a digital brainstorm on four topics relevant for the future',
     ],
     image: 'assets/projects/qualefuturo.png',
-    url: 'https://demos.kevincorizi.com/qualefuturo',
+    url: 'https://kevincorizi.github.io/me/qualefuturo/',
     tech: ['HTML5', 'CSS3', 'JavaScript', 'PHP'],
   },
   {
@@ -22,11 +22,9 @@ export const PROJECTS: Project[] = [
   },
   {
     title: 'Visionary Days 2020',
-    description: [
-      'Official website for the 2020 edition of Visionary Days, the event where thousands of people meet to write a better future.',
-    ],
+    description: ['Official website for the 2020 edition of Visionary Days, the event where thousands of people meet to write a better future.'],
     image: 'assets/projects/vd2020.png',
-    url: 'https://demos.kevincorizi.com/visionarydays2020',
+    url: 'https://kevincorizi.github.io/me/visionarydays2020',
     tech: ['HTML5', 'CSS3', 'JavaScript', 'PHP'],
   },
   {
@@ -41,20 +39,16 @@ export const PROJECTS: Project[] = [
   },
   {
     title: 'Visionary Days 2019',
-    description: [
-      'Official website for the 2019 edition of Visionary Days, the event where thousands of people meet to write a better future.',
-    ],
+    description: ['Official website for the 2019 edition of Visionary Days, the event where thousands of people meet to write a better future.'],
     image: 'assets/projects/vd2019.png',
-    url: 'https://demos.kevincorizi.com/visionarydays2019',
+    url: 'https://kevincorizi.github.io/me/visionarydays2019',
     tech: ['HTML5', 'CSS3', 'JavaScript', 'PHP'],
   },
   {
     title: 'Visionary Days 2018',
-    description: [
-      'Official website for the 2018 edition of Visionary Days, the event where thousands of people meet to write a better future.',
-    ],
+    description: ['Official website for the 2018 edition of Visionary Days, the event where thousands of people meet to write a better future.'],
     image: 'assets/projects/vd2018.png',
-    url: 'https://demos.kevincorizi.com/visionarydays2018',
+    url: 'https://kevincorizi.github.io/me/visionarydays2018',
     tech: ['HTML5', 'CSS3', 'JavaScript', 'PHP'],
   },
   {
@@ -69,11 +63,9 @@ export const PROJECTS: Project[] = [
   },
   {
     title: 'Visionary Days 2017',
-    description: [
-      'Official website for the first edition of Visionary Days, the event where thousands of people meet to write a better future.',
-    ],
+    description: ['Official website for the first edition of Visionary Days, the event where thousands of people meet to write a better future.'],
     image: 'assets/projects/vd2017.png',
-    url: 'https://demos.kevincorizi.com/visionarydays2017',
+    url: 'https://kevincorizi.github.io/me/visionarydays2017',
     tech: ['HTML5', 'CSS3', 'JavaScript', 'PHP'],
   },
 ];
@@ -150,16 +142,8 @@ export const EXPERIENCES: Experience[] = [
       'This experience taught me to evaluate and dispatch incoming projects, discuss with clients, plan and maintain deadlines.',
       'It also forced me to learn how to pivot and think quickly when problems arise, and to steer a variable workforce to make sure the client is satisfied with the results.',
     ],
-    skills: [
-      'People management',
-      'Estimate projects and set reliable deadlines',
-      'Discuss contracts with clients',
-      'Working under pressure',
-    ],
-    achievements: [
-      'More than 10 projects succesfully delivered',
-      'Helped steer the department towards more rewarding and profitable projects',
-    ],
+    skills: ['People management', 'Estimate projects and set reliable deadlines', 'Discuss contracts with clients', 'Working under pressure'],
+    achievements: ['More than 10 projects succesfully delivered', 'Helped steer the department towards more rewarding and profitable projects'],
     tech: ['Kanban', 'Google Suite'],
   },
   {
@@ -173,12 +157,7 @@ export const EXPERIENCES: Experience[] = [
       'I contributed to more than 10 projects working with my team, with varying degrees of complexity and urgency.',
       'This taught me to work under pressure to meet deadlines, to manage my time effectively, and to interact with the client to best match their needs.',
     ],
-    skills: [
-      'Time management',
-      'Team work',
-      'Lots of CSS tricks',
-      'Understand client needs',
-    ],
+    skills: ['Time management', 'Team work', 'Lots of CSS tricks', 'Understand client needs'],
     achievements: [],
     tech: ['WordPress', 'PrestaShop', 'BitBucket'],
   },

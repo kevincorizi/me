@@ -1,21 +1,21 @@
 .exp-logo-container {
-    display: flex;
-    margin-bottom: 20px;
+  display: flex;
+  margin-bottom: 20px;
 
-    .exp-logo {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        overflow: hidden;
-        margin-right: 30px;
+  .exp-logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
 
-        img {
-            height: 100%;
-            width: 100%;
-        }
+    img {
+      height: 100%;
+      width: 100%;
     }
+  }
 }
 
 .spacer {
-    margin: 40px 0;
+  margin: 40px 0;
 }

@@ -1,0 +1,261 @@
+/*
+ * headline.css
+ * Style for full-page opening text with animation
+ */
+
+#headline-section {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3001;
+}
+
+body.no-animation #headline-section {
+  display: none;
+}
+
+#headline-section .col-12 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #000;
+}
+
+#hero-text-container {
+  width: 45vw;
+  min-width: 600px;
+  text-align: center;
+}
+
+body.active #headline-section .col-12 #hero-text-container {
+  opacity: 0;
+}
+
+body.active:not(.no-animation) #headline-section .col-12 #hero-text-container {
+  transition: opacity 0.7s ease-in-out 4.3s;
+}
+
+#hero-date {
+  font-family: GTAmerica;
+  font-size: 1.5rem;
+  font-weight: 900;
+  font-stretch: expanded;
+  margin-bottom: 0;
+}
+
+#hero-text {
+  overflow: hidden;
+}
+
+/*
+#hero-text > div {
+    position: relative;
+    padding: 6px 15px;
+    margin-bottom: 5px;
+    float: left;
+    clear: both;
+    font-size: 35px;
+    /* transition: font-size 0.5s linear;
+}*/
+
+#hero-text span {
+  font-family: GTAmerica;
+  position: relative;
+  font-weight: 200;
+  font-stretch: expanded;
+  letter-spacing: 0;
+  font-size: 1.5rem;
+  display: inline-block;
+  color: #d3d3d3;
+  /* Animation */
+  bottom: -1.7rem;
+}
+
+#hero-text span:not(:last-child) {
+  padding-right: 0.5rem;
+}
+
+body.active #hero-text span {
+  bottom: 0;
+}
+
+body.active:not(.no-animation) #hero-text span:first-child {
+  transition: bottom 0.5s ease-in-out 0.6s;
+}
+
+body.active:not(.no-animation) #hero-text span:nth-child(2) {
+  transition: bottom 0.5s ease-in-out 0.9s;
+}
+
+body.active:not(.no-animation) #hero-text span:nth-child(3) {
+  transition: bottom 0.5s ease-in-out 1.2s;
+}
+
+body.active:not(.no-animation) #hero-text span:last-child {
+  transition: bottom 0.5s ease-in-out 1.5s;
+}
+
+#hero-action {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 1.5rem;
+}
+
+#hero-action button {
+  position: relative;
+  opacity: 0;
+  width: 0;
+  padding: 0.4rem 0;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid white;
+  background: linear-gradient(
+      to right,
+      transparent 0%,
+      transparent 33.333333%,
+      #4a4a4a 33.333333%,
+      #4a4a4a 66.666666%,
+      transparent 66.666666%,
+      transparent 100%
+    )
+    right bottom;
+  background-size: 300% 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-action button span {
+  opacity: 0;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+  font-family: 'GTAmerica Mono';
+  font-size: 0.85rem;
+}
+
+body.active #hero-action button {
+  width: 14rem;
+  /* padding: 5px; */
+  opacity: 1;
+  background-position: 50% 0;
+}
+
+body.active #hero-action button span {
+  opacity: 1;
+}
+
+/* Anticipare il riempimento della barra nel momento in cui appare già il trattino e ridurre il tempo prima che scompaia tutto */
+body.active:not(.no-animation) #hero-action button {
+  transition:
+    width 1s ease-in-out 2s,
+    /* padding 1s ease 3.5s, */ opacity 0.5s ease-in-out 1.5s,
+    background-position 0.6s ease-in-out 3.2s;
+}
+
+body.active:not(.no-animation) #hero-action button span {
+  transition: opacity 0.6s ease-in-out 2.5s;
+}
+
+#skip-intro {
+  position: absolute;
+  bottom: 7vh;
+  width: 100vw;
+  text-align: center;
+  cursor: pointer;
+  opacity: 1;
+}
+
+body.active:not(.no-animation) #skip-intro {
+  transition: opacity 0.7s ease-in-out 2.1s;
+}
+
+body.active #skip-intro {
+  opacity: 0;
+}
+
+#skip-intro span {
+  color: #4b4b4b;
+  font-size: 0.9rem;
+  font-family: 'GTAmerica Mono';
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+
+@media (max-width: 949px) {
+  #hero-text-container {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  #headline-section {
+    height: 100vh;
+    margin-top: 0;
+  }
+
+  #headline-section .col-4 {
+    display: none;
+  }
+
+  #headline-section .col-8 {
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    right: -20px;
+    height: auto;
+    flex: 0 0 100%;
+    max-width: 200%;
+    width: calc(100% + 40px);
+    padding: 0;
+  }
+
+  #headline-section .headline-image-container {
+    max-width: 100%;
+    margin: 0;
+    height: auto;
+  }
+
+  #headline-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #hero-text span {
+    font-size: 1rem;
+  }
+
+  #hero-text span:not(:last-child) {
+    padding-right: 2px;
+  }
+
+  #hero-action button {
+    padding: 8px 0;
+  }
+
+  body.active #hero-action button {
+    width: 16rem;
+  }
+
+  #hero-action button span {
+    font-size: 1.04rem;
+    letter-spacing: 1.3px;
+  }
+
+  #hero-date {
+    font-size: 1.76rem;
+    margin-bottom: 6px;
+  }
+}

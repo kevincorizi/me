@@ -13,7 +13,7 @@ export interface SEOData {
 
 @Injectable()
 export class SEOService {
-  private readonly BASE_URL = 'https://kevincorizi.com';
+  private readonly BASE_URL = 'https://kevincorizi.github.io';
 
   constructor(
     @Inject(DOCUMENT) private readonly dom: Document,
@@ -64,8 +64,6 @@ export class SEOService {
   }
 
   private setCanonical(canonicalPath: string) {
-    this.dom
-      .querySelector(`link[rel='canonical']`)
-      ?.setAttribute('href', `${this.BASE_URL}${canonicalPath}`);
+    this.dom.querySelector(`link[rel='canonical']`)?.setAttribute('href', `${this.BASE_URL}${canonicalPath}`);
   }
 }

@@ -9,15 +9,13 @@
         </div>
       </div>
       <div class="exp-company-container">
-        <span class="mat-headline">{{ exp.companies.join(" + ") }}</span>
+        <span class="mat-headline">{{ exp.companies.join(' + ') }}</span>
       </div>
       <div class="exp-role-container">
         <span class="mat-title">{{ exp.title }}</span>
       </div>
       <div class="exp-date-container">
-        <span class="mat-subheading-2"
-          >{{ exp.startDate }} - {{ exp.endDate }}</span
-        >
+        <span class="mat-subheading-2">{{ exp.startDate }} - {{ exp.endDate }}</span>
       </div>
       <div class="exp-description-container">
         <p *ngFor="let d of exp.description">{{ d }}</p>

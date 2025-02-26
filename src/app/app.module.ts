@@ -10,18 +10,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { SEOService } from './seo.service';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    AboutComponent,
-    ExperienceComponent,
-    ProjectsComponent,
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    MaterialModule,
-  ],
+  declarations: [AppComponent, AboutComponent, ExperienceComponent, ProjectsComponent],
+  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, MaterialModule],
   providers: [Title, Meta, SEOService],
   bootstrap: [AppComponent],
 })
