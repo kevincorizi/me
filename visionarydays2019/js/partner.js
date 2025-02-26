@@ -4,10 +4,7 @@ function isVisible(row, container) {
     containerTop = container.scrollTop(),
     containerHeight = container.height();
 
-  return (
-    elementTop - containerTop + elementHeight > 0 &&
-    elementTop - containerTop < containerHeight
-  );
+  return elementTop - containerTop + elementHeight > 0 && elementTop - containerTop < containerHeight;
 }
 
 $("a[href='http://']").click(function (e) {

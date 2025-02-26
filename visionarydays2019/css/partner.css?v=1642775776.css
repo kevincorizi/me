@@ -74,7 +74,7 @@
 }
 
 .line:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   left: 25%;
@@ -89,7 +89,7 @@
   background: #000;
   display: inline-block;
 
-  font-family: "GTAmerica";
+  font-family: 'GTAmerica';
   font-stretch: semi-expanded;
   font-weight: 600;
 }

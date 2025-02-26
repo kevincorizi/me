@@ -368,7 +368,7 @@ header {
   margin-bottom: 7.5rem;
   height: 5rem;
 
-  background-image: url("../../assets/header_img.jpg");
+  background-image: url('../../assets/header_img.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -421,7 +421,7 @@ button.btn {
 
   text-transform: uppercase;
   font-size: 1rem;
-  font-family: "GTAmerica Mono";
+  font-family: 'GTAmerica Mono';
   font-stretch: semi-expanded;
 
   display: flex;
@@ -758,8 +758,7 @@ footer #footer-bottom-links span:not(:last-child) {
   }
 }
 
-@media screen and (max-width: 414px) and (orientation: portrait),
-  screen and (max-width: 736px) and (orientation: landscape) {
+@media screen and (max-width: 414px) and (orientation: portrait), screen and (max-width: 736px) and (orientation: landscape) {
   .cc-window.cc-bottom {
     bottom: 2.88rem;
   }
@@ -800,7 +799,7 @@ footer #footer-bottom-links span:not(:last-child) {
 }
 
 .cc-compliance a {
-  font-family: "GTAmerica Mono", sans-serif;
+  font-family: 'GTAmerica Mono', sans-serif;
   font-size: 0.8rem;
   font-stretch: expanded;
   letter-spacing: 1px;
@@ -1249,10 +1248,7 @@ footer #footer-bottom-links span:not(:last-child) {
   }
 
   #footer-bottom > div:nth-child(2) > div:nth-child(2) hr,
-  #footer-bottom
-    > div:nth-child(2)
-    > div:nth-child(2)
-    .link-container:last-child,
+  #footer-bottom > div:nth-child(2) > div:nth-child(2) .link-container:last-child,
   footer button.btn {
     display: none !important;
   }
@@ -1275,10 +1271,7 @@ footer #footer-bottom-links span:not(:last-child) {
     color: #9f9f9f !important;
   }
 
-  #footer-bottom
-    > div:nth-child(2)
-    > div:nth-child(3)
-    .link-container:last-child {
+  #footer-bottom > div:nth-child(2) > div:nth-child(3) .link-container:last-child {
     margin-bottom: 0;
   }
 

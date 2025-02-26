@@ -141,7 +141,7 @@ body.active:not(.no-animation) #hero-text span:last-child {
   color: white;
   text-transform: uppercase;
   letter-spacing: 0.08rem;
-  font-family: "GTAmerica Mono";
+  font-family: 'GTAmerica Mono';
   font-size: 0.85rem;
 }
 
@@ -188,7 +188,7 @@ body.active #skip-intro {
 #skip-intro span {
   color: #4b4b4b;
   font-size: 0.9rem;
-  font-family: "GTAmerica Mono";
+  font-family: 'GTAmerica Mono';
   font-weight: 600;
   letter-spacing: 0.1rem;
 }

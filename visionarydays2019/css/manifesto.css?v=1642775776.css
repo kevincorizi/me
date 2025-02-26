@@ -236,7 +236,7 @@
 }
 
 .livebook-header .edition-title-container:first-child p:before {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   z-index: 1;
@@ -264,7 +264,7 @@
 .livebook-header.mobile-only .chevron::before {
   border-style: solid;
   border-width: 0.15em 0.15em 0 0;
-  content: "";
+  content: '';
   display: inline-block;
   height: 1.5rem;
   left: 0;
@@ -401,9 +401,7 @@
     margin-bottom: 0;
   }
 
-  .edition-detail-container.mobile-only
-    .edition-left-content
-    p:nth-child(n + 2) {
+  .edition-detail-container.mobile-only .edition-left-content p:nth-child(n + 2) {
     color: #ccc;
   }
 

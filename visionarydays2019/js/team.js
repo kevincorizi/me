@@ -3,11 +3,11 @@ $(document).ready(function () {
 
   if (_width < 500) team_mobile();
 
-  $("#names").height($(".names-wrapper").innerHeight());
+  $('#names').height($('.names-wrapper').innerHeight());
 });
 
 function team_mobile() {
-  let $images_container = $(".team-row .team-images-container");
+  let $images_container = $('.team-row .team-images-container');
   let offset_x = parseInt($images_container.position().left);
   let width = parseInt($images_container.outerWidth());
 

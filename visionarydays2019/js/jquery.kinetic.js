@@ -6,9 +6,9 @@
  @preserve Copyright (c) 2012 Dave Taylor http://davetayls.me
  */
 (function ($) {
-  "use strict";
+  'use strict';
 
-  var ACTIVE_CLASS = "kinetic-active";
+  var ACTIVE_CLASS = 'kinetic-active';
 
   /**
    * Provides requestAnimationFrame in a cross browser way.
@@ -21,10 +21,7 @@
         window.mozRequestAnimationFrame ||
         window.oRequestAnimationFrame ||
         window.msRequestAnimationFrame ||
-        function (
-          /* function FrameRequestCallback */ callback,
-          /* DOMElement Element */ element,
-        ) {
+        function (/* function FrameRequestCallback */ callback, /* DOMElement Element */ element) {
           window.setTimeout(callback, 1000 / 60);
         }
       );
@@ -34,7 +31,7 @@
   // add touch checker to jQuery.support
   $.support = $.support || {};
   $.extend($.support, {
-    touch: "ontouchend" in document,
+    touch: 'ontouchend' in document,
   });
 
   // KINETIC CLASS DEFINITION
@@ -50,9 +47,9 @@
     return this;
   };
 
-  Kinetic.DATA_KEY = "kinetic";
+  Kinetic.DATA_KEY = 'kinetic';
   Kinetic.DEFAULTS = {
-    cursor: "move",
+    cursor: 'move',
     decelerate: true,
     triggerHardware: false,
     threshold: 0,
@@ -63,16 +60,16 @@
     throttleFPS: 60,
     invert: false,
     movingClass: {
-      up: "kinetic-moving-up",
-      down: "kinetic-moving-down",
-      left: "kinetic-moving-left",
-      right: "kinetic-moving-right",
+      up: 'kinetic-moving-up',
+      down: 'kinetic-moving-down',
+      left: 'kinetic-moving-left',
+      right: 'kinetic-moving-right',
     },
     deceleratingClass: {
-      up: "kinetic-decelerating-up",
-      down: "kinetic-decelerating-down",
-      left: "kinetic-decelerating-left",
-      right: "kinetic-decelerating-right",
+      up: 'kinetic-decelerating-up',
+      down: 'kinetic-decelerating-down',
+      left: 'kinetic-decelerating-left',
+      right: 'kinetic-decelerating-right',
     },
   };
 
@@ -101,7 +98,7 @@
 
   Kinetic.prototype.detach = function () {
     this._detachListeners();
-    this.$el.removeClass(ACTIVE_CLASS).css("cursor", "");
+    this.$el.removeClass(ACTIVE_CLASS).css('cursor', '');
   };
 
   Kinetic.prototype.attach = function () {
@@ -109,7 +106,7 @@
       return;
     }
     this._attachListeners(this.$el);
-    this.$el.addClass(ACTIVE_CLASS).css("cursor", this.settings.cursor);
+    this.$el.addClass(ACTIVE_CLASS).css('cursor', this.settings.cursor);
   };
 
   Kinetic.prototype.destroy = function () {
@@ -139,19 +136,17 @@
     this.velocityY = 0;
 
     // make sure we reset everything when mouse up
-    $(document)
-      .mouseup($.proxy(this._resetMouse, this))
-      .click($.proxy(this._resetMouse, this));
+    $(document).mouseup($.proxy(this._resetMouse, this)).click($.proxy(this._resetMouse, this));
 
     this._initEvents();
 
-    this.$el.css("cursor", this.settings.cursor);
+    this.$el.css('cursor', this.settings.cursor);
 
     if (this.settings.triggerHardware) {
       this.$el.css({
-        "-webkit-transform": "translate3d(0,0,0)",
-        "-webkit-perspective": "1000",
-        "-webkit-backface-visibility": "hidden",
+        '-webkit-transform': 'translate3d(0,0,0)',
+        '-webkit-perspective': '1000',
+        '-webkit-backface-visibility': 'hidden',
       });
     }
   };
@@ -183,7 +178,7 @@
           self.threshold = self._threshold(e.target, e);
           self._start(e.clientX, e.clientY);
           self.elementFocused = e.target;
-          if (e.target.nodeName === "IMG") {
+          if (e.target.nodeName === 'IMG') {
             e.preventDefault();
           }
           e.stopPropagation();
@@ -243,10 +238,7 @@
     var $this = this.$el;
     var el = this.el;
 
-    if (
-      !this.lastMove ||
-      new Date() > new Date(this.lastMove.getTime() + this.throttleTimeout)
-    ) {
+    if (!this.lastMove || new Date() > new Date(this.lastMove.getTime() + this.throttleTimeout)) {
       this.lastMove = new Date();
 
       if (this.mouseDown && (this.xpos || this.ypos)) {
@@ -295,14 +287,8 @@
   };
 
   Kinetic.prototype._calculateVelocities = function () {
-    this.velocity = this._capVelocity(
-      this.prevXPos - this.xpos,
-      this.settings.maxvelocity,
-    );
-    this.velocityY = this._capVelocity(
-      this.prevYPos - this.ypos,
-      this.settings.maxvelocity,
-    );
+    this.velocity = this._capVelocity(this.prevXPos - this.xpos, this.settings.maxvelocity);
+    this.velocityY = this._capVelocity(this.prevYPos - this.ypos, this.settings.maxvelocity);
     if (this.settings.invert) {
       this.velocity *= -1;
       this.velocityY *= -1;
@@ -407,9 +393,7 @@
     if (settings.x && scroller.scrollWidth > 0) {
       this.scrollLeft(this.scrollLeft() + this.velocity);
       if (Math.abs(this.velocity) > 0) {
-        this.velocity = settings.decelerate
-          ? self._decelerateVelocity(this.velocity, settings.slowdown)
-          : this.velocity;
+        this.velocity = settings.decelerate ? self._decelerateVelocity(this.velocity, settings.slowdown) : this.velocity;
       }
     } else {
       this.velocity = 0;
@@ -419,9 +403,7 @@
     if (settings.y && scroller.scrollHeight > 0) {
       this.scrollTop(this.scrollTop() + this.velocityY);
       if (Math.abs(this.velocityY) > 0) {
-        this.velocityY = settings.decelerate
-          ? self._decelerateVelocity(this.velocityY, settings.slowdown)
-          : this.velocityY;
+        this.velocityY = settings.decelerate ? self._decelerateVelocity(this.velocityY, settings.slowdown) : this.velocityY;
       }
     } else {
       this.velocityY = 0;
@@ -450,7 +432,7 @@
   // get current scroller to apply positioning to
   Kinetic.prototype._getScroller = function () {
     var $scroller = this.$el;
-    if (this.$el.is("body") || this.$el.is("html")) {
+    if (this.$el.is('body') || this.$el.is('html')) {
       $scroller = $(window);
     }
     return $scroller;
@@ -459,7 +441,7 @@
   // set the scroll position
   Kinetic.prototype.scrollLeft = function (left) {
     var $scroller = this._getScroller();
-    if (typeof left === "number") {
+    if (typeof left === 'number') {
       $scroller.scrollLeft(left);
       this.settings.scrollLeft = left;
     } else {
@@ -468,7 +450,7 @@
   };
   Kinetic.prototype.scrollTop = function (top) {
     var $scroller = this._getScroller();
-    if (typeof top === "number") {
+    if (typeof top === 'number') {
       $scroller.scrollTop(top);
       this.settings.scrollTop = top;
     } else {
@@ -481,44 +463,32 @@
     var settings = this.settings;
 
     if ($.support.touch) {
-      $this
-        .bind("touchstart", settings.events.touchStart)
-        .bind("touchend", settings.events.inputEnd)
-        .bind("touchmove", settings.events.touchMove);
+      $this.bind('touchstart', settings.events.touchStart).bind('touchend', settings.events.inputEnd).bind('touchmove', settings.events.touchMove);
     }
 
-    $this
-      .mousedown(settings.events.inputDown)
-      .mouseup(settings.events.inputEnd)
-      .mousemove(settings.events.inputMove);
+    $this.mousedown(settings.events.inputDown).mouseup(settings.events.inputEnd).mousemove(settings.events.inputMove);
 
     $this
       .click(settings.events.inputClick)
       .scroll(settings.events.scroll)
-      .bind("selectstart", settings.events.selectStart)
-      .bind("dragstart", settings.events.dragStart);
+      .bind('selectstart', settings.events.selectStart)
+      .bind('dragstart', settings.events.dragStart);
   };
 
   Kinetic.prototype._detachListeners = function () {
     var $this = this.$el;
     var settings = this.settings;
     if ($.support.touch) {
-      $this
-        .unbind("touchstart", settings.events.touchStart)
-        .unbind("touchend", settings.events.inputEnd)
-        .unbind("touchmove", settings.events.touchMove);
+      $this.unbind('touchstart', settings.events.touchStart).unbind('touchend', settings.events.inputEnd).unbind('touchmove', settings.events.touchMove);
     }
 
-    $this
-      .unbind("mousedown", settings.events.inputDown)
-      .unbind("mouseup", settings.events.inputEnd)
-      .unbind("mousemove", settings.events.inputMove);
+    $this.unbind('mousedown', settings.events.inputDown).unbind('mouseup', settings.events.inputEnd).unbind('mousemove', settings.events.inputMove);
 
     $this
-      .unbind("click", settings.events.inputClick)
-      .unbind("scroll", settings.events.scroll)
-      .unbind("selectstart", settings.events.selectStart)
-      .unbind("dragstart", settings.events.dragStart);
+      .unbind('click', settings.events.inputClick)
+      .unbind('scroll', settings.events.scroll)
+      .unbind('selectstart', settings.events.selectStart)
+      .unbind('dragstart', settings.events.dragStart);
   };
 
   // EXPOSE KINETIC CONSTRUCTOR
@@ -532,18 +502,13 @@
     return this.each(function () {
       var $this = $(this);
       var instance = $this.data(Kinetic.DATA_KEY);
-      var options = $.extend(
-        {},
-        Kinetic.DEFAULTS,
-        $this.data(),
-        typeof option === "object" && option,
-      );
+      var options = $.extend({}, Kinetic.DEFAULTS, $this.data(), typeof option === 'object' && option);
 
       if (!instance) {
         $this.data(Kinetic.DATA_KEY, (instance = new Kinetic(this, options)));
       }
 
-      if (typeof option === "string") {
+      if (typeof option === 'string') {
         instance[option](callOptions);
       }
     });

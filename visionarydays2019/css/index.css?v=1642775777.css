@@ -50,7 +50,7 @@ body:not(.no-animation) footer {
   overflow: hidden;
   position: relative;
 
-  background-image: url("../assets/head/home_1.jpg");
+  background-image: url('../assets/head/home_1.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -542,13 +542,7 @@ form textarea {
   width: 100%;
 
   background-attachment: local;
-  background-image: repeating-linear-gradient(
-    #1c1c1c,
-    #1c1c1c 30px,
-    #3b3b3b 30px,
-    #3b3b3b 33px,
-    #1c1c1c 33px
-  );
+  background-image: repeating-linear-gradient(#1c1c1c, #1c1c1c 30px, #3b3b3b 30px, #3b3b3b 33px, #1c1c1c 33px);
   line-height: 2.6rem;
 
   border: none;
@@ -562,25 +556,13 @@ form textarea {
 
 @media screen and (min-width: 1100px) {
   form textarea {
-    background-image: repeating-linear-gradient(
-      #1c1c1c,
-      #1c1c1c 30px,
-      #3b3b3b 30px,
-      #3b3b3b 33px,
-      #1c1c1c 33px
-    );
+    background-image: repeating-linear-gradient(#1c1c1c, #1c1c1c 30px, #3b3b3b 30px, #3b3b3b 33px, #1c1c1c 33px);
   }
 }
 
 @media screen and (min-width: 1600px) {
   form textarea {
-    background-image: repeating-linear-gradient(
-      #1c1c1c,
-      #1c1c1c 36px,
-      #3b3b3b 36px,
-      #3b3b3b 39px,
-      #1c1c1c 39px
-    );
+    background-image: repeating-linear-gradient(#1c1c1c, #1c1c1c 36px, #3b3b3b 36px, #3b3b3b 39px, #1c1c1c 39px);
   }
 }
 
@@ -630,8 +612,8 @@ form .checkbox-container a:hover {
   color: #b2b2b2;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
@@ -670,7 +652,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 /* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
-  content: "";
+  content: '';
   position: absolute;
   display: none;
 }
@@ -1076,13 +1058,7 @@ form hr {
 
   form textarea {
     margin-top: 4rem;
-    background-image: repeating-linear-gradient(
-      #222222,
-      #222222 30px,
-      #3b3b3b 30px,
-      #3b3b3b 33px,
-      #222222 33px
-    );
+    background-image: repeating-linear-gradient(#222222, #222222 30px, #3b3b3b 30px, #3b3b3b 33px, #222222 33px);
   }
 
   form {
@@ -1109,7 +1085,7 @@ form hr {
   }
 
   #mobile-form-choice .mobile-city-name {
-    font-family: "GTAmerica Mono";
+    font-family: 'GTAmerica Mono';
     font-weight: 600;
     font-size: 15px;
     color: #ffffff;
@@ -1128,7 +1104,7 @@ form hr {
 
   #mobile-form-choice .mobile-location-name,
   #mobile-form-choice .mobile-date {
-    font-family: "GTAmerica Mono";
+    font-family: 'GTAmerica Mono';
     font-weight: 600;
     font-size: 12px;
     color: #9a9a9a;

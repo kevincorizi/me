@@ -7,8 +7,8 @@
 /* Stretch Normal */
 
 @font-face {
-  font-family: "GTAmerica";
-  src: url("../../assets/fonts/GT-America/GT-America-Regular.OTF");
+  font-family: 'GTAmerica';
+  src: url('../../assets/fonts/GT-America/GT-America-Regular.OTF');
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
@@ -17,40 +17,40 @@
 /* Stretch Extended (semi-expanded) */
 
 @font-face {
-  font-family: "GTAmerica";
-  src: url("../../assets/fonts/GT-America/GT-America-Extended-Light.OTF");
+  font-family: 'GTAmerica';
+  src: url('../../assets/fonts/GT-America/GT-America-Extended-Light.OTF');
   font-style: normal;
   font-weight: 300;
   font-stretch: semi-expanded;
 }
 
 @font-face {
-  font-family: "GTAmerica";
-  src: url("../../assets/fonts/GT-America/GT-America-Extended-Regular.OTF");
+  font-family: 'GTAmerica';
+  src: url('../../assets/fonts/GT-America/GT-America-Extended-Regular.OTF');
   font-style: normal;
   font-weight: normal;
   font-stretch: semi-expanded;
 }
 
 @font-face {
-  font-family: "GTAmerica";
-  src: url("../../assets/fonts/GT-America/GT-America-Extended-Medium.OTF");
+  font-family: 'GTAmerica';
+  src: url('../../assets/fonts/GT-America/GT-America-Extended-Medium.OTF');
   font-style: normal;
   font-weight: 600;
   font-stretch: semi-expanded;
 }
 
 @font-face {
-  font-family: "GTAmerica";
-  src: url("../../assets/fonts/GT-America/GT-America-Extended-Bold.OTF");
+  font-family: 'GTAmerica';
+  src: url('../../assets/fonts/GT-America/GT-America-Extended-Bold.OTF');
   font-style: normal;
   font-weight: bold;
   font-stretch: semi-expanded;
 }
 
 @font-face {
-  font-family: "GTAmerica";
-  src: url("../../assets/fonts/GT-America/GT-America-Extended-Black.OTF");
+  font-family: 'GTAmerica';
+  src: url('../../assets/fonts/GT-America/GT-America-Extended-Black.OTF');
   font-style: normal;
   font-weight: 900;
   font-stretch: semi-expanded;
@@ -59,80 +59,80 @@
 /* Stretch Expanded */
 
 @font-face {
-  font-family: "GTAmerica";
-  src: url("../../assets/fonts/GT-America/GT-America-Expanded-Black.OTF");
+  font-family: 'GTAmerica';
+  src: url('../../assets/fonts/GT-America/GT-America-Expanded-Black.OTF');
   font-style: normal;
   font-weight: 900;
   font-stretch: expanded;
 }
 
 @font-face {
-  font-family: "GTAmerica";
-  src: url("../../assets/fonts/GT-America/GT-America-Expanded-Bold.OTF");
+  font-family: 'GTAmerica';
+  src: url('../../assets/fonts/GT-America/GT-America-Expanded-Bold.OTF');
   font-style: normal;
   font-weight: bold;
   font-stretch: expanded;
 }
 
 @font-face {
-  font-family: "GTAmerica";
-  src: url("../../assets/fonts/GT-America/GT-America-Expanded-Medium.OTF");
+  font-family: 'GTAmerica';
+  src: url('../../assets/fonts/GT-America/GT-America-Expanded-Medium.OTF');
   font-style: normal;
   font-weight: 600;
   font-stretch: expanded;
 }
 
 @font-face {
-  font-family: "GTAmerica";
-  src: url("../../assets/fonts/GT-America/GT-America-Expanded-Regular.OTF");
+  font-family: 'GTAmerica';
+  src: url('../../assets/fonts/GT-America/GT-America-Expanded-Regular.OTF');
   font-style: normal;
   font-weight: normal;
   font-stretch: expanded;
 }
 
 @font-face {
-  font-family: "GTAmerica";
-  src: url("../../assets/fonts/GT-America/GT-America-Expanded-Light.OTF");
+  font-family: 'GTAmerica';
+  src: url('../../assets/fonts/GT-America/GT-America-Expanded-Light.OTF');
   font-style: normal;
   font-weight: 300;
   font-stretch: expanded;
 }
 
 @font-face {
-  font-family: "GTAmerica";
-  src: url("../../assets/fonts/GT-America/GT-America-Expanded-Thin.OTF");
+  font-family: 'GTAmerica';
+  src: url('../../assets/fonts/GT-America/GT-America-Expanded-Thin.OTF');
   font-style: normal;
   font-weight: 200;
   font-stretch: expanded;
 }
 
 @font-face {
-  font-family: "GTAmerica";
-  src: url("../../assets/fonts/GT-America/GT-America-Expanded-Ultra-Light.OTF");
+  font-family: 'GTAmerica';
+  src: url('../../assets/fonts/GT-America/GT-America-Expanded-Ultra-Light.OTF');
   font-style: normal;
   font-weight: 100;
   font-stretch: expanded;
 }
 
 @font-face {
-  font-family: "GTAmerica Mono";
-  src: url("../../assets/fonts/GT-America%20Mono/GT-America-Mono-Regular.OTF");
+  font-family: 'GTAmerica Mono';
+  src: url('../../assets/fonts/GT-America%20Mono/GT-America-Mono-Regular.OTF');
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
 }
 
 @font-face {
-  font-family: "GTAmerica Mono";
-  src: url("../../assets/fonts/GT-America%20Mono/GT-America-Mono-Medium.OTF");
+  font-family: 'GTAmerica Mono';
+  src: url('../../assets/fonts/GT-America%20Mono/GT-America-Mono-Medium.OTF');
   font-style: normal;
   font-weight: 600;
   font-stretch: normal;
 }
 
 @font-face {
-  font-family: "GTAmerica Mono";
-  src: url("../../assets/fonts/GT-America%20Mono/GT-America-Mono-Bold.OTF");
+  font-family: 'GTAmerica Mono';
+  src: url('../../assets/fonts/GT-America%20Mono/GT-America-Mono-Bold.OTF');
   font-style: normal;
   font-weight: bold;
   font-stretch: normal;
@@ -141,7 +141,7 @@
 /* Define font styles */
 
 h1.title {
-  font-family: "GTAmerica";
+  font-family: 'GTAmerica';
   font-stretch: expanded;
   font-weight: 900;
   color: #fff;
@@ -153,7 +153,7 @@ h1.title {
 
 /* Titoli più grandi di tutti */
 h2.title {
-  font-family: "GTAmerica";
+  font-family: 'GTAmerica';
   font-stretch: expanded;
   font-weight: 900;
   color: #fff;
@@ -165,7 +165,7 @@ h2.title {
 
 /* Titoli leggermente più piccoli */
 h3.title {
-  font-family: "GTAmerica";
+  font-family: 'GTAmerica';
   font-stretch: expanded;
   font-weight: 900;
   color: #fff;
@@ -179,7 +179,7 @@ h3.title {
 
 /* Paragrafi */
 p.text {
-  font-family: "GTAmerica";
+  font-family: 'GTAmerica';
   font-stretch: semi-expanded;
   font-weight: 600;
   color: #cccccc;
