@@ -1,0 +1,136 @@
+#section-tematiche {
+  margin-top: 10rem;
+}
+
+.tematica-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  width: 100%;
+  position: relative;
+
+  /*margin-bottom: 4rem;*/
+}
+
+.number-container {
+  width: 28%;
+  position: absolute;
+}
+
+.number-container.number {
+  position: -webkit-sticky; /* Required for Safari */
+  position: sticky;
+  top: 0;
+}
+
+/*
+.number-container.first-number {
+    top: -1.4rem;
+}
+.number-container.second-number,
+.number-container.third-number,
+.number-container.fourth-number {
+    top: -8.3rem;
+}
+*/
+
+.number-container span {
+  font-size: 21rem;
+  font-family: GTAmerica;
+  font-weight: 900;
+  font-stretch: expanded;
+  color: #000;
+  -webkit-text-stroke: 4px #fff;
+  line-height: 1.05;
+}
+
+.title-img-container {
+  width: 38%;
+  /* margin-left: 28%; */
+}
+
+.tematica-row .number + .title-img-container {
+  margin-top: 4rem;
+}
+
+.title-img-container.title {
+  margin-bottom: 2rem;
+}
+
+.title-img-container h3 {
+  margin-bottom: 2rem;
+}
+
+.time-desc-container {
+  width: 31%;
+  margin-top: 4rem;
+}
+
+.tematica-row .number + .title-img-container + .time-desc-container {
+  /* margin-top: 4rem; */
+}
+
+.time-desc-container p {
+  color: #ffffff;
+}
+
+.time-desc-container span {
+  display: block;
+  font-family: GTAmerica;
+  font-stretch: semi-expanded;
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+.time-desc-container span:not(:first-child) {
+  padding-left: 0.6rem;
+}
+
+#section-manifesto {
+  margin-top: 10rem;
+  width: 62%;
+  margin-bottom: 15rem;
+}
+
+#section-manifesto h2 {
+  margin-bottom: 4.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .number-container span {
+    font-size: 18rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #section-tematiche {
+    margin-top: 5rem;
+  }
+
+  .number-container.number {
+    display: none;
+  }
+
+  .tematica-row {
+    flex-direction: column;
+  }
+
+  .title-img-container,
+  .time-desc-container {
+    width: 100%;
+  }
+
+  .time-desc-container {
+    margin-top: 0;
+  }
+
+  .time-desc-container p {
+    margin-bottom: 0 !important;
+  }
+
+  #section-manifesto {
+    width: 100%;
+  }
+}

@@ -1,0 +1,92 @@
+/*
+ * Copyright Davide Taddei (c) 2019.
+ */
+
+#section-press {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 10rem;
+}
+
+#section-press .title {
+  font-size: 2.4rem;
+}
+
+#section-press .subtitle {
+  font-size: 2.4rem;
+  color: #4b4b4b;
+}
+
+#section-press .section-title {
+  width: calc(50% - 50px);
+}
+
+#section-press .spacer {
+  width: 100px;
+  height: 50vh;
+}
+
+#section-press .press-content {
+  font-size: 1.35rem;
+}
+
+#section-press .press-content-mobile {
+  font-size: 1.35rem;
+}
+#section-press .press-content-mobile:not(.collapse) {
+  display: none;
+}
+
+#section-press .press-articles {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  margin-top: 5rem;
+}
+
+#section-press .press-article {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+#section-press .press-article:first-child {
+  border-top: 1px solid #ccc;
+}
+
+#section-press .press-article p {
+  width: 75%;
+  min-height: 5rem;
+  font-size: 1.4rem;
+  font-stretch: expanded;
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  #section-press .section-title {
+    width: 100%;
+  }
+  #section-press .spacer,
+  #section-press .section-title .press-content {
+    display: none;
+  }
+  #section-press .press-content-mobile:not(.collapse) {
+    display: block;
+    margin-top: 3rem;
+  }
+  #section-press .press-content-mobile.arrow-text svg {
+    margin-left: 1rem;
+  }
+}

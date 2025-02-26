@@ -1,0 +1,845 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <title>DEMO - Privacy policy | VisionaryDays 2018</title>
+    <!-- Configure multi-demo domain -->
+    <base href="https://kevincorizi.github.io/me/visionarydays2018/" />
+
+    <meta
+      name="description"
+      content="DEMO - VisionaryDays 2018 - Torino, 1 Dicembre"
+    />
+    <meta
+      name="keywords"
+      content="visionary, days, day, visionario, visionari, torino, turin, evento, eventi, 2017, futuro, progetto, brainstorm, team, innovazione, futuro, comunicazione, talk, lavoro, workshop, manifesto, idea, idee, intuizione, coraggio, capacità, cambiamento, startup, progetto, volontari, volontariato, volontario, università, aziende, studenti, imprenditore, no profit"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
+    <link rel="icon" href="https://www.visionarydays.it/favicon.ico?v=2" />
+    <style>
+      @font-face {
+        font-family: "Kamerik";
+        src: url("assets/Kamerik_205/Kamerik%20205%20Book.ttf");
+      }
+
+      @font-face {
+        font-family: "KamerikBold";
+        src: url("assets/Kamerik_205/Kamerik%20205%20Bold.ttf");
+      }
+
+      html {
+        background-color: #171717;
+      }
+
+      body {
+        background-color: #171717;
+        width: 100%;
+        min-height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+      }
+
+      main {
+        padding: 40px 40px 0 40px;
+      }
+
+      @keyframes delay-overflow {
+        from {
+          overflow-y: hidden;
+        }
+      }
+
+      header {
+        overflow: hidden;
+        position: fixed;
+        z-index: 2001;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 40px;
+        opacity: 0;
+      }
+
+      #logo-container {
+        max-width: 160px;
+        float: left;
+      }
+
+      #logo-container img {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      #menu-container {
+        float: right;
+        display: flex;
+        margin-right: -10px;
+      }
+
+      #menu-container button {
+        background: none;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 0 10px;
+        cursor: pointer;
+        font-family: KamerikBold;
+        font-size: 15px;
+        line-height: 10px;
+      }
+
+      #anchors {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 40px;
+        z-index: 2000;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        opacity: 0;
+      }
+
+      a.list-group-item {
+        color: white;
+        padding: 5px 0;
+        background: none !important;
+        border: none;
+        font-family: Kamerik;
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+
+      a.list-group-item:hover {
+        color: #bdbdbd;
+      }
+
+      a.list-group-item.active {
+        color: #ff494d !important;
+      }
+
+      .social-container {
+        z-index: 2001;
+        opacity: 0;
+      }
+
+      #copyright-container {
+        color: white;
+        opacity: 0;
+        font-size: 14px;
+        font-family: Kamerik;
+        letter-spacing: 1px;
+        margin-left: 40px;
+      }
+
+      #button-menu {
+        display: none;
+      }
+
+      #button-menu.active {
+        color: #ff494d;
+      }
+
+      body.active:not(.no-animation) header {
+        transition: opacity 1s 4s ease;
+      }
+
+      body.active header {
+        opacity: 1;
+      }
+
+      body.active:not(.no-animation) #anchors {
+        transition: opacity 1s 4s ease;
+      }
+
+      body.active #anchors {
+        opacity: 1;
+      }
+
+      body.active:not(.no-animation) .social-container {
+        transition: opacity 1s 4s ease;
+      }
+
+      body.active .social-container {
+        opacity: 1;
+      }
+
+      body.active #copyright-container {
+        opacity: 1;
+      }
+
+      .network {
+        margin-top: calc(2 * 1em);
+      }
+
+      .hide {
+        display: none !important;
+      }
+
+      #mobile-menu {
+        display: none;
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        right: 0;
+        height: 100vh;
+        background: #171717;
+        z-index: 1999;
+        transition: top 0.5s ease;
+        padding: 20px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #mobile-menu.active {
+        top: 0;
+      }
+
+      #mobile-menu-content {
+        width: 81vw;
+        max-width: 100%;
+        margin-top: -50px;
+      }
+
+      #mobile-menu-content a {
+        display: block;
+        font-size: 20px;
+        color: white;
+        padding: 5px 0;
+        font-family: KamerikBold;
+      }
+
+      #mobile-menu-footer {
+        color: #717171;
+        font-size: 15px;
+        letter-spacing: 1px;
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        opacity: 0;
+        transition: opacity 0.5s 0.5s ease;
+        font-family: KamerikBold;
+      }
+
+      #mobile-menu.active #mobile-menu-footer {
+        opacity: 1;
+      }
+
+      footer {
+        font-family: Kamerik;
+        overflow: hidden;
+        padding: 40px;
+        background-color: #1c1c1c;
+      }
+
+      button span.action-arrow {
+        font-family: Karla;
+        padding-left: 5px;
+      }
+
+      @media (max-width: 1199px) {
+        main {
+          padding: 0 20px;
+        }
+
+        header {
+          padding: 20px;
+          background-color: #171717;
+        }
+
+        footer {
+          padding: 20px;
+        }
+
+        #button-menu {
+          display: block;
+        }
+
+        #anchors {
+          display: none;
+        }
+
+        #copyright-container,
+        #copyright-container-mock {
+          display: none;
+        }
+
+        #mobile-menu {
+          display: flex;
+        }
+
+        .logo-section:last-child {
+          margin-bottom: 50%;
+        }
+      }
+
+      body.no-animation #panoramica,
+      body.no-animation #agenda,
+      body.no-animation #partecipa,
+      body.no-animation footer {
+        display: block !important;
+      }
+
+      body.no-animation #hero-action button {
+        cursor: pointer !important;
+      }
+    </style>
+    <style>
+      footer {
+        display: none;
+      }
+
+      #footer-container {
+        color: white;
+      }
+
+      #footer-logo-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        max-width: 750px;
+        margin: 0 auto;
+        padding-top: 30px;
+      }
+
+      .logo-container {
+        width: 33%;
+        min-width: 240px;
+        padding: 0px 30px;
+        padding-bottom: 29px;
+        box-sizing: border-box;
+      }
+
+      .logo-content a {
+        max-width: 100%;
+        display: block;
+      }
+
+      .logo-content img {
+        max-width: 100%;
+      }
+
+      .logo-header {
+        border-bottom: 1px solid white;
+        padding-bottom: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .logo-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      footer a {
+        color: white;
+      }
+
+      footer a:hover {
+        text-decoration: none;
+        color: #bdbdbd;
+      }
+
+      #footer-bottom {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+      }
+
+      #footer-bottom * {
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+
+      .social-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 140px;
+        position: fixed;
+        bottom: 40px;
+        left: 40px;
+      }
+
+      .social-container a,
+      #social-container-mock a {
+        margin-bottom: 1px;
+      }
+
+      .social-container img,
+      #social-container-mock img {
+        width: 20px;
+      }
+
+      #social-container-mock {
+        opacity: 0;
+        position: initial;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 140px;
+      }
+
+      #social-container-mobile {
+        display: flex;
+        position: initial;
+        margin-top: 2rem !important;
+      }
+
+      #links-container {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 40px;
+      }
+
+      #links-container span {
+        display: block;
+      }
+
+      #links-container div {
+        display: flex;
+      }
+
+      .footer_right + .footer_right {
+        margin-left: 15%;
+      }
+
+      .footer_right {
+        white-space: nowrap;
+      }
+
+      @media screen and (min-width: 768px) {
+        .line-break {
+          width: 100%;
+        }
+
+        .logo-container.multiple {
+          width: 66%;
+          min-width: 480px;
+        }
+
+        .logo-container a + a {
+          margin-left: 60px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        #footer-logo-container {
+          display: block;
+        }
+
+        .logo-container {
+          margin: auto;
+        }
+
+        .logo-content img {
+          padding: 5px;
+          box-sizing: border-box;
+        }
+
+        .logo-content {
+          display: flex;
+          flex-direction: column;
+        }
+
+        #links-container div {
+          display: contents;
+        }
+
+        .footer_right + .footer_right {
+          margin-left: 0;
+        }
+
+        .footer_right {
+          width: 100%;
+        }
+      }
+
+      @media screen and (max-width: 1199px) {
+        .social-container,
+        #social-container-mock {
+          display: none;
+        }
+      }
+    </style>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      header {
+        opacity: 1;
+      }
+
+      footer {
+        display: block;
+      }
+
+      #wrapper {
+        max-width: 700px;
+        margin: auto;
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+
+      #copyright-container {
+        opacity: 1;
+      }
+
+      * {
+        font-family: Karla;
+        color: #aaa;
+      }
+
+      h1 {
+        margin-bottom: 120px;
+      }
+
+      h2 {
+        font-size: 1.3em;
+        padding-top: 35px;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      strong {
+        font-family: Kamerik;
+        letter-spacing: 2px;
+        color: white;
+      }
+
+      h4 {
+        margin-bottom: 0;
+        text-transform: uppercase;
+        font-size: 0.7em;
+        padding-top: 10px;
+        color: #aaa;
+      }
+
+      h4 + p {
+        margin-top: 5px;
+      }
+
+      h3 {
+        margin-top: 30px;
+        font-size: 1.1em;
+        line-height: 1.5em;
+      }
+
+      strong {
+        margin-top: 50px;
+        display: block;
+        font-style: normal;
+        text-transform: uppercase;
+        font-size: 0.8em;
+        font-weight: bold;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      p {
+        font-size: 1.2em;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Karla"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div id="logo-container">
+        <a href="index.html"
+          ><img src="assets/logo.svg" alt="Visionary Days 2018"
+        /></a>
+      </div>
+    </header>
+    <main>
+      <div id="wrapper">
+        <h1>Informativa Privacy</h1>
+        <h2>Introduzione</h2>
+        <p>
+          Siamo Visionari come te, e sappiamo quanto sia importante la tua
+          privacy. Pensiamo che sia un diritto di tutti avere informazioni
+          chiare su come vengono trattati i propri dati personali. Con questo
+          principio in testa, abbiamo scritto questa informativa privacy. Se
+          dovessi avere qualsiasi dubbio, domanda o commento, scrivici a
+          <a href="mailto:privacy@visionarydays.com"
+            >privacy@visionarydays.com</a
+          >
+        </p>
+        <p>
+          Ci impegniamo a trattare i tuoi dati secondo i principi di
+          trasparenza, correttezza e liceità, in conformità con il GDPR
+          (Regolamento Europeo per la Protezione Dati personali), con il Codice
+          Privacy così come novellato dal recente D.lgs. 101/2018.
+        </p>
+
+        <h2>Titolare del trattamento</h2>
+        <p>
+          Il trattamento dei tuoi dati personali è effettuato da Associazione di
+          Promozione Sociale Visionary (di seguito anche “Visionary”), Corso
+          Appio Claudio 213, 10046, Torino. Questa informativa, insieme alla
+          Cookie policy, fa riferimento a come raccogliamo, utilizziamo o
+          comunque trattiamo i dati personali di chi si registra all’evento
+          Visionary Days o naviga sul nostro sito.
+        </p>
+
+        <h2>Quali informazioni raccogliamo e come le usiamo</h2>
+        <p>
+          Ecco come utilizziamo le informazioni che raccogliamo e per quanto
+          tempo le conserviamo:
+        </p>
+
+        <h3>Nome, cognome</h3>
+        <h4>Perché li utilizziamo</h4>
+        <p>
+          Per riservarti un posto all’evento e stampare il tuo badge d’ingresso
+        </p>
+        <h4>Per quanto tempo li conserviamo?</h4>
+        <p>Fino alla data dell’evento per cui ti sei registrato</p>
+
+        <h3>Numero di cellulare</h3>
+        <h4>Perché li utilizziamo</h4>
+        <p>
+          Ti contatteremo qualche giorno prima dell’evento per confermare la tua
+          effettiva partecipazione e per avvisarti di eventuali cambiamenti
+        </p>
+        <h4>Per quanto tempo li conserviamo?</h4>
+        <p>Fino alla data dell’evento per cui ti sei registrato</p>
+
+        <h3>Indirizzo email</h3>
+        <h4>Perché li utilizziamo</h4>
+        <p>
+          Ti invieremo delle email con le informazioni sugli eventi che
+          organizziamo e che pensiamo potrebbero interessarti
+        </p>
+        <h4>Per quanto tempo li conserviamo?</h4>
+        <p>5 anni</p>
+
+        <h3>Dati sul tuo corso universitario o il tuo ruolo professionale</h3>
+        <h4>Perché li utilizziamo</h4>
+        <p>
+          Queste informazioni ci servono per poter creare dei tavoli di
+          discussione il più possibile eterogenei durante Visionary Days.
+        </p>
+        <h4>Per quanto tempo li conserviamo?</h4>
+        <p>Fino alla data dell’evento per cui ti sei registrato</p>
+        <p>
+          Tratteremo questi dati perché è necessario per adempiere ai nostri
+          obblighi contrattuali (perché ti sei registrato all’evento) e per il
+          nostro interesse legittimo (ad esempio per informarti e comunicarti
+          notizie rilevanti sugli ultimi sviluppi della tecnologia e sugli
+          eventi che organizziamo).
+        </p>
+
+        <h2>Foto e video</h2>
+        <p>
+          Potremmo fare foto e riprese video nel corso dei Visionary Days. I
+          Visionary Days si tengono in luoghi aperti al pubblico con un
+          controllo degli accessi. Le riprese saranno fatte a gruppi di persone
+          e non è nostra intenzione riprenderti personalmente. Questo
+          trattamento è basato sul legittimo interesse e useremo questo
+          materiale per promuovere i nostri eventi e per il video finale
+          post-evento. Se non intendi essere ripreso o fotografato, avvisaci al
+          momento della registrazione quando ti consegneremo il badge
+          dell’evento. Le immagini e le riprese video saranno conservate in
+          maniera sicura da Visionary per per tutto il periodo di attività
+          dell’associazione Visionary.
+        </p>
+
+        <h2>Condivisione dei dati con i nostri Sponsor e altri Servizi</h2>
+        <p>
+          Selezioniamo attentamente i nostri Sponsor. Durante la registrazione
+          il giorno dell’evento, ti verrà fornito un apposito modulo per il
+          consenso e potrai condividere i tuoi dati personali con alcuni degli
+          sponsor di Visionary Days. Sarai libero di esprimere il tuo consenso o
+          meno. Non condivideremo MAI i tuoi dati personali con altri soggetti
+          terzi senza il tuo consenso.
+        </p>
+        <p>
+          Utilizziamo responsabili di trattamento che ci forniscono servizi per
+          memorizzare e trattare i tuoi dati personali (come i fornitori di
+          servizi cloud e i programmi per l’invio semplificato delle email). Ci
+          assicuriamo che essi agiscono per nostro conto garantendo la sicurezza
+          dei tuoi dati personali.
+        </p>
+
+        <h2>Trasferimento dei tuoi dati personali fuori UE</h2>
+        <p>
+          Non trasferiamo i tuoi dati personali al di fuori dell’Unione Europea.
+          Quando ci serviamo di altri soggetti per finalità legate al
+          trattamento (ad esempio fornitori di servizi cloud) che trasferiscono
+          i tuoi dati al di fuori dell’UE, ci assicureremo di mettere in atto
+          tutte le misure di salvaguardia necessarie per garantire la protezione
+          dei tuoi dati personali. Nel caso volessi ricevere ulteriori dettagli
+          su questo aspetto, puoi scriverci a privacy@visionarydays.com.
+        </p>
+
+        <h2>Quali sono i tuoi diritti?</h2>
+        <p>
+          Rispettiamo i tuoi diritti e ci impegniamo a trattare le tue richieste
+          in maniera appropriata, e comunque entro il termine previsto dalla
+          legge.
+        </p>
+        <p>
+          Per esercitare i tuoi diritti, puoi scriverci a
+          <a href="mailto:privacy@visionarydays.com"
+            >privacy@visionarydays.com</a
+          >
+          in qualsiasi momento.
+        </p>
+        <h3>Diritto di accesso ai propri dati personali</h3>
+        <p>
+          Conosciuto anche come "richiesta d’accesso dell’interessato". Questo
+          diritto ti permette di ricevere una copia dei dati personali che
+          conserviamo su di te.
+        </p>
+        <h3>Diritto di chiedere la modifica dei propri dati personal</h3>
+        <p>
+          Questo diritto ti permette di modificare i tuoi dati personali che
+          sono incompleti o non corretti. Potremmo richiederti una dichiarazione
+          integrativa per verificare l’esattezza dei dati forniti.
+        </p>
+        <h3>Diritto di chiedere la cancellazione dei propri dati personali</h3>
+        <p>
+          Questo diritto ti permette di chiedere di cancellare o rimuovere i
+          propri dati personali, se non ci sono ragioni legittime per cui
+          Visionary dovrebbe continuare a trattarli.
+        </p>
+        <h3>Diritto di opporsi al trattamento dei propri dati personali</h3>
+        <p>
+          Questo diritto ti permette di opporti al trattamento dei dati qualora
+          questo si basi sul legittimo interesse e tu ritenga che siano stati
+          lesi i tuoi diritti fondamentali.
+        </p>
+        <h3>Diritto di limitare il trattamento dei propri personali</h3>
+        <p>
+          Questo diritto ti permette di chiedere a Visionary di sospendere il
+          trattamento nei seguenti casi:
+        </p>
+        <ul>
+          <li>se contesti l’esattezza dei dati personali;</li>
+          <li>
+            se contesti che l’utilizzo che Visionary fa dei tuoi dati è illecito
+            ma non ne chiedi la cancellazione;
+          </li>
+          <li>
+            se ti sei opposto al trattamento e Visionary stia controllando la
+            prevalenza dei propri interessi legittimi prevalenti.
+          </li>
+        </ul>
+        <h3>
+          Diritto di richiedere il trasferimento dei propri dati personali a un
+          soggetto terzo
+        </h3>
+        <p>
+          Visionary fornirà a te o al soggetto terzo scelto i tuoi dati
+          personali in un formato strutturato, di uso comune e leggibile da un
+          dispositivo automatico. Questo diritto si applica solo su informazioni
+          che Visionary tratta con mezzi automatizzati e che erano necessari al
+          contratto che avevamo stipulato con te.
+        </p>
+        <p>
+          Ci assicuriamo che tu possa esercitare facilmente i tuoi diritti. Se
+          ritieni che i tuoi diritti non siano stati rispettati, puoi presentare
+          un reclamo al Garante per la Protezione dei Dati Personali.
+        </p>
+
+        <h2>Come contattarci</h2>
+        <p>
+          Puoi contattarci scrivendoci via email a
+          <a href="mailto:privacy@visionarydays.com"
+            >privacy@visionarydays.com</a
+          >
+        </p>
+
+        <p></p>
+        <p></p>
+        <p><strong>Data di entrata in vigore: 21/09/2018</strong></p>
+      </div>
+    </main>
+    <footer>
+      <div id="copyright-container">&copy; prodotto da visionary</div>
+      <div id="footer-container">
+        <div id="footer-bottom">
+          <div id="social-container-mock">
+            <a href="http://www.instagram.com/visionarydays/"
+              ><img src="assets/social/instagram.svg" alt="instagram"
+            /></a>
+            <a href="http://www.facebook.com/visionarydays"
+              ><img src="assets/social/facebook.svg" alt="facebook"
+            /></a>
+            <a href="http://twitter.com/VisionaryDays"
+              ><img src="assets/social/twitter.svg" alt="twitter"
+            /></a>
+            <a
+              href="https://open.spotify.com/user/vil34xj8qmv1i245axo20k4fu/playlist/2nq7WfBcEexPXaHoOFSrVI?si=aX8GLjvOTKK7Tuekrg3IqA"
+              ><img src="assets/social/spotify.svg" alt="spotify"
+            /></a>
+          </div>
+          <div id="copyright-container">&copy; prodotto da visionary</div>
+          <div id="links-container">
+            <span class="footer_left"
+              ><a href="mailto:info@visionarydays.com"
+                >info@visionarydays.com</a
+              ></span
+            >
+            <div>
+              <span class="footer_right"
+                ><a href="assets/mediakit.zip">media kit</a></span
+              >
+              <span class="footer_right"
+                ><a href="privacy.html" target="_blank">privacy</a></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <style>
+      .demo-bar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 30px;
+        text-align: center;
+        color: black;
+        font-weight: bold;
+        font-family: sans-serif;
+        background-color: white;
+        z-index: 2000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      body.demo {
+        padding-top: 30px !important;
+      }
+    </style>
+    <script>
+      var el = document.createElement("div");
+      el.classList.add("demo-bar");
+      el.textContent = "For demo purposes only";
+      document.body.prepend(el);
+      document.body.classList.add("demo");
+    </script>
+  </body>
+</html>
