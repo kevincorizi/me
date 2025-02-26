@@ -1,0 +1,20 @@
+<svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="21" height="23.605" viewBox="0 0 29.57 23.605">
+    <defs>
+        <style>
+            .cls-1, .cls-2 {
+            fill: none;
+            stroke: #FFF;
+            stroke-linecap: round;
+            stroke-width: 2px;
+            }
+
+            .cls-1 {
+            stroke-linejoin: round;
+            }
+        </style>
+    </defs>
+    <g transform="translate(-1549.605 -5766.115)">
+        <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)"/>
+        <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)"/>
+    </g>
+</svg>
