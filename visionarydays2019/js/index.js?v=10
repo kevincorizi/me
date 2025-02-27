@@ -102,15 +102,6 @@ function animateImage() {
             }
         );
     }
-
-    setTimeout(function () {
-        if (POPUP_SHOWED == 0) {
-            if (window.popupcookie.getStatus() === undefined) {
-                window.popupcookie.open();
-                POPUP_SHOWED++;
-            }
-        }
-    }, 2000);
 }
 
 // Resize function window

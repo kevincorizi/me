@@ -29,8 +29,6 @@
 
     <link rel="preload" as="image" href="assets/head/home.jpg" />
 
-    <link rel="stylesheet" type="text/css" href="lib/cookie/cookieconsent.min.css" media="all" />
-    <script async defer src="lib/cookie/cookieconsent.min.js"></script>
     <style>
       :root {
         --blue: #007bff;
@@ -36495,67 +36493,6 @@
             window.location.href = '#first-section';
           }
         });
-
-        /* Preload img */
-        /*
-    Array.from(objects).map((item) => {
-        // Start loading image
-        const img = new Image();
-        img.src = item.dataset.src;
-        // Once image is loaded replace the src of the HTML element
-        img.onload = () => {
-            item.classList.remove('asyncImage');
-            return item.nodeName === 'IMG' ?
-                item.src = item.dataset.src :
-                item.style.backgroundImage = `url(${item.dataset.src})`;
-        }
-    });
-    */
-
-        if (window.cookieconsent !== undefined) {
-          window.cookieconsent.initialise(
-            {
-              palette: {
-                popup: {
-                  background: '#1C1C1C',
-                  text: '#CCCCCC',
-                },
-                button: {
-                  background: '#1C1C1C',
-                  text: '#CCCCCC',
-                },
-              },
-              content: {
-                message:
-                  'Questo sito utilizza cookie di terze parti per analisi statistiche e condivisione dei contenuti.' +
-                  "<br/> Procedendo con la navigazione acconsenti all'uso di tutti i cookie. Se vuoi saperne di più su cosa sono i cookies e come cancellarli, ",
-                dismiss: 'HO CAPITO',
-                link: 'fai click qui',
-                href: '/cookie',
-              },
-              onStatusChange: function (status, chosenBefore) {
-                dataLayer.push({ event: 'qf-cookie-consent' });
-              },
-              onPopupOpen: function () {
-                //workaround for issue on ipad
-                let el = $('.cc-floating');
-                if (el) {
-                  el.removeClass('cc-floating');
-                  el.addClass('cc-banner');
-                }
-              },
-              autoOpen: false,
-              onInitialise: function (status) {
-                dataLayer.push({ event: 'qf-cookie-consent' });
-              },
-            },
-            function (popup) {
-              window.popupcookie = popup;
-            }
-          );
-
-          window.cookieconsent.utils.isMobile = () => false;
-        }
       });
     </script>
     <script>
@@ -36614,15 +36551,6 @@
             }
           );
         }
-
-        setTimeout(function () {
-          if (POPUP_SHOWED == 0) {
-            if (window.popupcookie && window.popupcookie.getStatus() === undefined) {
-              window.popupcookie.open();
-              POPUP_SHOWED++;
-            }
-          }
-        }, 2000);
       }
 
       // Resize function window
@@ -37559,12 +37487,6 @@
       }
     </script>
     <script>
-      setTimeout(function () {
-        if (window.popupcookie !== undefined && window.popupcookie.getStatus() === undefined) {
-          window.popupcookie.open();
-        }
-      }, 7500);
-
       const media = document.querySelector('#videoModal video');
 
       function openVideo() {
