@@ -50,7 +50,7 @@ header {
 
 #qa-quick-links a:hover:after,
 #qa-quick-links a:focus:after {
-  background: url("/assets/symbols/chevron.svg") center no-repeat;
+  background: url("/me/qualefuturo/assets/symbols/chevron.svg") center no-repeat;
 }
 
 .qa-quick-links-hidden {

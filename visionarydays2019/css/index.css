@@ -50,7 +50,7 @@ body:not(.no-animation) footer {
   overflow: hidden;
   position: relative;
 
-  background-image: url('../assets/head/home_1.jpg');
+  background-image: url('/me/visionarydays2019/assets/head/home_1.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

@@ -174,8 +174,8 @@ document.addEventListener('DOMContentLoaded', function (event) {
         });
 
         app.loader
-          .add('image', '../assets/header_img_full.jpg')
-          .add('filter', '../assets/filter.png')
+          .add('image', '/me/visionarydays2020/assets/header_img_full.jpg')
+          .add('filter', '/me/visionarydays2020`/assets/filter.png')
           .load((loader, resources) => {
             img = new PIXI.Sprite(resources.image.texture);
 
