@@ -1,0 +1,39 @@
+header {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  height: var(--header-height);
+}
+
+header .header-logo img {
+  height: 60px;
+}
+
+#header-logo-ministro {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  width: 145px;
+}
+
+@media (min-width: 1200px) {
+  body.header-fixed #header-vd-logo {
+    visibility: hidden;
+  }
+
+  body.header-fixed #header-vd-logo-fixed {
+    display: block !important;
+    position: fixed;
+    top: 2.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    height: var(--header-mobile-height);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  header .header-logo img {
+    height: 45px;
+  }
+}

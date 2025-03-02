@@ -1,0 +1,30 @@
+#container-partner {
+  background-color: #05050f;
+  margin-left: calc(-1 * var(--qf-container-padding-x));
+  width: calc(100% + 2 * var(--qf-container-padding-x));
+}
+
+.partner-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.partner-carousel-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.partner-carousel-logo {
+  width: 200px;
+  min-width: 200px;
+  float: left;
+  opacity: 0.75;
+}
+
+@media (max-width: 767px) {
+  #container-partner {
+    margin-left: calc(-1 * var(--qf-container-mobile-padding-x));
+    width: calc(100% + 2 * var(--qf-container-mobile-padding-x));
+  }
+}

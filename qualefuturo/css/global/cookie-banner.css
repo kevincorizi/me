@@ -1,0 +1,75 @@
+.cc-window.cc-banner,
+.cc-window.cc-floating {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media all and (max-width: 949px) {
+  .cc-window.cc-banner,
+  .cc-window.cc-floating {
+    padding: 10px 20px 10px 20px;
+    justify-content: flex-start;
+  }
+}
+
+.cc-banner .cc-message {
+  width: 85vw;
+  min-width: 600px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: none;
+  font-family: GTAmerica, sans-serif;
+  font-size: 1rem;
+  font-stretch: semi-expanded;
+}
+
+@media all and (max-width: 1199px) {
+  .cc-banner .cc-message {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 949px) {
+  .cc-banner .cc-message {
+    width: calc(90vw - 8rem);
+    min-width: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media all and (max-width: 415px) {
+  .cc-banner .cc-message {
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+
+.cc-compliance a {
+  font-family: "GTAmerica Mono", sans-serif;
+  font-size: 0.8rem;
+  font-stretch: expanded;
+  letter-spacing: 1px;
+}
+
+.cc-compliance a:hover {
+  text-decoration: none;
+}
+
+.cc-link {
+  flex: none;
+  display: contents;
+  text-decoration: none;
+  color: #fff !important;
+}
+
+.cc-link:hover {
+  text-decoration: none;
+}

@@ -1,0 +1,313 @@
+main:not(#home) #section-title {
+  max-width: 73rem;
+  margin: 10rem auto 3rem;
+}
+h1.title {
+  font-size: 3.625rem;
+  text-align: center;
+}
+main:not(#home) #section-title .content {
+  width: 100%;
+}
+#section-team {
+  margin-top: 7rem;
+  margin-bottom: 20rem;
+
+  scroll-behavior: smooth;
+}
+
+h1 span.text-border {
+  color: transparent;
+  -webkit-text-stroke: 2px #fff;
+}
+.team-switches-container {
+  margin: 0 auto;
+}
+.team-switch {
+  color: #8b8b8b;
+  font-family: GTAmerica;
+  font-stretch: expanded;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+}
+.team-switch:not(.disabled) {
+  cursor: pointer;
+}
+.team-switch:not(:last-child) {
+  margin-right: 2.44rem;
+}
+.team-switch.disabled {
+  color: #3e3e3e;
+}
+.team-switch.active {
+  color: #ffffff;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 8px;
+}
+.team-row {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: flex-start;
+
+  width: 100%;
+  /* height: 27rem; */
+}
+
+.team-description-container {
+  width: 33%;
+  height: 100%;
+  /* box-shadow: 20px 0 20px 21px black; */
+  z-index: 1;
+}
+
+.team-description-container h2 {
+  margin-bottom: 3rem;
+  /* line-height: .7; */
+  line-height: 1;
+}
+
+.team-description-container .role {
+  display: block;
+  margin-bottom: 0.6rem;
+
+  font-family: GTAmerica;
+  font-weight: 900;
+  font-stretch: expanded;
+  text-transform: uppercase;
+  font-size: 2.1875rem;
+  color: #000;
+  text-shadow:
+    1px 0 0 #fff,
+    -1px 0 0 #fff,
+    0 1px 0 #fff,
+    0 -1px 0 #fff,
+    0.5px 0.5px #fff,
+    -0.5px -0.5px 0 #fff,
+    0.5px -0.5px 0 #fff,
+    -0.5px 0.5px 0 #fff;
+}
+
+.team-images-container {
+  width: 66%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.team-images {
+  /* width: 250rem; */
+  max-width: 72rem;
+}
+
+.team-images .team-single {
+  display: inline-flex;
+  /* width: 14rem; */
+  width: 22.5%;
+  margin-right: 2%;
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  font-family: GTAmerica;
+  font-size: 0.9375rem;
+  font-weight: bold;
+  font-stretch: expanded;
+
+  margin-bottom: 5rem;
+}
+
+.team-single .team-name {
+  margin-top: 1.6rem;
+  margin-bottom: 0.2rem;
+  color: #dddddd;
+  text-align: center;
+}
+
+.team-single .team-role {
+  color: #505050;
+  text-align: center;
+}
+
+#section-mail {
+  margin-top: 6rem;
+  margin-bottom: 15rem;
+
+  width: 75%;
+}
+
+#section-mail h3 {
+  margin-bottom: 3.5rem;
+}
+
+#names {
+  height: 15rem;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+#names .names-wrapper {
+  position: absolute;
+  width: 300%;
+  transform: translate3d(0, 0, 0);
+
+  animation: movenames 40s linear infinite;
+  -webkit-animation: movenames 40s linear infinite;
+  -moz-animation: movenames 40s linear infinite;
+  -o-animation: movenames 40s linear infinite;
+}
+
+#names .name {
+  width: fit-content;
+  font-weight: bold;
+  color: #a6a6a6;
+  font-size: 1.2rem;
+}
+
+@keyframes movenames {
+  100% {
+    transform: translateX(-66.6666%);
+  }
+}
+
+@-webkit-keyframes movenames {
+  100% {
+    transform: translateX(-66.6666%);
+  }
+}
+
+@-moz-keyframes movenames {
+  100% {
+    transform: translateX(-66.6666%);
+  }
+}
+
+@-o-keyframes movenames {
+  100% {
+    transform: translateX(-66.6666%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #names {
+    margin-bottom: 5%;
+  }
+}
+
+@media (max-width: 1299px) {
+  .team-row {
+    flex-direction: column;
+  }
+
+  .team-description-container,
+  .team-images-container,
+  .team-images {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .team-description-container {
+    height: auto;
+  }
+
+  .team-images .team-single {
+    width: 22.6%;
+  }
+  .team-images-container {
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 1199px) {
+  #names {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .team-images .team-single {
+    width: 30.5%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .team-images .team-single {
+    width: calc(49.2% - 1.5rem);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /* team trascinabile - visualizzazione mobile */
+  main:not(#home) #section-title {
+    margin-top: 13rem;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  main {
+    padding: 0 20px;
+  }
+  #section-team {
+    margin-top: 0.5rem;
+    margin-bottom: 8rem;
+  }
+  .team-switches-container {
+    display: none;
+  }
+
+  .team-description-container {
+    display: block !important;
+  }
+
+  .team-images-container {
+    overflow-x: scroll;
+    margin-bottom: 4rem;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px; /* Remove scrollbar space */
+    background: transparent; /* Optional: just make scrollbar invisible */
+  }
+
+  .team-images .team-single {
+    width: calc(50vw - 1.5rem);
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  #team-global,
+  #team-torino,
+  #team-genova {
+    display: block !important;
+  }
+  #team-global .team-images {
+    width: 820vw;
+    max-width: 820vw;
+  }
+
+  #team-torino .team-images {
+    width: 564vw;
+    max-width: 564vw;
+  }
+
+  #team-genova .team-images {
+    width: 256vw;
+    max-width: 256vw;
+  }
+  h1.title,
+  h2.title_h1 {
+    font-size: 28px;
+    line-height: 1.1;
+    text-align: left;
+  }
+  h1 span.text-border {
+    -webkit-text-stroke: 1px #fff;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h1.title,
+  h2.title_h1 {
+    font-size: 28px;
+  }
+}

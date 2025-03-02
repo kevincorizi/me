@@ -1,0 +1,35 @@
+#faq-container .text-faq-question {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #bbbbbb !important;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+#faq-container .text-faq-answer {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+}
+
+#faq-container h3 .icon-collapse,
+#faq-container h3 .icon-expand {
+  display: none;
+}
+
+#faq-container h3.collapsed .icon-expand {
+  display: inline-block;
+}
+
+#faq-container h3:not(.collapsed) .icon-collapse {
+  display: inline-block;
+}
+
+#faq-container .text-faq-question .icon-expand,
+#faq-container .text-faq-question .icon-collapse {
+  width: 2rem;
+  height: 2rem;
+  margin-left: 2rem;
+}

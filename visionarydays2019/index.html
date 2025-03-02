@@ -1,96 +1,74 @@
 <!doctype html>
 <html lang="it">
-  <head>
-    <title>DEMO - Visionary Days 2019</title>
-    <!-- Configure multi-demo domain -->
-    <base href="https://kevincorizi.github.io/me/visionarydays2019/" />
 
-    <meta
-      name="description"
-      content="23 Novembre 2019 - Torino e Genova. 1500 giovani Visionari under 35 si incontrano per scrivere il Futuro. Ready to collide with other Visions?"
-    />
-    <meta
-      name="keywords"
-      content="visionary, days, day, visionario, visionari, torino, turin, genova, evento, eventi, 2019, futuro, progetto, brainstorm, team, innovazione, futuro, comunicazione, talk, lavoro, workshop, manifesto, idea, idee, intuizione, coraggio, capacità, cambiamento, startup, progetto, volontari, volontariato, volontario, università, aziende, studenti, imprenditore, no profit, politecnico"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <link rel="icon" href="https://www.visionarydays.it/favicon.ico?v=2" />
-    <link rel="manifest" href="manifest.webmanifest.html" />
+<head>
+  <title>DEMO - Visionary Days 2019</title>
+  <base href="https://kevincorizi.github.io/me/visionarydays2019/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America/GT-America-Expanded-Black.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America%20Mono/GT-America-Mono-Medium.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America/GT-America-Expanded-Bold.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America/GT-America-Expanded-Medium.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America/GT-America-Expanded-Thin.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America/GT-America-Expanded-Regular.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America%20Mono/GT-America-Mono-Regular.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America/GT-America-Extended-Regular.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America/GT-America-Regular.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America/GT-America-Extended-Bold.OTF" />
+  <link rel="stylesheet" href="css/global/bootstrap.css" />
+  <link rel="stylesheet" href="css/global/font.css" />
+  <link rel="stylesheet" href="css/global/general.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/headline.css" />
+</head>
 
-    <link rel="stylesheet" href="css/global/bootstrap.css" />
-    <link rel="stylesheet" href="css/global/font.css" />
-    <link rel="stylesheet" href="css/global/general.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/headline.css" />
-  </head>
-
-  <body data-spy="scroll" data-offset="250" class="">
-    <header>
-      <div id="logo-container" style="position: relative; width: 100%">
-        <a href="index.html"><img src="assets/logo.svg" alt="Visionary Days 2018" /></a>
-      </div>
-      <div id="mobile-header-date" style="display: none; position: absolute; top: 105px">
-        <div id="mobile-menu-date" style="display: none">
-          <div><span>Torino/Genova</span></div>
-          <div>
-            <div id="line"></div>
-            <span>23 NOV 2019</span>
-          </div>
+<body data-spy="scroll" data-offset="250" class="">
+  <header>
+    <div id="logo-container" style="position: relative; width: 100%">
+      <a href="index.html"><img src="assets/logo.svg" alt="Visionary Days 2018" /></a>
+    </div>
+    <div id="mobile-header-date" style="display: none; position: absolute; top: 105px">
+      <div id="mobile-menu-date" style="display: none">
+        <div><span>Torino/Genova</span></div>
+        <div>
+          <div id="line"></div>
+          <span>23 NOV 2019</span>
         </div>
       </div>
-      <div id="desktop-menu">
-        <span class="dates" style="display: none">23 NOV 2019</span>
-        <span class="cities" style="display: none">Torino / Genova</span>
+    </div>
+    <div id="desktop-menu">
+      <span class="dates" style="display: none">23 NOV 2019</span>
+      <span class="cities" style="display: none">Torino / Genova</span>
+    </div>
+    <div id="menu-container">
+      <div class="menu-item-container">
+        <button id="button-menu">menu</button>
       </div>
-      <div id="menu-container">
-        <div class="menu-item-container">
-          <button id="button-menu">menu</button>
+      <button id="partecipa-button" style="display: none">partecipa</button>
+    </div>
+  </header>
+  <main id="home">
+    <div id="mobile-menu">
+      <div id="mobile-menu-header">
+        <div class="mobile-menu-logo">
+          <img src="assets/logo.svg" alt="Visionary Days" />
+          <span id="close-menu">EXIT</span>
+          <span id="close-desktop">×</span>
         </div>
-        <button id="partecipa-button" style="display: none">partecipa</button>
-      </div>
-    </header>
-    <main id="home">
-      <div id="mobile-menu">
-        <div id="mobile-menu-header">
-          <div class="mobile-menu-logo">
-            <img src="assets/logo.svg" alt="Visionary Days" />
-            <span id="close-menu">EXIT</span>
-            <span id="close-desktop">×</span>
-          </div>
-          <div class="menu-header-col">
-            <div id="mobile-menu-date">
-              <div style="display: none"><span>Torino/Genova</span></div>
-              <div style="display: none">
-                <div id="line"></div>
-                <span>23 NOV 2019</span>
-              </div>
-            </div>
-            <div class="menu-header-date">
-              <span style="display: none">23 NOV 2019</span>
-              <span style="display: none">Torino / Genova</span>
-            </div>
-            <div class="menu-header-text">
-              <span>Domande?</span>
+        <div class="menu-header-col">
+          <div id="mobile-menu-date">
+            <div style="display: none"><span>Torino/Genova</span></div>
+            <div style="display: none">
+              <div id="line"></div>
+              <span>23 NOV 2019</span>
             </div>
           </div>
-          <div class="menu-header-col">
-            <div id="menu-social-container" class="social-container">
-              <a href="http://www.instagram.com/visionarydays/" rel="nofollow" target="_blank">
-                <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    class="st0"
-                    d="M12,0C8.7,0,8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2S0.9,3.3,0.6,4.1
+          <div class="menu-header-date">
+            <span style="display: none">23 NOV 2019</span>
+            <span style="display: none">Torino / Genova</span>
+          </div>
+          <div class="menu-header-text">
+            <span>Domande?</span>
+          </div>
+        </div>
+        <div class="menu-header-col">
+          <div id="menu-social-container" class="social-container">
+            <a href="http://www.instagram.com/visionarydays/" rel="nofollow" target="_blank">
+              <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"
+                xml:space="preserve">
+                <path class="st0"
+                  d="M12,0C8.7,0,8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2S0.9,3.3,0.6,4.1
                                 C0.3,4.9,0.1,5.8,0.1,7.1C0,8.3,0,8.7,0,12s0,3.7,0.1,4.9c0.1,1.3,0.3,2.1,0.6,2.9C0.9,20.6,1.3,21.3,2,22c0.7,0.7,1.3,1.1,2.1,1.4
                                 c0.8,0.3,1.6,0.5,2.9,0.6C8.3,24,8.7,24,12,24s3.7,0,4.9-0.1c1.3-0.1,2.1-0.3,2.9-0.6c0.8-0.3,1.5-0.7,2.1-1.4
                                 c0.7-0.7,1.1-1.3,1.4-2.1c0.3-0.8,0.5-1.6,0.6-2.9C24,15.7,24,15.3,24,12s0-3.7-0.1-4.9c-0.1-1.3-0.3-2.1-0.6-2.9
@@ -101,53 +79,223 @@
                                 c-0.2-0.4-0.4-1.1-0.4-2.2c0-1.3-0.1-1.6-0.1-4.8c0-3.2,0-3.6,0.1-4.9C2.2,6,2.4,5.3,2.6,4.9c0.2-0.6,0.5-1,0.9-1.4
                                 c0.4-0.4,0.8-0.7,1.4-0.9c0.4-0.2,1.1-0.4,2.2-0.4C8.4,2.1,8.7,2.1,12,2.2C12,2.1,12,2.2,12,2.2z M12,5.8c-3.4,0-6.2,2.8-6.2,6.2
                                 c0,3.4,2.8,6.2,6.2,6.2c3.4,0,6.2-2.8,6.2-6.2C18.2,8.6,15.4,5.8,12,5.8z M12,16c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4
-                                S14.2,16,12,16z M19.8,5.6c0,0.8-0.6,1.4-1.4,1.4C17.6,7,17,6.4,17,5.6s0.6-1.4,1.4-1.4C19.2,4.2,19.8,4.8,19.8,5.6z"
-                  />
-                </svg>
-                <span>Instagram</span></a
-              >
-              <a href="http://www.facebook.com/visionarydays" rel="nofollow" target="_blank">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    class="st0"
-                    d="M22.7,0H1.3C0.6,0,0,0.6,0,1.3v21.4C0,23.4,0.6,24,1.3,24h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1,1.9-4.8,4.7-4.8
+                                S14.2,16,12,16z M19.8,5.6c0,0.8-0.6,1.4-1.4,1.4C17.6,7,17,6.4,17,5.6s0.6-1.4,1.4-1.4C19.2,4.2,19.8,4.8,19.8,5.6z" />
+              </svg>
+              <span>Instagram</span></a>
+            <a href="http://www.facebook.com/visionarydays" rel="nofollow" target="_blank">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"
+                xml:space="preserve">
+                <path class="st0" d="M22.7,0H1.3C0.6,0,0,0.6,0,1.3v21.4C0,23.4,0.6,24,1.3,24h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1,1.9-4.8,4.7-4.8
                                 c1.3,0,2.5,0.1,2.8,0.1V7h-1.9c-1.5,0-1.8,0.7-1.8,1.8v2.3h3.6l-0.5,3.6h-3.1V24h6.1c0.7,0,1.3-0.6,1.3-1.3V1.3
-                                C24,0.6,23.4,0,22.7,0"
-                  />
-                </svg>
-                <span>Facebook</span></a
-              >
-              <a href="http://twitter.com/VisionaryDays" rel="nofollow" target="_blank">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    class="st0"
-                    d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6
+                                C24,0.6,23.4,0,22.7,0" />
+              </svg>
+              <span>Facebook</span></a>
+            <a href="http://twitter.com/VisionaryDays" rel="nofollow" target="_blank">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"
+                xml:space="preserve">
+                <path class="st0" d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6
                                 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.6,3.2C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1
                                 c-0.8,0-1.6-0.2-2.2-0.6v0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4
                                 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.6,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6
-                                C22.5,6.4,23.3,5.6,24,4.6C24,4.6,24,4.6,24,4.6z"
-                  />
-                </svg>
-                <span>Twitter</span></a
-              >
+                                C22.5,6.4,23.3,5.6,24,4.6C24,4.6,24,4.6,24,4.6z" />
+              </svg>
+              <span>Twitter</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div id="mobile-menu-content" class="list-group">
+        <a class="list-group-item list-group-item-action menu-active" href="index.html#home">home</a>
+        <a class="list-group-item list-group-item-action" href="tematiche.html">tematiche 2019</a>
+        <a class="list-group-item list-group-item-action" href="manifesto.html">manifesto '17 '18</a>
+        <a class="list-group-item list-group-item-action" href="partner.html">partner e sponsor</a>
+        <a class="list-group-item list-group-item-action" href="team.html">team visionary</a>
+        <a class="list-group-item list-group-item-action" href="press.html">press</a>
+      </div>
+
+      <div id="mobile-menu-only">
+        <span>
+          <span>Domande?</span>
+          <span>
+            <svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="29.57" height="23.605"
+              viewBox="0 0 29.57 23.605">
+              <defs>
+                <style>
+                  .cls-1,
+                  .cls-2 {
+                    fill: none;
+                    stroke: #d8d8d8;
+                    stroke-linecap: round;
+                    stroke-width: 2px;
+                  }
+
+                  .cls-1 {
+                    stroke-linejoin: round;
+                  }
+                </style>
+              </defs>
+              <g transform="translate(-1549.605 -5766.115)">
+                <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389"
+                  transform="translate(-15696.018 6.982)" />
+                <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
+              </g>
+            </svg>
+          </span>
+        </span>
+        <span>
+          <span>Privacy</span>
+          <span>
+            <svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="29.57" height="23.605"
+              viewBox="0 0 29.57 23.605">
+              <defs>
+                <style>
+                  .cls-1,
+                  .cls-2 {
+                    fill: none;
+                    stroke: #d8d8d8;
+                    stroke-linecap: round;
+                    stroke-width: 2px;
+                  }
+
+                  .cls-1 {
+                    stroke-linejoin: round;
+                  }
+                </style>
+              </defs>
+              <g transform="translate(-1549.605 -5766.115)">
+                <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389"
+                  transform="translate(-15696.018 6.982)" />
+                <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
+              </g>
+            </svg>
+          </span>
+        </span>
+      </div>
+    </div>
+    <div id="headline-section">
+      <div class="col-12 p-0">
+        <div id="hero-text-container">
+          <div id="hero-date">
+            <span>VISIONARY DAYS</span>
+          </div>
+          <div id="hero-text">
+            <span>Ready</span>
+            <span>to collide</span>
+            <span>with other</span>
+            <span>visions?</span>
+          </div>
+          <div id="hero-action">
+            <button><span>#FUTURE</span></button>
+          </div>
+        </div>
+      </div>
+      <div id="skip-intro">
+        <span>SKIP ></span>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="section-title" class="row unselectable">
+        <canvas id="section-image"></canvas>
+        <div class="content">
+          <h1>Grazie per aver partecipato</h1>
+          <p>1500 giovani Visionari, 1500 possibili Futuri.</p>
+          <a href="index.html#img-paint">
+            <button>
+              <span>ENTRA NELLA COMMUNITY</span>
+              <svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="23.605"
+                viewBox="0 0 29.57 23.605">
+                <defs>
+                  <style>
+                    .cls-1,
+                    .cls-2 {
+                      fill: none;
+                      stroke: #fff;
+                      stroke-linecap: round;
+                      stroke-width: 2px;
+                    }
+
+                    .cls-1 {
+                      stroke-linejoin: round;
+                    }
+                  </style>
+                </defs>
+                <g transform="translate(-1549.605 -5766.115)">
+                  <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389"
+                    transform="translate(-15696.018 6.982)" />
+                  <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
+                </g>
+              </svg>
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div id="first-section" class="row one-image-row">
+        <div style="width: 58%">
+          <img src="assets/images/2x/sfida.png" alt="" />
+        </div>
+        <div style="width: 37.5%">
+          <h3 class="title">QUI NASCE IL FUTURO</h3>
+          <p class="text">
+            Visionary Days è dove 1500 giovani da tutta Italia si incontrano per affrontare i cambiamenti in corso e
+            dare forma al prossimo Futuro. Insieme,
+            concretamente e a partire dall’incontro di vite e visioni diverse.
+          </p>
+          <button class="btn" id="video-button">
+            Visionary Days in 60"
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-triangle" style="width: 16px" width="12.5"
+              height="12.5">
+              <polygon fill="#d8d8d8" points="12.5,6.25 0,12.5 0,0" />
+            </svg>
+          </button>
+          <div id="video-modal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <video src="assets/video/teaser.mp4" disableremoteplayback controls controlsList="nodownload"></video>
             </div>
           </div>
         </div>
+      </div>
 
-        <div id="mobile-menu-content" class="list-group">
-          <a class="list-group-item list-group-item-action menu-active" href="index.html#home">home</a>
-          <a class="list-group-item list-group-item-action" href="tematiche.html">tematiche 2019</a>
-          <a class="list-group-item list-group-item-action" href="manifesto.html">manifesto '17 '18</a>
-          <a class="list-group-item list-group-item-action" href="partner.html">partner e sponsor</a>
-          <a class="list-group-item list-group-item-action" href="team.html">team visionary</a>
-          <a class="list-group-item list-group-item-action" href="press.html">press</a>
+      <div id="second-section" class="row two-images-row">
+        <div class="section-row">
+          <h2 class="title">VISIONI, ISPIRAZIONI E CONTAMINAZIONI</h2>
+          <p class="text">
+            Dieci ore di brainstorming continuo, tra centinaia di tavole rotonde ripartite su due città e virtualmente
+            connesse tra loro per dare vita ad un
+            unico confronto collettivo alimentato da decine di talk ispirazionali. Un flusso immersivo di energie e idee
+            per il Futuro.
+          </p>
         </div>
+        <div class="section-row">
+          <div class="first-img">
+            <img src="assets/images/2x/contaminazione.png" alt="" />
+          </div>
+          <div class="second-img">
+            <video playsinline autoplay loop muted disableremoteplayback>
+              <source src="assets/video/contaminazione/contaminazione_1x.mp4" type="video/mp4" />
+              <source src="assets/video/contaminazione/contaminazione_2x.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
 
-        <div id="mobile-menu-only">
-          <span>
-            <span>Domande?</span>
-            <span>
-              <svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="29.57" height="23.605" viewBox="0 0 29.57 23.605">
+      <div id="third-section" class="row one-image-row">
+        <div style="width: 58%">
+          <img src="assets/images/2x/tematiche.png" alt="" />
+        </div>
+        <div style="width: 37.5%">
+          <h3 class="title">IL PROSSIMO PIANETA</h3>
+          <p class="text">
+            Per mantenere l’attuale stile di produzione e di vita un solo Pianeta non è sufficiente, ne servirebbe -
+            secondo il rapporto del Global Footprint
+            Network - 1,7, ovvero un’altra Terra. Cosa succederà fra 30 anni, quando saremo in 9 miliardi di abitanti?
+          </p>
+          <a href="tematiche.html">
+            <button class="btn">
+              <span>Scopri tutte le sessioni 2019</span><svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg"
+                width="29.57" height="23.605" viewBox="0 0 29.57 23.605">
                 <defs>
                   <style>
                     .cls-1,
@@ -164,16 +312,55 @@
                   </style>
                 </defs>
                 <g transform="translate(-1549.605 -5766.115)">
-                  <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)" />
+                  <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389"
+                    transform="translate(-15696.018 6.982)" />
                   <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
                 </g>
               </svg>
-            </span>
-          </span>
-          <span>
-            <span>Privacy</span>
-            <span>
-              <svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="29.57" height="23.605" viewBox="0 0 29.57 23.605">
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div id="fourth-section" class="row two-images-row">
+        <div class="section-row">
+          <h2 class="title">LEE, LA TECNOLOGIA CIVICA</h2>
+          <p class="text">
+            Lee è la piattaforma tecnologica che connette virtualmente tutti i tavoli di confronto: riceve da ognuno gli
+            output, li elabora in simultanea e ne
+            restituisce una visualizzazione immediata attraverso gli schermi della sala, abilitando così una reale
+            contaminazione collettiva.
+          </p>
+        </div>
+        <div class="section-row">
+          <div class="first-img">
+            <img src="assets/images/2x/ai.png" alt="" />
+          </div>
+          <div class="second-img">
+            <video playsinline autoplay loop muted disableremoteplayback>
+              <source src="assets/video/ai/ai_1x.mp4" type="video/mp4" />
+              <source src="assets/video/ai/ai_2x.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
+
+      <div id="fifth-section" class="row one-image-row">
+        <div style="width: 58%">
+          <img src="assets/images/2x/manifesto.jpg" alt="" />
+        </div>
+        <div style="width: 37.5%">
+          <h3 class="title">IL MANIFESTO DINAMICO</h3>
+          <p class="text">
+            L’intero confronto, elaborato e sintetizzato, diventa al termine Manifesto Dinamico, un libro cartaceo che
+            raccoglie le visioni sul prossimo
+            Futuro generate da 1500 giovani a confronto. Viene stampato e distribuito al termine dell’evento ad ognuno
+            dei partecipanti.
+          </p>
+          <a href="manifesto.html">
+            <button class="btn">
+              <span>Scopri il Manifesto '17/'18</span><svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg"
+                width="29.57" height="23.605" viewBox="0 0 29.57 23.605">
                 <defs>
                   <style>
                     .cls-1,
@@ -190,45 +377,37 @@
                   </style>
                 </defs>
                 <g transform="translate(-1549.605 -5766.115)">
-                  <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)" />
+                  <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389"
+                    transform="translate(-15696.018 6.982)" />
                   <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
                 </g>
               </svg>
-            </span>
-          </span>
+            </button>
+          </a>
         </div>
       </div>
-      <div id="headline-section">
-        <div class="col-12 p-0">
-          <div id="hero-text-container">
-            <div id="hero-date">
-              <span>VISIONARY DAYS</span>
-            </div>
-            <div id="hero-text">
-              <span>Ready</span>
-              <span>to collide</span>
-              <span>with other</span>
-              <span>visions?</span>
-            </div>
-            <div id="hero-action">
-              <button><span>#FUTURE</span></button>
-            </div>
+
+      <div id="review-section" class="row review-row">
+        <div id="first-review" class="review-col">
+          <div class="section-row">
+            <p class="text review-text">
+              "Vivere il Visionary Days è stata un’esperienza che non mi sarei mai aspettato. Impressionato
+              dall’atmosfera carica di adrenalina, dalla
+              attualità dei contenuti e dal format innovativo: uno di quegli eventi a cui tutti coloro che sanno sognare
+              dovrebbero partecipare."
+            </p>
           </div>
-        </div>
-        <div id="skip-intro">
-          <span>SKIP ></span>
-        </div>
-      </div>
-      <div class="container-fluid">
-        <div id="section-title" class="row unselectable">
-          <canvas id="section-image"></canvas>
-          <div class="content">
-            <h1>Grazie per aver partecipato</h1>
-            <p>1500 giovani Visionari, 1500 possibili Futuri.</p>
-            <a href="index.html#img-paint">
-              <button>
-                <span>ENTRA NELLA COMMUNITY</span>
-                <svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="23.605" viewBox="0 0 29.57 23.605">
+          <div class="section-row">
+            <div class="section-subcol">
+              <div>
+                <p class="text review-name">Domenico Catalano</p>
+                <p class="text review-description">Partecipante VD18</p>
+              </div>
+            </div>
+            <div class="review-social">
+              <a target="_blank" rel="nofollow" href="https://jetop.com/2018/12/14/un-giorno-da-visionari/"><svg
+                  class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="23.605"
+                  viewBox="0 0 29.57 23.605">
                   <defs>
                     <style>
                       .cls-1,
@@ -245,82 +424,43 @@
                     </style>
                   </defs>
                   <g transform="translate(-1549.605 -5766.115)">
-                    <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)" />
+                    <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389"
+                      transform="translate(-15696.018 6.982)" />
                     <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
                   </g>
-                </svg>
-              </button>
-            </a>
+                </svg></a>
+            </div>
           </div>
         </div>
 
-        <div id="first-section" class="row one-image-row">
-          <div style="width: 58%">
-            <img src="assets/images/2x/sfida.png" alt="" />
-          </div>
-          <div style="width: 37.5%">
-            <h3 class="title">QUI NASCE IL FUTURO</h3>
-            <p class="text">
-              Visionary Days è dove 1500 giovani da tutta Italia si incontrano per affrontare i cambiamenti in corso e dare forma al prossimo Futuro. Insieme,
-              concretamente e a partire dall’incontro di vite e visioni diverse.
+        <div id="first-review-mobile" class="review-col mobile">
+          <div class="section-row">
+            <p class="text review-text">
+              "Vivere il Visionary Days è stata un’esperienza che non mi sarei mai aspettato. Impressionato
+              dall’atmosfera carica di adrenalina, dalla
+              attualità dei contenuti e dal format innovativo: uno di quegli eventi a cui tutti coloro che sanno sognare
+              dovrebbero partecipare."
             </p>
-            <button class="btn" id="video-button">
-              Visionary Days in 60"
-              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="svg-triangle" style="width: 16px" width="12.5" height="12.5">
-                <polygon fill="#d8d8d8" points="12.5,6.25 0,12.5 0,0" />
-              </svg>
-            </button>
-            <div id="video-modal" class="modal">
-              <!-- Modal content -->
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <video src="assets/video/teaser.mp4" disableremoteplayback controls controlsList="nodownload"></video>
+          </div>
+          <div class="section-row">
+            <div class="section-subcol">
+              <div>
+                <p style="margin-bottom: 0">
+                  <span class="text review-name">Domenico Catalano</span><span class="text review-description">,
+                    Partecipante VD18</span>
+                </p>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div id="second-section" class="row two-images-row">
-          <div class="section-row">
-            <h2 class="title">VISIONI, ISPIRAZIONI E CONTAMINAZIONI</h2>
-            <p class="text">
-              Dieci ore di brainstorming continuo, tra centinaia di tavole rotonde ripartite su due città e virtualmente connesse tra loro per dare vita ad un
-              unico confronto collettivo alimentato da decine di talk ispirazionali. Un flusso immersivo di energie e idee per il Futuro.
-            </p>
-          </div>
-          <div class="section-row">
-            <div class="first-img">
-              <img src="assets/images/2x/contaminazione.png" alt="" />
-            </div>
-            <div class="second-img">
-              <video playsinline autoplay loop muted disableremoteplayback>
-                <source src="assets/video/contaminazione/contaminazione_1x.mp4" type="video/mp4" />
-                <source src="assets/video/contaminazione/contaminazione_2x.mp4" type="video/mp4" />
-              </video>
-            </div>
-          </div>
-        </div>
-
-        <div id="third-section" class="row one-image-row">
-          <div style="width: 58%">
-            <img src="assets/images/2x/tematiche.png" alt="" />
-          </div>
-          <div style="width: 37.5%">
-            <h3 class="title">IL PROSSIMO PIANETA</h3>
-            <p class="text">
-              Per mantenere l’attuale stile di produzione e di vita un solo Pianeta non è sufficiente, ne servirebbe - secondo il rapporto del Global Footprint
-              Network - 1,7, ovvero un’altra Terra. Cosa succederà fra 30 anni, quando saremo in 9 miliardi di abitanti?
-            </p>
-            <a href="tematiche.html">
-              <button class="btn">
-                <span>Scopri tutte le sessioni 2019</span
-                ><svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="29.57" height="23.605" viewBox="0 0 29.57 23.605">
+            <div class="review-social">
+              <a target="_blank" rel="nofollow" href="https://jetop.com/2018/12/14/un-giorno-da-visionari/"><svg
+                  class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="23.605"
+                  viewBox="0 0 29.57 23.605">
                   <defs>
                     <style>
                       .cls-1,
                       .cls-2 {
                         fill: none;
-                        stroke: #d8d8d8;
+                        stroke: #fff;
                         stroke-linecap: round;
                         stroke-width: 2px;
                       }
@@ -331,56 +471,41 @@
                     </style>
                   </defs>
                   <g transform="translate(-1549.605 -5766.115)">
-                    <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)" />
+                    <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389"
+                      transform="translate(-15696.018 6.982)" />
                     <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
                   </g>
-                </svg>
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <div id="fourth-section" class="row two-images-row">
-          <div class="section-row">
-            <h2 class="title">LEE, LA TECNOLOGIA CIVICA</h2>
-            <p class="text">
-              Lee è la piattaforma tecnologica che connette virtualmente tutti i tavoli di confronto: riceve da ognuno gli output, li elabora in simultanea e ne
-              restituisce una visualizzazione immediata attraverso gli schermi della sala, abilitando così una reale contaminazione collettiva.
-            </p>
-          </div>
-          <div class="section-row">
-            <div class="first-img">
-              <img src="assets/images/2x/ai.png" alt="" />
-            </div>
-            <div class="second-img">
-              <video playsinline autoplay loop muted disableremoteplayback>
-                <source src="assets/video/ai/ai_1x.mp4" type="video/mp4" />
-                <source src="assets/video/ai/ai_2x.mp4" type="video/mp4" />
-              </video>
+                </svg></a>
             </div>
           </div>
         </div>
 
-        <div id="fifth-section" class="row one-image-row">
-          <div style="width: 58%">
-            <img src="assets/images/2x/manifesto.jpg" alt="" />
-          </div>
-          <div style="width: 37.5%">
-            <h3 class="title">IL MANIFESTO DINAMICO</h3>
-            <p class="text">
-              L’intero confronto, elaborato e sintetizzato, diventa al termine Manifesto Dinamico, un libro cartaceo che raccoglie le visioni sul prossimo
-              Futuro generate da 1500 giovani a confronto. Viene stampato e distribuito al termine dell’evento ad ognuno dei partecipanti.
+        <div id="second-review" class="review-col">
+          <div class="section-row">
+            <p class="text review-text">
+              "Unbelievable. Unforgettable. Visionary days was an immersive experience, made of music, lights,
+              technology and 800 folks ready to build
+              together their collective idea of future."
             </p>
-            <a href="manifesto.html">
-              <button class="btn">
-                <span>Scopri il Manifesto '17/'18</span
-                ><svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="29.57" height="23.605" viewBox="0 0 29.57 23.605">
+          </div>
+          <div class="section-row">
+            <div class="section-subcol">
+              <div>
+                <p class="text review-name">Marianna De Caro</p>
+                <p class="text review-description">Partecipante VD18</p>
+              </div>
+            </div>
+            <div class="review-social">
+              <a target="_blank" rel="nofollow"
+                href="https://mariannadecaro.com/the-collective-idea-of-future-at-visionary-days"><svg
+                  class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="23.605"
+                  viewBox="0 0 29.57 23.605">
                   <defs>
                     <style>
                       .cls-1,
                       .cls-2 {
                         fill: none;
-                        stroke: #d8d8d8;
+                        stroke: #fff;
                         stroke-linecap: round;
                         stroke-width: 2px;
                       }
@@ -391,470 +516,201 @@
                     </style>
                   </defs>
                   <g transform="translate(-1549.605 -5766.115)">
-                    <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)" />
+                    <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389"
+                      transform="translate(-15696.018 6.982)" />
                     <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
                   </g>
-                </svg>
-              </button>
-            </a>
-          </div>
-        </div>
-
-        <div id="review-section" class="row review-row">
-          <div id="first-review" class="review-col">
-            <div class="section-row">
-              <p class="text review-text">
-                "Vivere il Visionary Days è stata un’esperienza che non mi sarei mai aspettato. Impressionato dall’atmosfera carica di adrenalina, dalla
-                attualità dei contenuti e dal format innovativo: uno di quegli eventi a cui tutti coloro che sanno sognare dovrebbero partecipare."
-              </p>
-            </div>
-            <div class="section-row">
-              <div class="section-subcol">
-                <div>
-                  <p class="text review-name">Domenico Catalano</p>
-                  <p class="text review-description">Partecipante VD18</p>
-                </div>
-              </div>
-              <div class="review-social">
-                <a target="_blank" rel="nofollow" href="https://jetop.com/2018/12/14/un-giorno-da-visionari/"
-                  ><svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="23.605" viewBox="0 0 29.57 23.605">
-                    <defs>
-                      <style>
-                        .cls-1,
-                        .cls-2 {
-                          fill: none;
-                          stroke: #fff;
-                          stroke-linecap: round;
-                          stroke-width: 2px;
-                        }
-
-                        .cls-1 {
-                          stroke-linejoin: round;
-                        }
-                      </style>
-                    </defs>
-                    <g transform="translate(-1549.605 -5766.115)">
-                      <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)" />
-                      <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
-                    </g></svg
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div id="first-review-mobile" class="review-col mobile">
-            <div class="section-row">
-              <p class="text review-text">
-                "Vivere il Visionary Days è stata un’esperienza che non mi sarei mai aspettato. Impressionato dall’atmosfera carica di adrenalina, dalla
-                attualità dei contenuti e dal format innovativo: uno di quegli eventi a cui tutti coloro che sanno sognare dovrebbero partecipare."
-              </p>
-            </div>
-            <div class="section-row">
-              <div class="section-subcol">
-                <div>
-                  <p style="margin-bottom: 0">
-                    <span class="text review-name">Domenico Catalano</span><span class="text review-description">, Partecipante VD18</span>
-                  </p>
-                </div>
-              </div>
-              <div class="review-social">
-                <a target="_blank" rel="nofollow" href="https://jetop.com/2018/12/14/un-giorno-da-visionari/"
-                  ><svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="23.605" viewBox="0 0 29.57 23.605">
-                    <defs>
-                      <style>
-                        .cls-1,
-                        .cls-2 {
-                          fill: none;
-                          stroke: #fff;
-                          stroke-linecap: round;
-                          stroke-width: 2px;
-                        }
-
-                        .cls-1 {
-                          stroke-linejoin: round;
-                        }
-                      </style>
-                    </defs>
-                    <g transform="translate(-1549.605 -5766.115)">
-                      <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)" />
-                      <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
-                    </g></svg
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div id="second-review" class="review-col">
-            <div class="section-row">
-              <p class="text review-text">
-                "Unbelievable. Unforgettable. Visionary days was an immersive experience, made of music, lights, technology and 800 folks ready to build
-                together their collective idea of future."
-              </p>
-            </div>
-            <div class="section-row">
-              <div class="section-subcol">
-                <div>
-                  <p class="text review-name">Marianna De Caro</p>
-                  <p class="text review-description">Partecipante VD18</p>
-                </div>
-              </div>
-              <div class="review-social">
-                <a target="_blank" rel="nofollow" href="https://mariannadecaro.com/the-collective-idea-of-future-at-visionary-days"
-                  ><svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="23.605" viewBox="0 0 29.57 23.605">
-                    <defs>
-                      <style>
-                        .cls-1,
-                        .cls-2 {
-                          fill: none;
-                          stroke: #fff;
-                          stroke-linecap: round;
-                          stroke-width: 2px;
-                        }
-
-                        .cls-1 {
-                          stroke-linejoin: round;
-                        }
-                      </style>
-                    </defs>
-                    <g transform="translate(-1549.605 -5766.115)">
-                      <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)" />
-                      <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
-                    </g></svg
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div id="second-review-mobile" class="review-col mobile">
-            <div class="section-row">
-              <p class="text review-text">
-                "Unbelievable. Unforgettable. Visionary days was an immersive experience, made of music, lights, technology and 800 folks ready to build
-                together their collective idea of future."
-              </p>
-            </div>
-            <div class="section-row">
-              <div class="section-subcol">
-                <div>
-                  <p style="margin-bottom: 0">
-                    <span class="text review-name">Marianna De Caro</span><span class="text review-description">, Partecipante VD18</span>
-                  </p>
-                </div>
-              </div>
-              <div class="review-social">
-                <a target="_blank" rel="nofollow" href="https://mariannadecaro.com/the-collective-idea-of-future-at-visionary-days"
-                  ><svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="23.605" viewBox="0 0 29.57 23.605">
-                    <defs>
-                      <style>
-                        .cls-1,
-                        .cls-2 {
-                          fill: none;
-                          stroke: #fff;
-                          stroke-linecap: round;
-                          stroke-width: 2px;
-                        }
-
-                        .cls-1 {
-                          stroke-linejoin: round;
-                        }
-                      </style>
-                    </defs>
-                    <g transform="translate(-1549.605 -5766.115)">
-                      <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)" />
-                      <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
-                    </g></svg
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div id="third-review" class="review-col">
-            <div class="section-row">
-              <p class="text review-text">
-                "L’evento è stato reso speciale dai ragazzi che ne hanno fatto realtà: tutti mossi da un solo scopo, ovvero quello di radunare l’energia di
-                persone con il desiderio di scrivere il futuro di cui faranno parte, senza aspettare di viverlo passivamente."
-              </p>
-            </div>
-            <div class="section-row">
-              <div class="section-subcol">
-                <div>
-                  <p class="text review-name">Matteo Paletta</p>
-                  <p class="text review-description">Partecipante VD18</p>
-                </div>
-              </div>
-              <div class="review-social">
-                <a target="_blank" rel="nofollow" href="https://medium.com/@MatteoPaletta/cos%C3%A8-successo-a-visionary-days-2k18-77ff12279d03"
-                  ><svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="23.605" viewBox="0 0 29.57 23.605">
-                    <defs>
-                      <style>
-                        .cls-1,
-                        .cls-2 {
-                          fill: none;
-                          stroke: #fff;
-                          stroke-linecap: round;
-                          stroke-width: 2px;
-                        }
-
-                        .cls-1 {
-                          stroke-linejoin: round;
-                        }
-                      </style>
-                    </defs>
-                    <g transform="translate(-1549.605 -5766.115)">
-                      <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)" />
-                      <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
-                    </g></svg
-                ></a>
-              </div>
-            </div>
-          </div>
-
-          <div id="third-review-mobile" class="review-col mobile">
-            <div class="section-row">
-              <p class="text review-text">
-                "L’evento è stato reso speciale dai ragazzi che ne hanno fatto realtà: tutti mossi da un solo scopo, ovvero quello di radunare l’energia di
-                persone con il desiderio di scrivere il futuro di cui faranno parte, senza aspettare di viverlo passivamente."
-              </p>
-            </div>
-            <div class="section-row">
-              <div class="section-subcol">
-                <div>
-                  <p style="margin-bottom: 0">
-                    <span class="text review-name">Matteo Paletta</span><span class="text review-description">, Partecipante VD18</span>
-                  </p>
-                </div>
-              </div>
-              <div class="review-social">
-                <a target="_blank" rel="nofollow" href="https://medium.com/@MatteoPaletta/cos%C3%A8-successo-a-visionary-days-2k18-77ff12279d03"
-                  ><svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="23.605" viewBox="0 0 29.57 23.605">
-                    <defs>
-                      <style>
-                        .cls-1,
-                        .cls-2 {
-                          fill: none;
-                          stroke: #fff;
-                          stroke-linecap: round;
-                          stroke-width: 2px;
-                        }
-
-                        .cls-1 {
-                          stroke-linejoin: round;
-                        }
-                      </style>
-                    </defs>
-                    <g transform="translate(-1549.605 -5766.115)">
-                      <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)" />
-                      <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
-                    </g></svg
-                ></a>
-              </div>
+                </svg></a>
             </div>
           </div>
         </div>
 
-        <div id="img-paint" class="row"></div>
+        <div id="second-review-mobile" class="review-col mobile">
+          <div class="section-row">
+            <p class="text review-text">
+              "Unbelievable. Unforgettable. Visionary days was an immersive experience, made of music, lights,
+              technology and 800 folks ready to build
+              together their collective idea of future."
+            </p>
+          </div>
+          <div class="section-row">
+            <div class="section-subcol">
+              <div>
+                <p style="margin-bottom: 0">
+                  <span class="text review-name">Marianna De Caro</span><span class="text review-description">,
+                    Partecipante VD18</span>
+                </p>
+              </div>
+            </div>
+            <div class="review-social">
+              <a target="_blank" rel="nofollow"
+                href="https://mariannadecaro.com/the-collective-idea-of-future-at-visionary-days"><svg
+                  class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="23.605"
+                  viewBox="0 0 29.57 23.605">
+                  <defs>
+                    <style>
+                      .cls-1,
+                      .cls-2 {
+                        fill: none;
+                        stroke: #fff;
+                        stroke-linecap: round;
+                        stroke-width: 2px;
+                      }
 
-        <div id="form-intro" class="row">
-          <div class="content">
-            <h3 class="title">
-              <span
-                >Non ti fermare alla possibilità, spingiti verso la realtà.<br />Non avere paura del cambiamento, diventane parte.<br />Non aspettare che sia
-                Domani, anticipa.</span
-              >
-            </h3>
-            <p class="text"></p>
+                      .cls-1 {
+                        stroke-linejoin: round;
+                      }
+                    </style>
+                  </defs>
+                  <g transform="translate(-1549.605 -5766.115)">
+                    <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389"
+                      transform="translate(-15696.018 6.982)" />
+                    <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
+                  </g>
+                </svg></a>
+            </div>
           </div>
         </div>
 
-        <div id="form_news">
-          <form id="attesa-form">
-            <div class="input-container">
-              <label for="nome">Nome</label>
-              <input placeholder="Nome" type="text" name="nome" id="nome" required="" />
-            </div>
-
-            <div class="input-container">
-              <label for="email">Email</label>
-              <input placeholder="Email" type="email" name="email" id="email" required="" />
-            </div>
-
-            <div
-              id="submit_flex_container"
-              style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; margin-top: 5rem"
-            >
-              <div class="privacy-container">
-                <label class="checkbox-container" for="privacy-2"
-                  >Ho letto l'<a href="privacy.html">informativa privacy</a> in cui è spiegato come sono utilizzati i miei dati
-                  <input type="checkbox" name="privacy-2" id="privacy-2" />
-                  <span class="checkmark"></span>
-                </label>
-                <input type="text" name="empty_privacy-2" id="empty_privacy-2" required style="width: 1px; opacity: 0; height: 1px; padding-top: 1px" />
-              </div>
-              <div class="submit-container" style="flex-shrink: 0; width: auto; margin-left: 5rem; margin-top: 0">
-                <div>
-                  <div style="position: absolute; left: -5000px" aria-hidden="true">
-                    <input type="text" name="b_1a3e536fdd1f8bd704427f555_a7df23a2d5" tabindex="-1" value="" />
-                  </div>
-                  <button disabled class="btn" value="Invia Candidatura" id="invia-candidatura">
-                    <span>Iscriviti</span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="29.57" height="23.605" viewBox="0 0 29.57 23.605">
-                      <defs>
-                        <style>
-                          .cls-1,
-                          .cls-2 {
-                            fill: none;
-                            stroke: #d8d8d8;
-                            stroke-linecap: round;
-                            stroke-width: 2px;
-                          }
-
-                          .cls-1 {
-                            stroke-linejoin: round;
-                          }
-                        </style>
-                      </defs>
-                      <g transform="translate(-1549.605 -5766.115)">
-                        <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)" />
-                        <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
-                      </g>
-                    </svg>
-                  </button>
-                </div>
+        <div id="third-review" class="review-col">
+          <div class="section-row">
+            <p class="text review-text">
+              "L’evento è stato reso speciale dai ragazzi che ne hanno fatto realtà: tutti mossi da un solo scopo,
+              ovvero quello di radunare l’energia di
+              persone con il desiderio di scrivere il futuro di cui faranno parte, senza aspettare di viverlo
+              passivamente."
+            </p>
+          </div>
+          <div class="section-row">
+            <div class="section-subcol">
+              <div>
+                <p class="text review-name">Matteo Paletta</p>
+                <p class="text review-description">Partecipante VD18</p>
               </div>
             </div>
-          </form>
+            <div class="review-social">
+              <a target="_blank" rel="nofollow"
+                href="https://medium.com/@MatteoPaletta/cos%C3%A8-successo-a-visionary-days-2k18-77ff12279d03"><svg
+                  class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="23.605"
+                  viewBox="0 0 29.57 23.605">
+                  <defs>
+                    <style>
+                      .cls-1,
+                      .cls-2 {
+                        fill: none;
+                        stroke: #fff;
+                        stroke-linecap: round;
+                        stroke-width: 2px;
+                      }
+
+                      .cls-1 {
+                        stroke-linejoin: round;
+                      }
+                    </style>
+                  </defs>
+                  <g transform="translate(-1549.605 -5766.115)">
+                    <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389"
+                      transform="translate(-15696.018 6.982)" />
+                    <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
+                  </g>
+                </svg></a>
+            </div>
+          </div>
+        </div>
+
+        <div id="third-review-mobile" class="review-col mobile">
+          <div class="section-row">
+            <p class="text review-text">
+              "L’evento è stato reso speciale dai ragazzi che ne hanno fatto realtà: tutti mossi da un solo scopo,
+              ovvero quello di radunare l’energia di
+              persone con il desiderio di scrivere il futuro di cui faranno parte, senza aspettare di viverlo
+              passivamente."
+            </p>
+          </div>
+          <div class="section-row">
+            <div class="section-subcol">
+              <div>
+                <p style="margin-bottom: 0">
+                  <span class="text review-name">Matteo Paletta</span><span class="text review-description">,
+                    Partecipante VD18</span>
+                </p>
+              </div>
+            </div>
+            <div class="review-social">
+              <a target="_blank" rel="nofollow"
+                href="https://medium.com/@MatteoPaletta/cos%C3%A8-successo-a-visionary-days-2k18-77ff12279d03"><svg
+                  class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="23.605"
+                  viewBox="0 0 29.57 23.605">
+                  <defs>
+                    <style>
+                      .cls-1,
+                      .cls-2 {
+                        fill: none;
+                        stroke: #fff;
+                        stroke-linecap: round;
+                        stroke-width: 2px;
+                      }
+
+                      .cls-1 {
+                        stroke-linejoin: round;
+                      }
+                    </style>
+                  </defs>
+                  <g transform="translate(-1549.605 -5766.115)">
+                    <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389"
+                      transform="translate(-15696.018 6.982)" />
+                    <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
+                  </g>
+                </svg></a>
+            </div>
+          </div>
         </div>
       </div>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <div class="footer-content" id="footer-sponsor">
-          <div class="footer-logos">
-            <div class="footer-logo">
-              <a target="_blank" href="http://www.polito.it">
-                <img alt="Politecnico di Torino" src="assets/logos/partner/polito.png" />
-              </a>
-            </div>
 
-            <div class="footer-logo">
-              <a target="_blank" href="https://www.fcagroup.com/">
-                <img alt="FCA" src="assets/logos/partner/fca.png" />
-              </a>
-            </div>
+      <div id="img-paint" class="row"></div>
 
-            <div class="footer-logo">
-              <a target="_blank" href="https://www.nestle.it/">
-                <img alt="Nestle" src="assets/logos/partner/nestle.png" />
-              </a>
-            </div>
-
-            <div class="footer-logo">
-              <a target="_blank" href="https://www.reply.com">
-                <img alt="Reply" src="assets/logos/partner/reply.png" />
-              </a>
-            </div>
-
-            <div class="footer-logo">
-              <a target="_blank" href="https://www.compagniadisanpaolo.it/">
-                <img alt="Compagnia di San Paolo" src="assets/logos/partner/compagniadisanpaolo.png" />
-              </a>
-            </div>
-
-            <div class="footer-logo">
-              <a target="_blank" href="http://www.fondazionecrt.it/">
-                <img alt="Fondazione CRT" src="assets/logos/partner/crt.png" />
-              </a>
-            </div>
-
-            <div class="footer-logo">
-              <a target="_blank" href="http://www.agenziagiovani.it/">
-                <img alt="ANG" src="assets/logos/partner/visionarydays_ang.png" />
-              </a>
-            </div>
-
-            <div class="footer-logo">
-              <a target="_blank" href="https://www.regione.piemonte.it/">
-                <img alt="Regione Piemonte" src="assets/logos/partner/visionarydays_regionepiemonte.png" />
-              </a>
-            </div>
-
-            <div class="footer-logo">
-              <a target="_blank" href="https://www.regione.liguria.it/">
-                <img alt="Regione Liguria" src="assets/logos/partner/visionarydays_regioneliguria.png" />
-              </a>
-            </div>
-
-            <div class="footer-logo">
-              <a target="_blank" href="http://www.comune.torino.it/">
-                <img alt="Città di Torino" src="assets/logos/partner/comune_torino.png" />
-              </a>
-            </div>
-
-            <div class="footer-logo">
-              <a target="_blank" href="https://smart.comune.genova.it/">
-                <img alt="Comune di Genova" src="assets/logos/partner/visionarydays_comunegenova.png" />
-              </a>
-            </div>
-          </div>
-          <div class="footer-logos" style="position: relative">
-            <div class="line" style="grid-column-start: 1; grid-column-end: 1">
-              <h3
-                class="title"
-                style="
-                  padding-right: 10px;
-                  font-stretch: semi-expanded;
-                  font-weight: 600;
-                  font-size: 1rem;
-                  text-align: center;
-                  width: 100%;
-                  margin-bottom: 5rem;
-                "
-              >
-                MEDIA PARTNER
-              </h3>
-            </div>
-            <div style="grid-column-start: 2; grid-column-end: 5"></div>
-            <div class="footer-logo" style="width: 100%">
-              <a target="_blank" href="https://www.raiplayradio.it/radio2/">
-                <img alt="RAI Radio 2" src="assets/logos/partner/visionarydays_radio2.svg" />
-              </a>
-            </div>
-          </div>
-          <hr />
+      <div id="form-intro" class="row">
+        <div class="content">
+          <h3 class="title">
+            <span>Non ti fermare alla possibilità, spingiti verso la realtà.<br />Non avere paura del cambiamento,
+              diventane parte.<br />Non aspettare che sia
+              Domani, anticipa.</span>
+          </h3>
+          <p class="text"></p>
         </div>
       </div>
-      <style type="text/css">
-        .line:after {
-          content: '';
-          position: absolute;
-          top: 0.5rem;
-          left: 25%;
-          right: 0;
-          border-top: solid 1px #898989;
-          z-index: 9;
-        }
-      </style>
-      <div class="footer-container">
-        <div id="footer-bottom" class="footer-content">
-          <div>
-            <img class="logo" src="assets/logo.svg" />
+
+      <div id="form_news">
+        <form id="attesa-form">
+          <div class="input-container">
+            <label for="nome">Nome</label>
+            <input placeholder="Nome" type="text" name="nome" id="nome" required="" />
           </div>
-          <div>
-            <div style="position: relative"></div>
-            <div>
-              <div class="link-container" id="link-teaser">
-                <a href="index.html">Visionary Days in 60”</a>
-              </div>
-              <div class="link-container">
-                <a href="manifesto.html">Manifesto ’17 ’18</a>
-              </div>
-              <div class="link-container">
-                <a href="tematiche.html">Tematiche 2019</a>
-              </div>
-              <hr style="border-top: 2px solid #3b3b3b; width: 100%; margin-top: 1.5625rem" />
-              <div class="link-container" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center">
-                <a href="domande.html"
-                  >Domande?
-                  <svg xmlns="http://www.w3.org/2000/svg" width="29.57" height="23.605" viewBox="0 0 29.57 23.605" style="width: 1.4rem; margin-left: 0.25rem">
+
+          <div class="input-container">
+            <label for="email">Email</label>
+            <input placeholder="Email" type="email" name="email" id="email" required="" />
+          </div>
+
+          <div id="submit_flex_container"
+            style="display: flex; flex-direction: row; justify-content: space-between; align-items: flex-start; margin-top: 5rem">
+            <div class="privacy-container">
+              <label class="checkbox-container" for="privacy-2">Ho letto l'<a href="privacy.html">informativa
+                  privacy</a> in cui è spiegato come sono utilizzati i miei dati
+                <input type="checkbox" name="privacy-2" id="privacy-2" />
+                <span class="checkmark"></span>
+              </label>
+              <input type="text" name="empty_privacy-2" id="empty_privacy-2" required
+                style="width: 1px; opacity: 0; height: 1px; padding-top: 1px" />
+            </div>
+            <div class="submit-container" style="flex-shrink: 0; width: auto; margin-left: 5rem; margin-top: 0">
+              <div>
+                <div style="position: absolute; left: -5000px" aria-hidden="true">
+                  <input type="text" name="b_1a3e536fdd1f8bd704427f555_a7df23a2d5" tabindex="-1" value="" />
+                </div>
+                <button disabled class="btn" value="Invia Candidatura" id="invia-candidatura">
+                  <span>Iscriviti</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="29.57" height="23.605" viewBox="0 0 29.57 23.605">
                     <defs>
                       <style>
                         .cls-1,
@@ -870,37 +726,190 @@
                         }
                       </style>
                     </defs>
-                    <g id="Group_125" data-name="Group 125" transform="translate(-1549.605 -5766.115)">
-                      <path
-                        id="Path_17"
-                        data-name="Path 17"
-                        class="cls-1"
-                        d="M17263.8,5760.546l10.389,10.389-10.389,10.389"
-                        transform="translate(-15696.018 6.982)"
-                      />
-                      <path id="Path_18" data-name="Path 18" class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
+                    <g transform="translate(-1549.605 -5766.115)">
+                      <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389"
+                        transform="translate(-15696.018 6.982)" />
+                      <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
                     </g>
                   </svg>
-                </a>
+                </button>
               </div>
             </div>
-            <div>
-              <div class="link-container">
-                <a href="team.html">Il team Visionary</a>
-              </div>
-              <div class="link-container">
-                <a href="partner.html">Partner&Sponsor</a>
-              </div>
-              <div class="link-container"><a href="press.html">Press</a></div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content" id="footer-sponsor">
+        <div class="footer-logos">
+          <div class="footer-logo">
+            <a target="_blank" href="http://www.polito.it">
+              <img alt="Politecnico di Torino" src="assets/logos/partner/polito.png" />
+            </a>
+          </div>
 
-              <button class="btn" id="footer-partecipa" style="display: none">Partecipa</button>
+          <div class="footer-logo">
+            <a target="_blank" href="https://www.fcagroup.com/">
+              <img alt="FCA" src="assets/logos/partner/fca.png" />
+            </a>
+          </div>
+
+          <div class="footer-logo">
+            <a target="_blank" href="https://www.nestle.it/">
+              <img alt="Nestle" src="assets/logos/partner/nestle.png" />
+            </a>
+          </div>
+
+          <div class="footer-logo">
+            <a target="_blank" href="https://www.reply.com">
+              <img alt="Reply" src="assets/logos/partner/reply.png" />
+            </a>
+          </div>
+
+          <div class="footer-logo">
+            <a target="_blank" href="https://www.compagniadisanpaolo.it/">
+              <img alt="Compagnia di San Paolo" src="assets/logos/partner/compagniadisanpaolo.png" />
+            </a>
+          </div>
+
+          <div class="footer-logo">
+            <a target="_blank" href="http://www.fondazionecrt.it/">
+              <img alt="Fondazione CRT" src="assets/logos/partner/crt.png" />
+            </a>
+          </div>
+
+          <div class="footer-logo">
+            <a target="_blank" href="http://www.agenziagiovani.it/">
+              <img alt="ANG" src="assets/logos/partner/visionarydays_ang.png" />
+            </a>
+          </div>
+
+          <div class="footer-logo">
+            <a target="_blank" href="https://www.regione.piemonte.it/">
+              <img alt="Regione Piemonte" src="assets/logos/partner/visionarydays_regionepiemonte.png" />
+            </a>
+          </div>
+
+          <div class="footer-logo">
+            <a target="_blank" href="https://www.regione.liguria.it/">
+              <img alt="Regione Liguria" src="assets/logos/partner/visionarydays_regioneliguria.png" />
+            </a>
+          </div>
+
+          <div class="footer-logo">
+            <a target="_blank" href="http://www.comune.torino.it/">
+              <img alt="Città di Torino" src="assets/logos/partner/comune_torino.png" />
+            </a>
+          </div>
+
+          <div class="footer-logo">
+            <a target="_blank" href="https://smart.comune.genova.it/">
+              <img alt="Comune di Genova" src="assets/logos/partner/visionarydays_comunegenova.png" />
+            </a>
+          </div>
+        </div>
+        <div class="footer-logos" style="position: relative">
+          <div class="line" style="grid-column-start: 1; grid-column-end: 1">
+            <h3 class="title" style="
+                  padding-right: 10px;
+                  font-stretch: semi-expanded;
+                  font-weight: 600;
+                  font-size: 1rem;
+                  text-align: center;
+                  width: 100%;
+                  margin-bottom: 5rem;
+                ">
+              MEDIA PARTNER
+            </h3>
+          </div>
+          <div style="grid-column-start: 2; grid-column-end: 5"></div>
+          <div class="footer-logo" style="width: 100%">
+            <a target="_blank" href="https://www.raiplayradio.it/radio2/">
+              <img alt="RAI Radio 2" src="assets/logos/partner/visionarydays_radio2.svg" />
+            </a>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </div>
+    <style type="text/css">
+      .line:after {
+        content: '';
+        position: absolute;
+        top: 0.5rem;
+        left: 25%;
+        right: 0;
+        border-top: solid 1px #898989;
+        z-index: 9;
+      }
+    </style>
+    <div class="footer-container">
+      <div id="footer-bottom" class="footer-content">
+        <div>
+          <img class="logo" src="assets/logo.svg" />
+        </div>
+        <div>
+          <div style="position: relative"></div>
+          <div>
+            <div class="link-container" id="link-teaser">
+              <a href="index.html">Visionary Days in 60”</a>
             </div>
-            <div class="social-container">
-              <a href="http://www.instagram.com/visionarydays/">
-                <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    class="st0"
-                    d="M12,0C8.7,0,8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2S0.9,3.3,0.6,4.1
+            <div class="link-container">
+              <a href="manifesto.html">Manifesto ’17 ’18</a>
+            </div>
+            <div class="link-container">
+              <a href="tematiche.html">Tematiche 2019</a>
+            </div>
+            <hr style="border-top: 2px solid #3b3b3b; width: 100%; margin-top: 1.5625rem" />
+            <div class="link-container"
+              style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center">
+              <a href="domande.html">Domande?
+                <svg xmlns="http://www.w3.org/2000/svg" width="29.57" height="23.605" viewBox="0 0 29.57 23.605"
+                  style="width: 1.4rem; margin-left: 0.25rem">
+                  <defs>
+                    <style>
+                      .cls-1,
+                      .cls-2 {
+                        fill: none;
+                        stroke: #d8d8d8;
+                        stroke-linecap: round;
+                        stroke-width: 2px;
+                      }
+
+                      .cls-1 {
+                        stroke-linejoin: round;
+                      }
+                    </style>
+                  </defs>
+                  <g id="Group_125" data-name="Group 125" transform="translate(-1549.605 -5766.115)">
+                    <path id="Path_17" data-name="Path 17" class="cls-1"
+                      d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)" />
+                    <path id="Path_18" data-name="Path 18" class="cls-2" d="M17274.688,5777.917h-27.082"
+                      transform="translate(-15697)" />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="link-container">
+              <a href="team.html">Il team Visionary</a>
+            </div>
+            <div class="link-container">
+              <a href="partner.html">Partner&Sponsor</a>
+            </div>
+            <div class="link-container"><a href="press.html">Press</a></div>
+
+            <button class="btn" id="footer-partecipa" style="display: none">Partecipa</button>
+          </div>
+          <div class="social-container">
+            <a href="http://www.instagram.com/visionarydays/">
+              <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"
+                xml:space="preserve">
+                <path class="st0"
+                  d="M12,0C8.7,0,8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2S0.9,3.3,0.6,4.1
                                 C0.3,4.9,0.1,5.8,0.1,7.1C0,8.3,0,8.7,0,12s0,3.7,0.1,4.9c0.1,1.3,0.3,2.1,0.6,2.9C0.9,20.6,1.3,21.3,2,22c0.7,0.7,1.3,1.1,2.1,1.4
                                 c0.8,0.3,1.6,0.5,2.9,0.6C8.3,24,8.7,24,12,24s3.7,0,4.9-0.1c1.3-0.1,2.1-0.3,2.9-0.6c0.8-0.3,1.5-0.7,2.1-1.4
                                 c0.7-0.7,1.1-1.3,1.4-2.1c0.3-0.8,0.5-1.6,0.6-2.9C24,15.7,24,15.3,24,12s0-3.7-0.1-4.9c-0.1-1.3-0.3-2.1-0.6-2.9
@@ -911,72 +920,62 @@
                                 c-0.2-0.4-0.4-1.1-0.4-2.2c0-1.3-0.1-1.6-0.1-4.8c0-3.2,0-3.6,0.1-4.9C2.2,6,2.4,5.3,2.6,4.9c0.2-0.6,0.5-1,0.9-1.4
                                 c0.4-0.4,0.8-0.7,1.4-0.9c0.4-0.2,1.1-0.4,2.2-0.4C8.4,2.1,8.7,2.1,12,2.2C12,2.1,12,2.2,12,2.2z M12,5.8c-3.4,0-6.2,2.8-6.2,6.2
                                 c0,3.4,2.8,6.2,6.2,6.2c3.4,0,6.2-2.8,6.2-6.2C18.2,8.6,15.4,5.8,12,5.8z M12,16c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4
-                                S14.2,16,12,16z M19.8,5.6c0,0.8-0.6,1.4-1.4,1.4C17.6,7,17,6.4,17,5.6s0.6-1.4,1.4-1.4C19.2,4.2,19.8,4.8,19.8,5.6z"
-                  />
-                </svg>
-                <span>Instagram</span></a
-              >
-              <a href="http://www.facebook.com/visionarydays">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    class="st0"
-                    d="M22.7,0H1.3C0.6,0,0,0.6,0,1.3v21.4C0,23.4,0.6,24,1.3,24h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1,1.9-4.8,4.7-4.8
+                                S14.2,16,12,16z M19.8,5.6c0,0.8-0.6,1.4-1.4,1.4C17.6,7,17,6.4,17,5.6s0.6-1.4,1.4-1.4C19.2,4.2,19.8,4.8,19.8,5.6z" />
+              </svg>
+              <span>Instagram</span></a>
+            <a href="http://www.facebook.com/visionarydays">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"
+                xml:space="preserve">
+                <path class="st0" d="M22.7,0H1.3C0.6,0,0,0.6,0,1.3v21.4C0,23.4,0.6,24,1.3,24h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1,1.9-4.8,4.7-4.8
                                 c1.3,0,2.5,0.1,2.8,0.1V7h-1.9c-1.5,0-1.8,0.7-1.8,1.8v2.3h3.6l-0.5,3.6h-3.1V24h6.1c0.7,0,1.3-0.6,1.3-1.3V1.3
-                                C24,0.6,23.4,0,22.7,0"
-                  />
-                </svg>
-                <span>Facebook</span></a
-              >
-              <a href="http://twitter.com/VisionaryDays">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    class="st0"
-                    d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6
+                                C24,0.6,23.4,0,22.7,0" />
+              </svg>
+              <span>Facebook</span></a>
+            <a href="http://twitter.com/VisionaryDays">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"
+                xml:space="preserve">
+                <path class="st0" d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6
                                 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.6,3.2C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1
                                 c-0.8,0-1.6-0.2-2.2-0.6v0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4
                                 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.6,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6
-                                C22.5,6.4,23.3,5.6,24,4.6C24,4.6,24,4.6,24,4.6z"
-                  />
-                </svg>
-                <span>Twitter</span></a
-              >
-            </div>
+                                C22.5,6.4,23.3,5.6,24,4.6C24,4.6,24,4.6,24,4.6z" />
+              </svg>
+              <span>Twitter</span></a>
           </div>
-          <div id="footer-bottom-links">
+        </div>
+        <div id="footer-bottom-links">
+          <div>
+            <span>© 2020 Visionary. Tutti i diritti riservati.</span>
+          </div>
+          <div>
             <div>
-              <span>© 2020 Visionary. Tutti i diritti riservati.</span>
+              <span><a href="mailto:info@visionarydays.com">info@visionarydays.com</a></span>
             </div>
             <div>
-              <div>
-                <span><a href="mailto:info@visionarydays.com">info@visionarydays.com</a></span>
-              </div>
-              <div>
-                <span><a href="assets/mediakit.zip">Media Kit</a></span>
-                <span><a href="privacy.html">Informativa Privacy</a></span>
-                <span><a href="cookie.html">Cookies</a></span>
-              </div>
+              <span><a href="assets/mediakit.zip">Media Kit</a></span>
+              <span><a href="privacy.html">Informativa Privacy</a></span>
+              <span><a href="cookie.html">Cookies</a></span>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script>
-      window._on = 1;
-    </script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.ui.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.1/pixi.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/general.js"></script>
-    <script src="js/index.js"></script>
-    <script type="application/ld+json">
+    </div>
+  </footer>
+  <script>
+    window._on = 1;
+  </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.2/velocity.ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/5.1.1/pixi.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/general.js"></script>
+  <script src="js/index.js"></script>
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Event",
@@ -1012,34 +1011,35 @@
         }
       }
     </script>
-    <style>
-      .demo-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 30px;
-        text-align: center;
-        color: black;
-        font-weight: bold;
-        font-family: sans-serif;
-        background-color: white;
-        z-index: 2000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+  <style>
+    .demo-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      color: black;
+      font-weight: bold;
+      font-family: sans-serif;
+      background-color: white;
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-      body.demo {
-        padding-top: 30px !important;
-      }
-    </style>
-    <script>
-      var el = document.createElement('div');
-      el.classList.add('demo-bar');
-      el.textContent = 'For demo purposes only';
-      document.body.prepend(el);
-      document.body.classList.add('demo');
-    </script>
-  </body>
+    body.demo {
+      padding-top: 30px !important;
+    }
+  </style>
+  <script>
+    var el = document.createElement('div');
+    el.classList.add('demo-bar');
+    el.textContent = 'For demo purposes only';
+    document.body.prepend(el);
+    document.body.classList.add('demo');
+  </script>
+</body>
+
 </html>

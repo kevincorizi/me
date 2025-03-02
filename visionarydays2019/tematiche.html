@@ -1,91 +1,73 @@
 <!doctype html>
 <html lang="it">
-  <head>
-    <title>DEMO - Tematiche | VisionaryDays 2019</title>
-    <!-- Configure multi-demo domain -->
-    <base href="https://kevincorizi.github.io/me/visionarydays2019/" />
 
-    <meta name="description" content="VisionaryDays 2019 - Torino e Genova, 23 Novembre" />
-    <meta
-      name="keywords"
-      content="visionary, days, day, visionario, visionari, torino, turin, genova, evento, eventi, 2019, futuro, progetto, brainstorm, team, innovazione, futuro, comunicazione, talk, lavoro, workshop, manifesto, idea, idee, intuizione, coraggio, capacità, cambiamento, startup, progetto, volontari, volontariato, volontario, università, aziende, studenti, imprenditore, no profit, politecnico"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
-    <link rel="icon" href="https://www.visionarydays.it/favicon.ico?v=2" />
-    <link rel="manifest" href="manifest.webmanifest.html" />
+<head>
+  <title>DEMO - Tematiche | VisionaryDays 2019</title>
+  <base href="https://kevincorizi.github.io/me/visionarydays2019/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
 
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America/GT-America-Expanded-Black.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America%20Mono/GT-America-Mono-Medium.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America/GT-America-Expanded-Bold.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America/GT-America-Expanded-Medium.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America/GT-America-Expanded-Thin.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America/GT-America-Expanded-Regular.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America%20Mono/GT-America-Mono-Regular.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America/GT-America-Extended-Regular.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America/GT-America-Regular.OTF" />
-    <link crossorigin="anonymous" as="font" type="font/otf" href="assets/fonts/GT-America/GT-America-Extended-Bold.OTF" />
+  <link rel="stylesheet" href="css/global/bootstrap.css" />
+  <link rel="stylesheet" href="css/global/font.css" />
+  <link rel="stylesheet" href="css/global/general.css" />
+  <link rel="stylesheet" href="css/tematiche.css" />
+</head>
 
-    <link rel="stylesheet" href="css/global/bootstrap.css" />
-    <link rel="stylesheet" href="css/global/font.css" />
-    <link rel="stylesheet" href="css/global/general.css" />
-    <link rel="stylesheet" href="css/tematiche.css" />
-  </head>
-  <body data-spy="scroll" data-offset="250" class="no-animation active">
-    <header>
-      <div id="logo-container" style="position: relative; width: 100%">
-        <a href="index.html"><img src="assets/logo.svg" alt="Visionary Days 2018" /></a>
-      </div>
-      <div id="mobile-header-date" style="display: none; position: absolute; top: 105px">
-        <div id="mobile-menu-date" style="display: none">
-          <div><span>Torino/Genova</span></div>
-          <div>
-            <div id="line"></div>
-            <span>23 NOV 2019</span>
-          </div>
+<body data-spy="scroll" data-offset="250" class="no-animation active">
+  <header>
+    <div id="logo-container" style="position: relative; width: 100%">
+      <a href="index.html"><img src="assets/logo.svg" alt="Visionary Days 2018" /></a>
+    </div>
+    <div id="mobile-header-date" style="display: none; position: absolute; top: 105px">
+      <div id="mobile-menu-date" style="display: none">
+        <div><span>Torino/Genova</span></div>
+        <div>
+          <div id="line"></div>
+          <span>23 NOV 2019</span>
         </div>
       </div>
-      <div id="desktop-menu">
-        <span class="dates" style="display: none">23 NOV 2019</span>
-        <span class="cities" style="display: none">Torino / Genova</span>
+    </div>
+    <div id="desktop-menu">
+      <span class="dates" style="display: none">23 NOV 2019</span>
+      <span class="cities" style="display: none">Torino / Genova</span>
+    </div>
+    <div id="menu-container">
+      <div class="menu-item-container">
+        <button id="button-menu">menu</button>
       </div>
-      <div id="menu-container">
-        <div class="menu-item-container">
-          <button id="button-menu">menu</button>
+      <button id="partecipa-button" style="display: none">partecipa</button>
+    </div>
+  </header>
+  <main id="tematiche">
+    <div id="mobile-menu">
+      <div id="mobile-menu-header">
+        <div class="mobile-menu-logo">
+          <img src="assets/logo.svg" alt="Visionary Days" />
+          <span id="close-menu">EXIT</span>
+          <span id="close-desktop">×</span>
         </div>
-        <button id="partecipa-button" style="display: none">partecipa</button>
-      </div>
-    </header>
-    <main id="tematiche">
-      <div id="mobile-menu">
-        <div id="mobile-menu-header">
-          <div class="mobile-menu-logo">
-            <img src="assets/logo.svg" alt="Visionary Days" />
-            <span id="close-menu">EXIT</span>
-            <span id="close-desktop">×</span>
-          </div>
-          <div class="menu-header-col">
-            <div id="mobile-menu-date">
-              <div style="display: none"><span>Torino/Genova</span></div>
-              <div style="display: none">
-                <div id="line"></div>
-                <span>23 NOV 2019</span>
-              </div>
-            </div>
-            <div class="menu-header-date">
-              <span style="display: none">23 NOV 2019</span>
-              <span style="display: none">Torino / Genova</span>
-            </div>
-            <div class="menu-header-text">
-              <span>Domande?</span>
+        <div class="menu-header-col">
+          <div id="mobile-menu-date">
+            <div style="display: none"><span>Torino/Genova</span></div>
+            <div style="display: none">
+              <div id="line"></div>
+              <span>23 NOV 2019</span>
             </div>
           </div>
-          <div class="menu-header-col">
-            <div id="menu-social-container" class="social-container">
-              <a href="http://www.instagram.com/visionarydays/" rel="nofollow" target="_blank">
-                <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    class="st0"
-                    d="M12,0C8.7,0,8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2S0.9,3.3,0.6,4.1
+          <div class="menu-header-date">
+            <span style="display: none">23 NOV 2019</span>
+            <span style="display: none">Torino / Genova</span>
+          </div>
+          <div class="menu-header-text">
+            <span>Domande?</span>
+          </div>
+        </div>
+        <div class="menu-header-col">
+          <div id="menu-social-container" class="social-container">
+            <a href="http://www.instagram.com/visionarydays/" rel="nofollow" target="_blank">
+              <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"
+                xml:space="preserve">
+                <path class="st0"
+                  d="M12,0C8.7,0,8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2S0.9,3.3,0.6,4.1
                                 C0.3,4.9,0.1,5.8,0.1,7.1C0,8.3,0,8.7,0,12s0,3.7,0.1,4.9c0.1,1.3,0.3,2.1,0.6,2.9C0.9,20.6,1.3,21.3,2,22c0.7,0.7,1.3,1.1,2.1,1.4
                                 c0.8,0.3,1.6,0.5,2.9,0.6C8.3,24,8.7,24,12,24s3.7,0,4.9-0.1c1.3-0.1,2.1-0.3,2.9-0.6c0.8-0.3,1.5-0.7,2.1-1.4
                                 c0.7-0.7,1.1-1.3,1.4-2.1c0.3-0.8,0.5-1.6,0.6-2.9C24,15.7,24,15.3,24,12s0-3.7-0.1-4.9c-0.1-1.3-0.3-2.1-0.6-2.9
@@ -96,303 +78,306 @@
                                 c-0.2-0.4-0.4-1.1-0.4-2.2c0-1.3-0.1-1.6-0.1-4.8c0-3.2,0-3.6,0.1-4.9C2.2,6,2.4,5.3,2.6,4.9c0.2-0.6,0.5-1,0.9-1.4
                                 c0.4-0.4,0.8-0.7,1.4-0.9c0.4-0.2,1.1-0.4,2.2-0.4C8.4,2.1,8.7,2.1,12,2.2C12,2.1,12,2.2,12,2.2z M12,5.8c-3.4,0-6.2,2.8-6.2,6.2
                                 c0,3.4,2.8,6.2,6.2,6.2c3.4,0,6.2-2.8,6.2-6.2C18.2,8.6,15.4,5.8,12,5.8z M12,16c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4
-                                S14.2,16,12,16z M19.8,5.6c0,0.8-0.6,1.4-1.4,1.4C17.6,7,17,6.4,17,5.6s0.6-1.4,1.4-1.4C19.2,4.2,19.8,4.8,19.8,5.6z"
-                  />
-                </svg>
-                <span>Instagram</span></a
-              >
-              <a href="http://www.facebook.com/visionarydays" rel="nofollow" target="_blank">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    class="st0"
-                    d="M22.7,0H1.3C0.6,0,0,0.6,0,1.3v21.4C0,23.4,0.6,24,1.3,24h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1,1.9-4.8,4.7-4.8
+                                S14.2,16,12,16z M19.8,5.6c0,0.8-0.6,1.4-1.4,1.4C17.6,7,17,6.4,17,5.6s0.6-1.4,1.4-1.4C19.2,4.2,19.8,4.8,19.8,5.6z" />
+              </svg>
+              <span>Instagram</span></a>
+            <a href="http://www.facebook.com/visionarydays" rel="nofollow" target="_blank">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"
+                xml:space="preserve">
+                <path class="st0" d="M22.7,0H1.3C0.6,0,0,0.6,0,1.3v21.4C0,23.4,0.6,24,1.3,24h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1,1.9-4.8,4.7-4.8
                                 c1.3,0,2.5,0.1,2.8,0.1V7h-1.9c-1.5,0-1.8,0.7-1.8,1.8v2.3h3.6l-0.5,3.6h-3.1V24h6.1c0.7,0,1.3-0.6,1.3-1.3V1.3
-                                C24,0.6,23.4,0,22.7,0"
-                  />
-                </svg>
-                <span>Facebook</span></a
-              >
-              <a href="http://twitter.com/VisionaryDays" rel="nofollow" target="_blank">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    class="st0"
-                    d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6
+                                C24,0.6,23.4,0,22.7,0" />
+              </svg>
+              <span>Facebook</span></a>
+            <a href="http://twitter.com/VisionaryDays" rel="nofollow" target="_blank">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"
+                xml:space="preserve">
+                <path class="st0" d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6
                                 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.6,3.2C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1
                                 c-0.8,0-1.6-0.2-2.2-0.6v0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4
                                 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.6,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6
-                                C22.5,6.4,23.3,5.6,24,4.6C24,4.6,24,4.6,24,4.6z"
-                  />
-                </svg>
-                <span>Twitter</span></a
-              >
-            </div>
+                                C22.5,6.4,23.3,5.6,24,4.6C24,4.6,24,4.6,24,4.6z" />
+              </svg>
+              <span>Twitter</span></a>
           </div>
         </div>
+      </div>
 
-        <div id="mobile-menu-content" class="list-group">
-          <a class="list-group-item list-group-item-action" href="index.html">home</a>
-          <a class="list-group-item list-group-item-action menu-active" href="tematiche.html">tematiche 2019</a>
-          <a class="list-group-item list-group-item-action" href="manifesto.html">manifesto '17 '18</a>
-          <a class="list-group-item list-group-item-action" href="partner.html">partner e sponsor</a>
-          <a class="list-group-item list-group-item-action" href="team.html">team visionary</a>
-          <a class="list-group-item list-group-item-action" href="press.html">press</a>
-        </div>
+      <div id="mobile-menu-content" class="list-group">
+        <a class="list-group-item list-group-item-action" href="index.html">home</a>
+        <a class="list-group-item list-group-item-action menu-active" href="tematiche.html">tematiche 2019</a>
+        <a class="list-group-item list-group-item-action" href="manifesto.html">manifesto '17 '18</a>
+        <a class="list-group-item list-group-item-action" href="partner.html">partner e sponsor</a>
+        <a class="list-group-item list-group-item-action" href="team.html">team visionary</a>
+        <a class="list-group-item list-group-item-action" href="press.html">press</a>
+      </div>
 
-        <div id="mobile-menu-only">
+      <div id="mobile-menu-only">
+        <span>
+          <span>Domande?</span>
           <span>
-            <span>Domande?</span>
-            <span>
-              <svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="29.57" height="23.605" viewBox="0 0 29.57 23.605">
-                <defs>
-                  <style>
-                    .cls-1,
-                    .cls-2 {
-                      fill: none;
-                      stroke: #d8d8d8;
-                      stroke-linecap: round;
-                      stroke-width: 2px;
-                    }
+            <svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="29.57" height="23.605"
+              viewBox="0 0 29.57 23.605">
+              <defs>
+                <style>
+                  .cls-1,
+                  .cls-2 {
+                    fill: none;
+                    stroke: #d8d8d8;
+                    stroke-linecap: round;
+                    stroke-width: 2px;
+                  }
 
-                    .cls-1 {
-                      stroke-linejoin: round;
-                    }
-                  </style>
-                </defs>
-                <g transform="translate(-1549.605 -5766.115)">
-                  <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)" />
-                  <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
-                </g>
-              </svg>
-            </span>
+                  .cls-1 {
+                    stroke-linejoin: round;
+                  }
+                </style>
+              </defs>
+              <g transform="translate(-1549.605 -5766.115)">
+                <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389"
+                  transform="translate(-15696.018 6.982)" />
+                <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
+              </g>
+            </svg>
           </span>
+        </span>
+        <span>
+          <span>Privacy</span>
           <span>
-            <span>Privacy</span>
-            <span>
-              <svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="29.57" height="23.605" viewBox="0 0 29.57 23.605">
-                <defs>
-                  <style>
-                    .cls-1,
-                    .cls-2 {
-                      fill: none;
-                      stroke: #d8d8d8;
-                      stroke-linecap: round;
-                      stroke-width: 2px;
-                    }
+            <svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="29.57" height="23.605"
+              viewBox="0 0 29.57 23.605">
+              <defs>
+                <style>
+                  .cls-1,
+                  .cls-2 {
+                    fill: none;
+                    stroke: #d8d8d8;
+                    stroke-linecap: round;
+                    stroke-width: 2px;
+                  }
 
-                    .cls-1 {
-                      stroke-linejoin: round;
-                    }
-                  </style>
-                </defs>
-                <g transform="translate(-1549.605 -5766.115)">
-                  <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)" />
-                  <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
-                </g>
-              </svg>
-            </span>
+                  .cls-1 {
+                    stroke-linejoin: round;
+                  }
+                </style>
+              </defs>
+              <g transform="translate(-1549.605 -5766.115)">
+                <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389"
+                  transform="translate(-15696.018 6.982)" />
+                <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
+              </g>
+            </svg>
           </span>
+        </span>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div id="img-paint" class="row"></div>
+
+      <div id="section-title" class="row">
+        <div class="content">
+          <h4>Visionary Days 2019 — IL TEMA</h4>
+          <h1 class="title">Quali forme per il prossimo pianeta?</h1>
+          <p class="text">
+            Dieci ore totali divise in più sessioni tematiche, ciascuna della durata di un’ora e divisa in due momenti:
+            <i>ispirazione</i>, con talk
+            introduttivo di 15’ dal palco centrale, e <i>contaminazione</i>, con 45’ di confronto in plenaria tra i
+            tavoli virtualmente connessi.
+          </p>
         </div>
       </div>
-      <div class="container-fluid">
-        <div id="img-paint" class="row"></div>
 
-        <div id="section-title" class="row">
-          <div class="content">
-            <h4>Visionary Days 2019 — IL TEMA</h4>
-            <h1 class="title">Quali forme per il prossimo pianeta?</h1>
+      <div id="section-tematiche" class="row">
+        <div class="tematica-row">
+          <div class="number-container number first-number">
+            <span>1</span>
+          </div>
+          <div class="title title-img-container">
+            <h3 class="title">RISORSE</h3>
+            <div style="width: 100%">
+              <img src="assets/images/1x/risorse/02.png" />
+            </div>
+          </div>
+          <div class="time-desc-container">
+            <p style="margin-bottom: 4.1rem">
+              <span></span>
+              <span></span>
+            </p>
             <p class="text">
-              Dieci ore totali divise in più sessioni tematiche, ciascuna della durata di un’ora e divisa in due momenti: <i>ispirazione</i>, con talk
-              introduttivo di 15’ dal palco centrale, e <i>contaminazione</i>, con 45’ di confronto in plenaria tra i tavoli virtualmente connessi.
+              Ogni anno l’economia mondiale consuma quasi 93 miliardi di tonnellate di materie prime. Di queste, solo il
+              9% sono riutilizzate. Il consumo di
+              risorse è triplicato dal 1970 e potrebbe raddoppiare entro il 2050.
             </p>
           </div>
         </div>
-
-        <div id="section-tematiche" class="row">
-          <div class="tematica-row">
-            <div class="number-container number first-number">
-              <span>1</span>
-            </div>
-            <div class="title title-img-container">
-              <h3 class="title">RISORSE</h3>
-              <div style="width: 100%">
-                <img src="assets/images/1x/risorse/02.png" />
-              </div>
-            </div>
-            <div class="time-desc-container">
-              <p style="margin-bottom: 4.1rem">
-                <span></span>
-                <span></span>
-              </p>
-              <p class="text">
-                Ogni anno l’economia mondiale consuma quasi 93 miliardi di tonnellate di materie prime. Di queste, solo il 9% sono riutilizzate. Il consumo di
-                risorse è triplicato dal 1970 e potrebbe raddoppiare entro il 2050.
-              </p>
+        <div class="tematica-row">
+          <div class="number-container number second-number">
+            <span>2</span>
+          </div>
+          <div class="title title-img-container">
+            <h3 class="title">ABITANTI</h3>
+            <div style="width: 100%">
+              <img src="assets/images/1x/abitanti/04.png" />
             </div>
           </div>
-          <div class="tematica-row">
-            <div class="number-container number second-number">
-              <span>2</span>
-            </div>
-            <div class="title title-img-container">
-              <h3 class="title">ABITANTI</h3>
-              <div style="width: 100%">
-                <img src="assets/images/1x/abitanti/04.png" />
-              </div>
-            </div>
-            <div class="time-desc-container">
-              <p style="margin-bottom: 4.1rem">
-                <span></span>
-                <span></span>
-              </p>
-              <p class="text">
-                La popolazione mondiale è cresciuta da 1 miliardo nel 1800 a 7 miliardi nel 2012. Le stime prevedono una popolazione totale di 9,6 miliardi
-                entro la metà degli anni 2050. Molte delle popolazioni con la crescita più rapida vivono nei Paesi più poveri.
-              </p>
-            </div>
-          </div>
-          <div class="tematica-row">
-            <div class="number-container number third-number">
-              <span>3</span>
-            </div>
-            <div class="title title-img-container">
-              <h3 class="title">ECONOMIE</h3>
-              <div style="width: 100%">
-                <img src="assets/images/1x/economie/01.png" />
-              </div>
-            </div>
-            <div class="time-desc-container">
-              <p style="margin-bottom: 4.1rem">
-                <span></span>
-                <span></span>
-              </p>
-              <p class="text">
-                Oggi un’auto rimane parcheggiata in media per il 92% della sua esistenza, il 31% del cibo viene sprecato lungo la catena del valore, la durata
-                dei manufatti delle nostre industrie non supera i 9 anni, solo il 40% dei rifiuti solidi urbani viene riciclato.
-              </p>
-            </div>
-          </div>
-          <div class="tematica-row">
-            <div class="number-container number fourth-number">
-              <span>4</span>
-            </div>
-            <div class="title title-img-container">
-              <h3 class="title">NUOVA TERRA</h3>
-              <div style="width: 100%">
-                <img src="assets/images/1x/nuovaterra/01.png" />
-              </div>
-            </div>
-            <div class="time-desc-container">
-              <p style="margin-bottom: 4.1rem">
-                <span></span>
-                <span></span>
-              </p>
-              <p class="text">
-                È tempo di esplorare altri sistemi solari. 'Estenderci' sarà forse l'unica cosa che potrà salvarci da noi stessi. Sono convinto che gli esseri
-                umani abbiano bisogno di lasciare la Terra. (- Stephen Hawking)
-              </p>
-            </div>
+          <div class="time-desc-container">
+            <p style="margin-bottom: 4.1rem">
+              <span></span>
+              <span></span>
+            </p>
+            <p class="text">
+              La popolazione mondiale è cresciuta da 1 miliardo nel 1800 a 7 miliardi nel 2012. Le stime prevedono una
+              popolazione totale di 9,6 miliardi
+              entro la metà degli anni 2050. Molte delle popolazioni con la crescita più rapida vivono nei Paesi più
+              poveri.
+            </p>
           </div>
         </div>
-
-        <div id="section-manifesto" class="row">
-          <h2 class="title">SCOPRI I TEMI DELLE SCORSE EDIZIONI. GUARDA IL MANIFESTO DINAMICO ’17 E ’18</h2>
-          <a href="manifesto.html">
-            <button class="btn">
-              MANIFESTO '17/'18<svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="23.605" viewBox="0 0 29.57 23.605">
-                <defs>
-                  <style>
-                    .cls-1,
-                    .cls-2 {
-                      fill: none;
-                      stroke: #fff;
-                      stroke-linecap: round;
-                      stroke-width: 2px;
-                    }
-
-                    .cls-1 {
-                      stroke-linejoin: round;
-                    }
-                  </style>
-                </defs>
-                <g transform="translate(-1549.605 -5766.115)">
-                  <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)" />
-                  <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
-                </g>
-              </svg>
-            </button>
-          </a>
+        <div class="tematica-row">
+          <div class="number-container number third-number">
+            <span>3</span>
+          </div>
+          <div class="title title-img-container">
+            <h3 class="title">ECONOMIE</h3>
+            <div style="width: 100%">
+              <img src="assets/images/1x/economie/01.png" />
+            </div>
+          </div>
+          <div class="time-desc-container">
+            <p style="margin-bottom: 4.1rem">
+              <span></span>
+              <span></span>
+            </p>
+            <p class="text">
+              Oggi un’auto rimane parcheggiata in media per il 92% della sua esistenza, il 31% del cibo viene sprecato
+              lungo la catena del valore, la durata
+              dei manufatti delle nostre industrie non supera i 9 anni, solo il 40% dei rifiuti solidi urbani viene
+              riciclato.
+            </p>
+          </div>
+        </div>
+        <div class="tematica-row">
+          <div class="number-container number fourth-number">
+            <span>4</span>
+          </div>
+          <div class="title title-img-container">
+            <h3 class="title">NUOVA TERRA</h3>
+            <div style="width: 100%">
+              <img src="assets/images/1x/nuovaterra/01.png" />
+            </div>
+          </div>
+          <div class="time-desc-container">
+            <p style="margin-bottom: 4.1rem">
+              <span></span>
+              <span></span>
+            </p>
+            <p class="text">
+              È tempo di esplorare altri sistemi solari. 'Estenderci' sarà forse l'unica cosa che potrà salvarci da noi
+              stessi. Sono convinto che gli esseri
+              umani abbiano bisogno di lasciare la Terra. (- Stephen Hawking)
+            </p>
+          </div>
         </div>
       </div>
-    </main>
-    <footer>
-      <div class="footer-container">
-        <div id="footer-bottom" class="footer-content">
+
+      <div id="section-manifesto" class="row">
+        <h2 class="title">SCOPRI I TEMI DELLE SCORSE EDIZIONI. GUARDA IL MANIFESTO DINAMICO ’17 E ’18</h2>
+        <a href="manifesto.html">
+          <button class="btn">
+            MANIFESTO '17/'18<svg class="arrow-symbol" xmlns="http://www.w3.org/2000/svg" width="1.5rem" height="23.605"
+              viewBox="0 0 29.57 23.605">
+              <defs>
+                <style>
+                  .cls-1,
+                  .cls-2 {
+                    fill: none;
+                    stroke: #fff;
+                    stroke-linecap: round;
+                    stroke-width: 2px;
+                  }
+
+                  .cls-1 {
+                    stroke-linejoin: round;
+                  }
+                </style>
+              </defs>
+              <g transform="translate(-1549.605 -5766.115)">
+                <path class="cls-1" d="M17263.8,5760.546l10.389,10.389-10.389,10.389"
+                  transform="translate(-15696.018 6.982)" />
+                <path class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
+              </g>
+            </svg>
+          </button>
+        </a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div id="footer-bottom" class="footer-content">
+        <div>
+          <img class="logo" src="assets/logo.svg" />
+        </div>
+        <div>
+          <div style="position: relative"></div>
           <div>
-            <img class="logo" src="assets/logo.svg" />
+            <div class="link-container" id="link-teaser">
+              <a href="index.html">Visionary Days in 60”</a>
+            </div>
+            <div class="link-container">
+              <a href="manifesto.html">Manifesto ’17 ’18</a>
+            </div>
+            <div class="link-container">
+              <a href="tematiche.html">Tematiche 2019</a>
+            </div>
+            <hr style="border-top: 2px solid #3b3b3b; width: 100%; margin-top: 1.5625rem" />
+            <div class="link-container"
+              style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center">
+              <a href="domande.html">Domande?
+                <svg xmlns="http://www.w3.org/2000/svg" width="29.57" height="23.605" viewBox="0 0 29.57 23.605"
+                  style="width: 1.4rem; margin-left: 0.25rem">
+                  <defs>
+                    <style>
+                      .cls-1,
+                      .cls-2 {
+                        fill: none;
+                        stroke: #d8d8d8;
+                        stroke-linecap: round;
+                        stroke-width: 2px;
+                      }
+
+                      .cls-1 {
+                        stroke-linejoin: round;
+                      }
+                    </style>
+                  </defs>
+                  <g id="Group_125" data-name="Group 125" transform="translate(-1549.605 -5766.115)">
+                    <path id="Path_17" data-name="Path 17" class="cls-1"
+                      d="M17263.8,5760.546l10.389,10.389-10.389,10.389" transform="translate(-15696.018 6.982)" />
+                    <path id="Path_18" data-name="Path 18" class="cls-2" d="M17274.688,5777.917h-27.082"
+                      transform="translate(-15697)" />
+                  </g>
+                </svg>
+              </a>
+            </div>
           </div>
           <div>
-            <div style="position: relative"></div>
-            <div>
-              <div class="link-container" id="link-teaser">
-                <a href="index.html">Visionary Days in 60”</a>
-              </div>
-              <div class="link-container">
-                <a href="manifesto.html">Manifesto ’17 ’18</a>
-              </div>
-              <div class="link-container">
-                <a href="tematiche.html">Tematiche 2019</a>
-              </div>
-              <hr style="border-top: 2px solid #3b3b3b; width: 100%; margin-top: 1.5625rem" />
-              <div class="link-container" style="display: flex; flex-direction: row; justify-content: flex-start; align-items: center">
-                <a href="domande.html"
-                  >Domande?
-                  <svg xmlns="http://www.w3.org/2000/svg" width="29.57" height="23.605" viewBox="0 0 29.57 23.605" style="width: 1.4rem; margin-left: 0.25rem">
-                    <defs>
-                      <style>
-                        .cls-1,
-                        .cls-2 {
-                          fill: none;
-                          stroke: #d8d8d8;
-                          stroke-linecap: round;
-                          stroke-width: 2px;
-                        }
-
-                        .cls-1 {
-                          stroke-linejoin: round;
-                        }
-                      </style>
-                    </defs>
-                    <g id="Group_125" data-name="Group 125" transform="translate(-1549.605 -5766.115)">
-                      <path
-                        id="Path_17"
-                        data-name="Path 17"
-                        class="cls-1"
-                        d="M17263.8,5760.546l10.389,10.389-10.389,10.389"
-                        transform="translate(-15696.018 6.982)"
-                      />
-                      <path id="Path_18" data-name="Path 18" class="cls-2" d="M17274.688,5777.917h-27.082" transform="translate(-15697)" />
-                    </g>
-                  </svg>
-                </a>
-              </div>
+            <div class="link-container">
+              <a href="team.html">Il team Visionary</a>
             </div>
-            <div>
-              <div class="link-container">
-                <a href="team.html">Il team Visionary</a>
-              </div>
-              <div class="link-container">
-                <a href="partner.html">Partner&Sponsor</a>
-              </div>
-              <div class="link-container"><a href="press.html">Press</a></div>
-
-              <button class="btn" id="footer-partecipa" style="display: none">Partecipa</button>
+            <div class="link-container">
+              <a href="partner.html">Partner&Sponsor</a>
             </div>
-            <div class="social-container">
-              <a href="http://www.instagram.com/visionarydays/">
-                <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    class="st0"
-                    d="M12,0C8.7,0,8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2S0.9,3.3,0.6,4.1
+            <div class="link-container"><a href="press.html">Press</a></div>
+
+            <button class="btn" id="footer-partecipa" style="display: none">Partecipa</button>
+          </div>
+          <div class="social-container">
+            <a href="http://www.instagram.com/visionarydays/">
+              <svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"
+                xml:space="preserve">
+                <path class="st0"
+                  d="M12,0C8.7,0,8.3,0,7.1,0.1C5.8,0.1,4.9,0.3,4.1,0.6C3.4,0.9,2.7,1.3,2,2S0.9,3.3,0.6,4.1
                                 C0.3,4.9,0.1,5.8,0.1,7.1C0,8.3,0,8.7,0,12s0,3.7,0.1,4.9c0.1,1.3,0.3,2.1,0.6,2.9C0.9,20.6,1.3,21.3,2,22c0.7,0.7,1.3,1.1,2.1,1.4
                                 c0.8,0.3,1.6,0.5,2.9,0.6C8.3,24,8.7,24,12,24s3.7,0,4.9-0.1c1.3-0.1,2.1-0.3,2.9-0.6c0.8-0.3,1.5-0.7,2.1-1.4
                                 c0.7-0.7,1.1-1.3,1.4-2.1c0.3-0.8,0.5-1.6,0.6-2.9C24,15.7,24,15.3,24,12s0-3.7-0.1-4.9c-0.1-1.3-0.3-2.1-0.6-2.9
@@ -403,94 +388,85 @@
                                 c-0.2-0.4-0.4-1.1-0.4-2.2c0-1.3-0.1-1.6-0.1-4.8c0-3.2,0-3.6,0.1-4.9C2.2,6,2.4,5.3,2.6,4.9c0.2-0.6,0.5-1,0.9-1.4
                                 c0.4-0.4,0.8-0.7,1.4-0.9c0.4-0.2,1.1-0.4,2.2-0.4C8.4,2.1,8.7,2.1,12,2.2C12,2.1,12,2.2,12,2.2z M12,5.8c-3.4,0-6.2,2.8-6.2,6.2
                                 c0,3.4,2.8,6.2,6.2,6.2c3.4,0,6.2-2.8,6.2-6.2C18.2,8.6,15.4,5.8,12,5.8z M12,16c-2.2,0-4-1.8-4-4s1.8-4,4-4s4,1.8,4,4
-                                S14.2,16,12,16z M19.8,5.6c0,0.8-0.6,1.4-1.4,1.4C17.6,7,17,6.4,17,5.6s0.6-1.4,1.4-1.4C19.2,4.2,19.8,4.8,19.8,5.6z"
-                  />
-                </svg>
-                <span>Instagram</span></a
-              >
-              <a href="http://www.facebook.com/visionarydays">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    class="st0"
-                    d="M22.7,0H1.3C0.6,0,0,0.6,0,1.3v21.4C0,23.4,0.6,24,1.3,24h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1,1.9-4.8,4.7-4.8
+                                S14.2,16,12,16z M19.8,5.6c0,0.8-0.6,1.4-1.4,1.4C17.6,7,17,6.4,17,5.6s0.6-1.4,1.4-1.4C19.2,4.2,19.8,4.8,19.8,5.6z" />
+              </svg>
+              <span>Instagram</span></a>
+            <a href="http://www.facebook.com/visionarydays">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"
+                xml:space="preserve">
+                <path class="st0" d="M22.7,0H1.3C0.6,0,0,0.6,0,1.3v21.4C0,23.4,0.6,24,1.3,24h11.5v-9.3H9.7v-3.6h3.1V8.4c0-3.1,1.9-4.8,4.7-4.8
                                 c1.3,0,2.5,0.1,2.8,0.1V7h-1.9c-1.5,0-1.8,0.7-1.8,1.8v2.3h3.6l-0.5,3.6h-3.1V24h6.1c0.7,0,1.3-0.6,1.3-1.3V1.3
-                                C24,0.6,23.4,0,22.7,0"
-                  />
-                </svg>
-                <span>Facebook</span></a
-              >
-              <a href="http://twitter.com/VisionaryDays">
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24" xml:space="preserve">
-                  <path
-                    class="st0"
-                    d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6
+                                C24,0.6,23.4,0,22.7,0" />
+              </svg>
+              <span>Facebook</span></a>
+            <a href="http://twitter.com/VisionaryDays">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 24 24"
+                xml:space="preserve">
+                <path class="st0" d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6
                                 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.6,3.2C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1
                                 c-0.8,0-1.6-0.2-2.2-0.6v0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4
                                 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.6,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6
-                                C22.5,6.4,23.3,5.6,24,4.6C24,4.6,24,4.6,24,4.6z"
-                  />
-                </svg>
-                <span>Twitter</span></a
-              >
-            </div>
+                                C22.5,6.4,23.3,5.6,24,4.6C24,4.6,24,4.6,24,4.6z" />
+              </svg>
+              <span>Twitter</span></a>
           </div>
-          <div id="footer-bottom-links">
+        </div>
+        <div id="footer-bottom-links">
+          <div>
+            <span>© 2020 Visionary. Tutti i diritti riservati.</span>
+          </div>
+          <div>
             <div>
-              <span>© 2020 Visionary. Tutti i diritti riservati.</span>
+              <span><a href="mailto:info@visionarydays.com">info@visionarydays.com</a></span>
             </div>
             <div>
-              <div>
-                <span><a href="mailto:info@visionarydays.com">info@visionarydays.com</a></span>
-              </div>
-              <div>
-                <span><a href="assets/mediakit.zip">Media Kit</a></span>
-                <span><a href="privacy.html">Informativa Privacy</a></span>
-                <span><a href="cookie.html">Cookies</a></span>
-              </div>
+              <span><a href="assets/mediakit.zip">Media Kit</a></span>
+              <span><a href="privacy.html">Informativa Privacy</a></span>
+              <span><a href="cookie.html">Cookies</a></span>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.3/velocity.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.3/velocity.ui.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/general.js"></script>
-    <style>
-      .demo-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 30px;
-        text-align: center;
-        color: black;
-        font-weight: bold;
-        font-family: sans-serif;
-        background-color: white;
-        z-index: 2000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.3/velocity.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.3/velocity.ui.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/general.js"></script>
+  <style>
+    .demo-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      color: black;
+      font-weight: bold;
+      font-family: sans-serif;
+      background-color: white;
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-      body.demo {
-        padding-top: 30px !important;
-      }
-    </style>
-    <script>
-      var el = document.createElement('div');
-      el.classList.add('demo-bar');
-      el.textContent = 'For demo purposes only';
-      document.body.prepend(el);
-      document.body.classList.add('demo');
-    </script>
-  </body>
+    body.demo {
+      padding-top: 30px !important;
+    }
+  </style>
+  <script>
+    var el = document.createElement('div');
+    el.classList.add('demo-bar');
+    el.textContent = 'For demo purposes only';
+    document.body.prepend(el);
+    document.body.classList.add('demo');
+  </script>
+</body>
+
 </html>

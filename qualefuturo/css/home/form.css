@@ -1,0 +1,181 @@
+form .input-container input::placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+form .input-container input:-ms-input-placeholder {
+  color: white;
+  opacity: 0.5;
+}
+
+form input:focus {
+  outline: none;
+}
+
+form .input-container {
+  font-family: GTAmerica, sans-serif;
+  font-weight: 600;
+  font-stretch: semi-expanded;
+  font-size: 2rem;
+}
+
+form .input-container input {
+  background-color: #ffffff21;
+  border: none;
+  width: 100%;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-stretch: semi-expanded;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+form .input-container input.error {
+  border: 1px solid #8b3a3a;
+}
+
+/* AUTOCOMPLETE */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill {
+  -webkit-text-fill-color: #ffffff !important;
+  box-shadow: 0 0 0px 1px #ffffff21 inset !important;
+  transition: background-color 5000s ease-in-out 0s !important;
+}
+
+/* CHECKBOX */
+form .checkbox-container {
+  display: block;
+  position: relative;
+  max-width: 400px;
+}
+
+form .checkbox-container label {
+  position: relative;
+  padding-left: 2.5rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+form .checkbox-container.error .checkmark {
+  border: 2px solid #8b3a3a;
+}
+
+form .checkbox-container a {
+  color: #7d7d7d;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 21px;
+  width: 21px;
+  background-color: transparent;
+  border: 2px solid #626262;
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.checkbox-container:hover input ~ .checkmark {
+  border-color: white;
+}
+
+.checkbox-container input:checked ~ .checkmark {
+  border-color: white;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-container .checkmark:after {
+  left: 6px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/* SUBMIT FEETDBACK */
+.text-error {
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  color: #8B3A3A;
+  font-family: "GTAmerica", sans-serif;
+  font-weight: 900;
+}
+
+#form-container {
+  position: relative;
+}
+
+#form-container #form-success {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background-color: #05050f;
+  z-index: 2;
+}
+
+#form-container #form-error {
+  display: none;
+  text-align: center;
+}
+
+#form-container #form-error .text-error {
+  display: none;
+}
+
+#form-container.success #form-success {
+  display: flex;
+}
+
+#form-container.error #form-error {
+  display: block;
+}
+
+@media (max-width: 767px) {
+  #submit-container {
+    flex-direction: column-reverse !important;
+    align-items: center !important;
+  }
+
+  #submit-button-container {
+    width: 100%;
+  }
+
+  form .input-container input {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  form .checkbox-container {
+    max-width: 100%;
+  }
+}

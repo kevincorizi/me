@@ -1,0 +1,174 @@
+.grid-expand-content {
+  padding: 4rem;
+  padding-top: 0;
+}
+
+.grid-report-icon {
+  max-width: 160px;
+  margin: 5rem 0;
+}
+
+.grid-report-icon img {
+  max-width: 100%;
+}
+
+.grid-border {
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  width: calc(100% - 30px);
+  border-bottom: 2px solid white;
+  opacity: 0.38;
+}
+
+.grid-report-title {
+  font-family: GTAmerica, sans-serif;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  line-height: 2.5rem;
+  letter-spacing: 1px;
+}
+
+.grid-report-block-text {
+  font-family: GTAmerica, sans-serif;
+  color: white;
+  font-size: 2rem;
+}
+
+.grid-report-title-small {
+  font-family: GTAmerica, sans-serif;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+  padding-bottom: 1.25rem;
+}
+
+.grid-topic-title {
+  font-family: GTAmerica, sans-serif;
+  color: white;
+  font-weight: normal;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+
+  line-height: 1.25;
+}
+
+.grid-topic-option-container {
+  padding-bottom: 5px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.grid-topic-row:last-child .grid-topic-option-container {
+  padding-bottom: 1rem;
+}
+
+.grid-topic-row:last-child .grid-topic-option-container .grid-topic-option-name {
+  text-transform: none;
+  font-weight: normal;
+}
+
+.grid-topic-option-name {
+  font-family: GTAmerica, sans-serif;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+}
+
+.grid-topic-option-value {
+  font-family: GTAmerica, sans-serif;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+  opacity: 0.5;
+}
+
+.grid-chevron {
+  width: 2rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 1199px) {
+  .grid-content-begin {
+    padding-top: 175px;
+  }
+}
+
+@media (max-width: 991px) {
+  .grid-topic-options-container .grid-topic-option-container:last-child {
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.38);
+  }
+}
+
+@media (max-width: 767px) {
+  .grid-report-title-small {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .grid-topic-title {
+    font-size: 1.5rem;
+    letter-spacing: 0.15rem;
+  }
+
+  .grid-report-title {
+    font-size: 2rem;
+    line-height: 2.1rem;
+  }
+
+  .grid-topic-option-name,
+  .grid-topic-option-value {
+    font-size: 1.1rem;
+    letter-spacing: 0.11rem;
+  }
+
+  .grid-report-block-text {
+    font-family: GTAmerica, sans-serif;
+    color: white;
+    font-size: 1.5rem;
+    font-stretch: semi-expanded;
+  }
+
+  .grid-expand-content {
+    padding: 1.5rem;
+    padding-top: 0;
+  }
+
+  .grid-content-begin {
+    padding: 3rem 0;
+    margin: 3rem 0;
+    margin-bottom: 3rem;
+    border-top: 2px solid rgba(255, 255, 255, 0.38);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.38);
+  }
+
+  .grid-content-begin > .col-12 {
+    padding: 0;
+  }
+
+  #grid-container .grid-container:nth-child(1) .grid-expand-content {
+    padding-top: var(--grid-cell-mobile-height-1);
+  }
+
+  #grid-container .grid-container:nth-child(2) .grid-expand-content {
+    padding-top: var(--grid-cell-mobile-height-2);
+  }
+
+  #grid-container .grid-container:nth-child(3) .grid-expand-content {
+    padding-top: var(--grid-cell-mobile-height-3);
+  }
+
+  #grid-container .grid-container:nth-child(4) .grid-expand-content {
+    padding-top: var(--grid-cell-mobile-height-4);
+  }
+}

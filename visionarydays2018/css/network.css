@@ -1,0 +1,147 @@
+#network-wrapper {
+  max-width: 1800px;
+  margin: auto;
+  padding-left: 20vw;
+}
+
+@media (max-width: 1200px) {
+  #network-wrapper {
+    max-width: 1000px;
+    padding-left: 0;
+  }
+}
+
+#intro {
+  width: 45vw;
+  min-width: 600px;
+}
+
+@media (max-width: 600px) {
+  #intro {
+    min-width: 100%;
+  }
+}
+
+#text-intro {
+  color: #8c8c8c;
+  height: 100vh;
+  position: relative;
+  font-size: 3vw;
+  font-family: Kamerik;
+  margin-top: -40px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 1199px) {
+  #text-intro {
+    margin-top: 0;
+  }
+}
+
+#text-box {
+  max-width: 510px;
+}
+
+.white {
+  color: white;
+  font-style: normal;
+}
+
+#logos {
+  font-family: Kamerik;
+  font-size: 75%;
+  color: #a6a6a6;
+  background-color: #171717;
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.logos-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.logo-section {
+  margin: 5% 0;
+}
+
+.logo-wrapper {
+  width: 15%;
+  margin-right: 10%;
+  margin-top: 5%;
+  min-width: 148.5px;
+}
+
+.logo-content {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.logo-content a {
+  max-width: 100%;
+  display: block;
+}
+
+.logo-content img {
+  max-width: 100%;
+  filter: opacity(0);
+  transition: filter 2s ease-in-out;
+  -webkit-transition: filter 2s ease-in-out;
+}
+
+.line {
+  position: relative;
+  z-index: 2;
+  text-align: left;
+  margin-right: 7%;
+}
+.line:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  right: 0;
+  border-top: solid 1px #313131;
+  z-index: -1;
+}
+.inline-text {
+  margin: 0;
+  padding-right: 10px;
+  background: #171717;
+  display: inline-block;
+}
+
+@media screen and (min-width: 650px) {
+  #text-intro {
+    font-size: 121%;
+  }
+}
+
+@media screen and (max-width: 534px) {
+  #text-intro {
+    font-size: 17.5px;
+  }
+  .logos {
+    margin-top: 2.5vh;
+  }
+
+  .logos-wrapper {
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo-section:last-child {
+    margin-bottom: 10%;
+  }
+  #text-intro {
+    text-align: left;
+  }
+}

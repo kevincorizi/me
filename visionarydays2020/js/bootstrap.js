@@ -4,11 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined'
-    ? factory(exports, require('jquery'), require('popper.js'))
-    : typeof define === 'function' && define.amd
-      ? define(['exports', 'jquery', 'popper.js'], factory)
-      : ((global = global || self), factory((global.bootstrap = {}), global.jQuery, global.Popper));
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('jquery'), require('popper.js')) : typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) : ((global = global || self), factory((global.bootstrap = {}), global.jQuery, global.Popper));
 })(this, function (exports, $, Popper) {
   'use strict';
 
@@ -198,12 +194,7 @@
           var valueType = value && Util.isElement(value) ? 'element' : toType(value);
 
           if (!new RegExp(expectedTypes).test(valueType)) {
-            throw new Error(
-              componentName.toUpperCase() +
-                ': ' +
-                ('Option "' + property + '" provided type "' + valueType + '" ') +
-                ('but expected type "' + expectedTypes + '".')
-            );
+            throw new Error(componentName.toUpperCase() + ': ' + ('Option "' + property + '" provided type "' + valueType + '" ') + ('but expected type "' + expectedTypes + '".'));
           }
         }
       }
@@ -461,12 +452,7 @@
             }
 
             if (triggerChangeEvent) {
-              if (
-                input.hasAttribute('disabled') ||
-                rootElement.hasAttribute('disabled') ||
-                input.classList.contains('disabled') ||
-                rootElement.classList.contains('disabled')
-              ) {
+              if (input.hasAttribute('disabled') || rootElement.hasAttribute('disabled') || input.classList.contains('disabled') || rootElement.classList.contains('disabled')) {
                 return;
               }
 
@@ -1211,9 +1197,7 @@
         this._isTransitioning = false;
         this._element = element;
         this._config = this._getConfig(config);
-        this._triggerArray = [].slice.call(
-          document.querySelectorAll('[data-toggle="collapse"][href="#' + element.id + '"],' + ('[data-toggle="collapse"][data-target="#' + element.id + '"]'))
-        );
+        this._triggerArray = [].slice.call(document.querySelectorAll('[data-toggle="collapse"][href="#' + element.id + '"],' + ('[data-toggle="collapse"][data-target="#' + element.id + '"]')));
         var toggleList = [].slice.call(document.querySelectorAll(Selector$3.DATA_TOGGLE));
 
         for (var i = 0, len = toggleList.length; i < len; i++) {
@@ -1894,11 +1878,7 @@
             continue;
           }
 
-          if (
-            event &&
-            ((event.type === 'click' && /input|textarea/i.test(event.target.tagName)) || (event.type === 'keyup' && event.which === TAB_KEYCODE)) &&
-            $.contains(parent, event.target)
-          ) {
+          if (event && ((event.type === 'click' && /input|textarea/i.test(event.target.tagName)) || (event.type === 'keyup' && event.which === TAB_KEYCODE)) && $.contains(parent, event.target)) {
             continue;
           }
 
@@ -1939,13 +1919,7 @@
         //  - If key is other than escape
         //    - If key is not up or down => not a dropdown command
         //    - If trigger inside the menu => not a dropdown command
-        if (
-          /input|textarea/i.test(event.target.tagName)
-            ? event.which === SPACE_KEYCODE ||
-              (event.which !== ESCAPE_KEYCODE &&
-                ((event.which !== ARROW_DOWN_KEYCODE && event.which !== ARROW_UP_KEYCODE) || $(event.target).closest(Selector$4.MENU).length))
-            : !REGEXP_KEYDOWN.test(event.which)
-        ) {
+        if (/input|textarea/i.test(event.target.tagName) ? event.which === SPACE_KEYCODE || (event.which !== ESCAPE_KEYCODE && ((event.which !== ARROW_DOWN_KEYCODE && event.which !== ARROW_UP_KEYCODE) || $(event.target).closest(Selector$4.MENU).length)) : !REGEXP_KEYDOWN.test(event.which)) {
           return;
         }
 
@@ -3499,8 +3473,7 @@
     placement: 'right',
     trigger: 'click',
     content: '',
-    template:
-      '<div class="popover" role="tooltip">' + '<div class="arrow"></div>' + '<h3 class="popover-header"></h3>' + '<div class="popover-body"></div></div>',
+    template: '<div class="popover" role="tooltip">' + '<div class="arrow"></div>' + '<h3 class="popover-header"></h3>' + '<div class="popover-body"></div></div>',
   });
 
   var DefaultType$5 = _objectSpread({}, Tooltip.DefaultType, {
@@ -3735,13 +3708,7 @@
         this._element = element;
         this._scrollElement = element.tagName === 'BODY' ? window : element;
         this._config = this._getConfig(config);
-        this._selector =
-          this._config.target +
-          ' ' +
-          Selector$8.NAV_LINKS +
-          ',' +
-          (this._config.target + ' ' + Selector$8.LIST_ITEMS + ',') +
-          (this._config.target + ' ' + Selector$8.DROPDOWN_ITEMS);
+        this._selector = this._config.target + ' ' + Selector$8.NAV_LINKS + ',' + (this._config.target + ' ' + Selector$8.LIST_ITEMS + ',') + (this._config.target + ' ' + Selector$8.DROPDOWN_ITEMS);
         this._offsets = [];
         this._targets = [];
         this._activeTarget = null;
@@ -3875,10 +3842,7 @@
         var offsetLength = this._offsets.length;
 
         for (var i = offsetLength; i--; ) {
-          var isActiveTarget =
-            this._activeTarget !== this._targets[i] &&
-            scrollTop >= this._offsets[i] &&
-            (typeof this._offsets[i + 1] === 'undefined' || scrollTop < this._offsets[i + 1]);
+          var isActiveTarget = this._activeTarget !== this._targets[i] && scrollTop >= this._offsets[i] && (typeof this._offsets[i + 1] === 'undefined' || scrollTop < this._offsets[i + 1]);
 
           if (isActiveTarget) {
             this._activate(this._targets[i]);
@@ -4051,10 +4015,7 @@
       _proto.show = function show() {
         var _this = this;
 
-        if (
-          (this._element.parentNode && this._element.parentNode.nodeType === Node.ELEMENT_NODE && $(this._element).hasClass(ClassName$9.ACTIVE)) ||
-          $(this._element).hasClass(ClassName$9.DISABLED)
-        ) {
+        if ((this._element.parentNode && this._element.parentNode.nodeType === Node.ELEMENT_NODE && $(this._element).hasClass(ClassName$9.ACTIVE)) || $(this._element).hasClass(ClassName$9.DISABLED)) {
           return;
         }
 
@@ -4118,10 +4079,7 @@
       _proto._activate = function _activate(element, container, callback) {
         var _this2 = this;
 
-        var activeElements =
-          container && (container.nodeName === 'UL' || container.nodeName === 'OL')
-            ? $(container).find(Selector$9.ACTIVE_UL)
-            : $(container).children(Selector$9.ACTIVE);
+        var activeElements = container && (container.nodeName === 'UL' || container.nodeName === 'OL') ? $(container).find(Selector$9.ACTIVE_UL) : $(container).children(Selector$9.ACTIVE);
         var active = activeElements[0];
         var isTransitioning = callback && active && $(active).hasClass(ClassName$9.FADE);
 
@@ -4468,11 +4426,7 @@
     var minPatch = 1;
     var maxMajor = 4;
 
-    if (
-      (version[0] < ltMajor && version[1] < minMinor) ||
-      (version[0] === minMajor && version[1] === minMinor && version[2] < minPatch) ||
-      version[0] >= maxMajor
-    ) {
+    if ((version[0] < ltMajor && version[1] < minMinor) || (version[0] === minMajor && version[1] === minMinor && version[2] < minPatch) || version[0] >= maxMajor) {
       throw new Error("Bootstrap's JavaScript requires at least jQuery v1.9.1 but less than v4.0.0");
     }
   })();

@@ -1,0 +1,88 @@
+:root {
+  font-size: 12px;
+  --window-height: 90vh;
+  --header-height: 130px;
+  --header-mobile-height: 90px;
+  --qf-container-padding-x: 3rem;
+  --qf-container-mobile-padding-x: 1.5rem;
+  --grid-total-height: auto;
+  --grid-cell-mobile-height-1: auto;
+  --grid-cell-mobile-height-2: auto;
+  --grid-cell-mobile-height-3: auto;
+  --grid-cell-mobile-height-4: auto;
+  --grid-cell-max-height: auto;
+  --scrollbar-width: 8px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.18);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #05050f;
+}
+
+.qf-container {
+  max-width: 1900px;
+  padding-left: var(--qf-container-padding-x);
+  padding-right: var(--qf-container-padding-x);
+  margin: auto;
+}
+
+.spacer {
+  padding: 5rem 0;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.w-66 {
+  width: 66%!important;
+}
+
+/* SCROLLBAR */
+::-webkit-scrollbar-track {
+  border-radius: var(--scrollbar-width);
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: var(--scrollbar-width);
+  background-color: rgba(255, 255, 255, 0.18);
+}
+
+/* OVERRIDES */
+:focus {
+  outline: none !important;
+}
+
+@media (min-width: 992px) {
+  .w-lg-75 {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 767px) {
+  .qf-container {
+    padding-left: var(--qf-container-mobile-padding-x);
+    padding-right: var(--qf-container-mobile-padding-x);
+  }
+
+  .spacer {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 575px) {
+  .w-sm-100 {
+    width: 100% !important;
+  }
+}

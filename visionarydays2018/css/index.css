@@ -1,0 +1,267 @@
+@font-face {
+  font-family: "Kamerik";
+  src: url("assets/Kamerik_205/Kamerik 205 Book.ttf");
+}
+@font-face {
+  font-family: "KamerikBold";
+  src: url("assets/Kamerik_205/Kamerik 205 Bold.ttf");
+}
+
+html {
+  background-color: #171717;
+}
+
+body {
+  background-color: #171717;
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+main {
+  padding: 40px 40px 0 40px;
+}
+
+@keyframes delay-overflow {
+  from {
+    overflow-y: hidden;
+  }
+}
+
+header {
+  overflow: hidden;
+  position: fixed;
+  z-index: 2001;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 40px;
+  opacity: 0;
+}
+
+#logo-container {
+  max-width: 160px;
+  float: left;
+}
+
+#logo-container img {
+  max-width: 100%;
+  width: 100%;
+}
+
+#menu-container {
+  float: right;
+  display: flex;
+  margin-right: -10px;
+}
+
+#menu-container button {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0 10px;
+  cursor: pointer;
+  font-family: KamerikBold;
+  font-size: 15px;
+  line-height: 10px;
+}
+
+#anchors {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 40px;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  opacity: 0;
+}
+
+a.list-group-item {
+  color: white;
+  padding: 5px 0;
+  background: none !important;
+  border: none;
+  font-family: Kamerik;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+a.list-group-item:hover {
+  color: #bdbdbd;
+}
+
+a.list-group-item.active {
+  color: #ff494d !important;
+}
+
+.social-container {
+  z-index: 2001;
+  opacity: 0;
+}
+
+#copyright-container {
+  color: white;
+  opacity: 0;
+  font-size: 14px;
+  font-family: Kamerik;
+  letter-spacing: 1px;
+  margin-left: 40px;
+}
+
+#button-menu {
+  display: none;
+}
+
+#button-menu.active {
+  color: #ff494d;
+}
+
+body.active:not(.no-animation) header {
+  transition: opacity 1s 4s ease;
+}
+
+body.active header {
+  opacity: 1;
+}
+
+body.active:not(.no-animation) #anchors {
+  transition: opacity 1s 4s ease;
+}
+
+body.active #anchors {
+  opacity: 1;
+}
+
+body.active:not(.no-animation) .social-container {
+  transition: opacity 1s 4s ease;
+}
+
+body.active .social-container {
+  opacity: 1;
+}
+
+body.active #copyright-container {
+  opacity: 1;
+}
+
+.network {
+  margin-top: calc(2 * 1em);
+}
+
+.hide {
+  display: none !important;
+}
+
+#mobile-menu {
+  display: none;
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background: #171717;
+  z-index: 1999;
+  transition: top 0.5s ease;
+  padding: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mobile-menu.active {
+  top: 0;
+}
+
+#mobile-menu-content {
+  width: 81vw;
+  max-width: 100%;
+  margin-top: -50px;
+}
+
+#mobile-menu-content a {
+  display: block;
+  font-size: 20px;
+  color: white;
+  padding: 5px 0;
+  font-family: KamerikBold;
+}
+
+#mobile-menu-footer {
+  color: #717171;
+  font-size: 15px;
+  letter-spacing: 1px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0;
+  transition: opacity 0.5s 0.5s ease;
+  font-family: KamerikBold;
+}
+
+#mobile-menu.active #mobile-menu-footer {
+  opacity: 1;
+}
+
+footer {
+  font-family: Kamerik;
+  overflow: hidden;
+  padding: 40px;
+  background-color: #1c1c1c;
+}
+
+button span.action-arrow {
+  font-family: Karla;
+  padding-left: 5px;
+}
+
+@media (max-width: 1199px) {
+  main {
+    padding: 0 20px;
+  }
+
+  header {
+    padding: 20px;
+    background-color: #171717;
+  }
+
+  footer {
+    padding: 20px;
+  }
+
+  #button-menu {
+    display: block;
+  }
+
+  #anchors {
+    display: none;
+  }
+
+  #copyright-container,
+  #copyright-container-mock {
+    display: none;
+  }
+
+  #mobile-menu {
+    display: flex;
+  }
+
+  .logo-section:last-child {
+    margin-bottom: 50%;
+  }
+}
+
+body.no-animation #panoramica,
+body.no-animation #agenda,
+body.no-animation #partecipa,
+body.no-animation footer {
+  display: block !important;
+}
+
+body.no-animation #hero-action button {
+  cursor: pointer !important;
+}

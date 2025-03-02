@@ -1,416 +1,411 @@
 <!doctype html>
 <html>
-  <head>
-    <!-- Configure multi-demo domain -->
-    <base href="https://kevincorizi.github.io/me/visionarydays2017/" />
 
-    <title>DEMO - Orario | VisionaryDays 2017</title>
-    <meta name="viewport" content="width=device-width" />
-    <meta charset="utf-8" />
-    <meta name="description" content="" />
-    <meta name="author" content="Kevin Corizi (kevincorizi@outlook.com)" />
+<head>
+  <base href="https://kevincorizi.github.io/me/visionarydays2017/" />
+  <title>DEMO - Orario | VisionaryDays 2017</title>
+  <meta name="viewport" content="width=device-width" />
 
-    <meta name="theme-color" content="#250838" />
-    <meta name="msapplication-navbutton-color" content="#250838" />
-    <meta name="mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/timetable.css" />
+</head>
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
-    <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/timetable.css" />
-  </head>
-  <body>
-    <header>
-      <nav class="navbar navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">&#8801;</button>
-            <a class="navbar-brand" href="index.html"><img src="assets/logo/small.png" alt="VisionaryDays 2017" /></a>
-          </div>
-          <div class="collapse navbar-collapse" id="main-menu">
-            <ul class="nav navbar-nav navbar-right">
-              <li>
-                <a href="index.html">home</a>
-              </li>
-              <li>
-                <a href="agenda.html" style="text-decoration: underline">agenda</a>
-              </li>
-              <li>
-                <a href="team.html">chi siamo</a>
-              </li>
-              <li>
-                <a href="network.html">network</a>
-              </li>
-            </ul>
-            <ul id="menu-social">
-              <li>
-                <a href="https://www.facebook.com/visionarydays/" target="_blank"><img src="assets/img/facebook.png" alt="Facebook" /></a>
-              </li>
-              <li>
-                <a href="https://medium.com/@visionarydays" target="_blank"><img src="assets/img/medium.png" alt="Medium" /></a>
-              </li>
-              <li>
-                <a href="https://in.linkedin.com/company/visionary-days" target="_blank"><img src="assets/img/linkedin.png" alt="LinkedIn" /></a>
-              </li>
-            </ul>
-          </div>
+<body>
+  <header>
+    <nav class="navbar navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">&#8801;</button>
+          <a class="navbar-brand" href="index.html"><img src="assets/logo/small.png" alt="VisionaryDays 2017" /></a>
         </div>
-      </nav>
-    </header>
-    <aside>
-      <div id="location">
-        <p>11 Novembre 2017</p>
-        <p>Torino, Lingotto Fiere, Sala Gialla</p>
-      </div>
-      <div id="schedule">
-        <ul>
-          <li class="schedule-entry active">
-            <a href="agenda.html#accredito">
-              <div class="schedule-entry-content">
-                <p class="schedule-entry-name">
-                  <span>Accredito</span>
-                </p>
-                <p class="schedule-entry-time">h 9.00</p>
-              </div>
-            </a>
-          </li>
-          <li class="schedule-entry">
-            <a href="agenda.html#apertura">
-              <div class="schedule-entry-content">
-                <p class="schedule-entry-name">
-                  <span>Apertura e benvenuto</span>
-                </p>
-                <p class="schedule-entry-time">h 10.00</p>
-              </div>
-            </a>
-          </li>
-          <li class="schedule-entry">
-            <a href="agenda.html#internet-oggetti">
-              <div class="schedule-entry-content">
-                <p class="schedule-entry-name">
-                  <span>Internet degli oggetti</span>
-                  <span>talk + discussione</span>
-                </p>
-                <p class="schedule-entry-time">h 11.00</p>
-              </div>
-            </a>
-          </li>
-          <li class="schedule-entry">
-            <a href="agenda.html#tecnologie">
-              <div class="schedule-entry-content">
-                <p class="schedule-entry-name">
-                  <span>Tecnologie di comunicazione</span>
-                  <span>talk + discussione</span>
-                </p>
-                <p class="schedule-entry-time">h 12.00</p>
-              </div>
-            </a>
-          </li>
-          <li class="schedule-entry schedule-break">
-            <a href="agenda.html#pausa-pranzo">
-              <div class="schedule-entry-content">
-                <p class="schedule-entry-name">
-                  <span>pausa pranzo</span>
-                </p>
-                <p class="schedule-entry-time">h 13.00</p>
-              </div>
-            </a>
-          </li>
-          <li class="schedule-entry">
-            <a href="agenda.html#internet-fiducia">
-              <div class="schedule-entry-content">
-                <p class="schedule-entry-name">
-                  <span>Internet della fiducia</span>
-                  <span>talk + discussione</span>
-                </p>
-                <p class="schedule-entry-time">h 14.30</p>
-              </div>
-            </a>
-          </li>
-          <li class="schedule-entry">
-            <a href="agenda.html#digital-divide">
-              <div class="schedule-entry-content">
-                <p class="schedule-entry-name">
-                  <span>Digital divide</span>
-                  <span>talk + discussione</span>
-                </p>
-                <p class="schedule-entry-time">h 15.30</p>
-              </div>
-            </a>
-          </li>
-          <li class="schedule-entry schedule-break">
-            <a href="agenda.html#coffee-break">
-              <div class="schedule-entry-content">
-                <p class="schedule-entry-name">
-                  <span>coffee break</span>
-                </p>
-                <p class="schedule-entry-time">h 16.30</p>
-              </div>
-            </a>
-          </li>
-          <li class="schedule-entry">
-            <a href="agenda.html#antropologia-digitale">
-              <div class="schedule-entry-content">
-                <p class="schedule-entry-name">
-                  <span>Antropologia digitale</span>
-                  <span>talk + discussione</span>
-                </p>
-                <p class="schedule-entry-time">h 17.00</p>
-              </div>
-            </a>
-          </li>
-          <li class="schedule-entry">
-            <a href="agenda.html#ringraziamenti">
-              <div class="schedule-entry-content">
-                <p class="schedule-entry-name">
-                  <span>Chiusura</span>
-                </p>
-                <p class="schedule-entry-time">h 18.00</p>
-              </div>
-            </a>
-          </li>
-          <li class="schedule-entry">
-            <a href="agenda.html#cena">
-              <div class="schedule-entry-content">
-                <p class="schedule-entry-name">
-                  <span>Apericena\DjSet</span>
-                </p>
-                <p class="schedule-entry-time">h 19.00</p>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </aside>
-    <main>
-      <div class="tab-container">
-        <div class="tab tab-collapsed">
-          <a name="accredito"></a>
-          <div class="tab-main">
-            <p class="tab-title">Accredito</p>
-            <p class="tab-time">h 9.00</p>
-          </div>
-        </div>
-        <div class="tab tab-collapsed">
-          <a name="apertura"></a>
-          <div class="tab-main">
-            <p class="tab-title">Apertura e benvenuto</p>
-            <p class="tab-time">h 10.00</p>
-          </div>
-        </div>
-        <div class="tab tab-collapsed tab-content">
-          <a name="internet-oggetti"></a>
-          <div class="tab-main">
-            <p class="tab-title">Internet degli oggetti</p>
-            <p class="tab-subtitle">Intro di Dario Cottafava, ricercatore IoT e co-fondatore di CREA</p>
-            <p class="tab-time">h 11.00</p>
-          </div>
-          <div class="tab-collapse">
-            <p class="tab-description">
-              Computer e smartphone, ma anche lavatrici, telecamere e semafori: circa 15 miliardi di dispositivi intelligenti connessi tra loro e capaci di
-              pensare, apprendere e comunicare.
-            </p>
-          </div>
-        </div>
-        <div class="tab tab-collapsed tab-content">
-          <a name="tecnologie"></a>
-          <div class="tab-main">
-            <p class="tab-title">Tecnologie di comunicazione</p>
-            <p class="tab-subtitle"></p>
-            <p class="tab-time">h 12.00</p>
-          </div>
-          <div class="tab-collapse">
-            <p class="tab-description">
-              Gli smartphone sono destinati a sparire e a loro succederà la possibilità di vivere in un mondo in cui la vita reale e la tecnologia saranno
-              mescolate senza soluzione di continuità.
-            </p>
-          </div>
-        </div>
-        <div class="tab tab-collapsed">
-          <a name="pausa-pranzo"></a>
-          <div class="tab-main">
-            <p class="tab-title">Pausa pranzo</p>
-            <p class="tab-time">h 13.00</p>
-          </div>
-        </div>
-        <div class="tab tab-collapsed tab-content">
-          <a name="internet-fiducia"></a>
-          <div class="tab-main">
-            <p class="tab-title">Internet della fiducia</p>
-            <p class="tab-subtitle">Intro di Francesca Bosco, cybercriminologa e programme officer UNICRI</p>
-            <p class="tab-time">h 14.30</p>
-          </div>
-          <div class="tab-collapse">
-            <p class="tab-description">
-              Firewall, attacchi DDoS, influenze governative e dati centralizzati: la promessa degli esordi di una rete sicura, aperta, democratica e
-              decentralizzata, rimane ancora un obiettivo futuribile.
-            </p>
-          </div>
-        </div>
-        <div class="tab tab-collapsed tab-content">
-          <a name="digital-divide"></a>
-          <div class="tab-main">
-            <p class="tab-title">Digital divide</p>
-            <p class="tab-subtitle">Intro di Federico Morello, Young Advisor UE e Digital Trasformation Manager</p>
-            <p class="tab-time">h 15.30</p>
-          </div>
-          <div class="tab-collapse">
-            <p class="tab-description">
-              Il 57% della popolazione mondiale è esclusa da Internet: la sfida è trasformare l’accesso alla rete e alle informazioni da privilegio a diritto
-              fondamentale, come l’acqua potabile?
-            </p>
-          </div>
-        </div>
-        <div class="tab tab-collapsed">
-          <a name="coffee-break"></a>
-          <div class="tab-main">
-            <p class="tab-title">Coffee break</p>
-            <p class="tab-time">h 16.30</p>
-          </div>
-        </div>
-        <div class="tab tab-collapsed tab-content">
-          <a name="antropologia-digitale"></a>
-          <div class="tab-main">
-            <p class="tab-title">Antropologia digitale</p>
-            <p class="tab-subtitle">Intro di Massimo Temporelli, divulgatore scientifico e fondatore di The Fablab</p>
-            <p class="tab-time">h 17.00</p>
-          </div>
-          <div class="tab-collapse">
-            <p class="tab-description">
-              Cosa vuol dire essere “umani” e comunicare in un'epoca dove siamo circondati dalla tecnologia, ci incontriamo online più che offline e dialoghiamo
-              con degli oggetti.
-            </p>
-          </div>
-        </div>
-        <div class="tab tab-collapsed">
-          <a name="ringraziamenti"></a>
-          <div class="tab-main">
-            <p class="tab-title">Chiusura</p>
-            <p class="tab-time">h 18.00</p>
-          </div>
-        </div>
-        <div class="tab tab-collapsed">
-          <a name="cena"></a>
-          <div class="tab-main">
-            <p class="tab-title">Apericena\DjSet</p>
-            <p class="tab-time">h 19.00</p>
-          </div>
+        <div class="collapse navbar-collapse" id="main-menu">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="index.html">home</a>
+            </li>
+            <li>
+              <a href="agenda.html" style="text-decoration: underline">agenda</a>
+            </li>
+            <li>
+              <a href="team.html">chi siamo</a>
+            </li>
+            <li>
+              <a href="network.html">network</a>
+            </li>
+          </ul>
+          <ul id="menu-social">
+            <li>
+              <a href="https://www.facebook.com/visionarydays/" target="_blank"><img src="assets/img/facebook.png"
+                  alt="Facebook" /></a>
+            </li>
+            <li>
+              <a href="https://medium.com/@visionarydays" target="_blank"><img src="assets/img/medium.png"
+                  alt="Medium" /></a>
+            </li>
+            <li>
+              <a href="https://in.linkedin.com/company/visionary-days" target="_blank"><img
+                  src="assets/img/linkedin.png" alt="LinkedIn" /></a>
+            </li>
+          </ul>
         </div>
       </div>
-    </main>
-    <footer>
-      <nav class="navbar">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <ul id="footer-items">
-              <li>
-                <a href="https://www.facebook.com/visionarydays/" target="_blank">Facebook</a>
-              </li>
-              <li>
-                <a href="https://medium.com/@visionarydays" target="_blank">Medium</a>
-              </li>
-              <li>
-                <a href="https://in.linkedin.com/company/visionary-days" target="_blank">LinkedIn</a>
-              </li>
-              <li>
-                <a href="files/visionarydays_press_kit.zip">Press Kit</a>
-              </li>
-            </ul>
+    </nav>
+  </header>
+  <aside>
+    <div id="location">
+      <p>11 Novembre 2017</p>
+      <p>Torino, Lingotto Fiere, Sala Gialla</p>
+    </div>
+    <div id="schedule">
+      <ul>
+        <li class="schedule-entry active">
+          <a href="agenda.html#accredito">
+            <div class="schedule-entry-content">
+              <p class="schedule-entry-name">
+                <span>Accredito</span>
+              </p>
+              <p class="schedule-entry-time">h 9.00</p>
+            </div>
+          </a>
+        </li>
+        <li class="schedule-entry">
+          <a href="agenda.html#apertura">
+            <div class="schedule-entry-content">
+              <p class="schedule-entry-name">
+                <span>Apertura e benvenuto</span>
+              </p>
+              <p class="schedule-entry-time">h 10.00</p>
+            </div>
+          </a>
+        </li>
+        <li class="schedule-entry">
+          <a href="agenda.html#internet-oggetti">
+            <div class="schedule-entry-content">
+              <p class="schedule-entry-name">
+                <span>Internet degli oggetti</span>
+                <span>talk + discussione</span>
+              </p>
+              <p class="schedule-entry-time">h 11.00</p>
+            </div>
+          </a>
+        </li>
+        <li class="schedule-entry">
+          <a href="agenda.html#tecnologie">
+            <div class="schedule-entry-content">
+              <p class="schedule-entry-name">
+                <span>Tecnologie di comunicazione</span>
+                <span>talk + discussione</span>
+              </p>
+              <p class="schedule-entry-time">h 12.00</p>
+            </div>
+          </a>
+        </li>
+        <li class="schedule-entry schedule-break">
+          <a href="agenda.html#pausa-pranzo">
+            <div class="schedule-entry-content">
+              <p class="schedule-entry-name">
+                <span>pausa pranzo</span>
+              </p>
+              <p class="schedule-entry-time">h 13.00</p>
+            </div>
+          </a>
+        </li>
+        <li class="schedule-entry">
+          <a href="agenda.html#internet-fiducia">
+            <div class="schedule-entry-content">
+              <p class="schedule-entry-name">
+                <span>Internet della fiducia</span>
+                <span>talk + discussione</span>
+              </p>
+              <p class="schedule-entry-time">h 14.30</p>
+            </div>
+          </a>
+        </li>
+        <li class="schedule-entry">
+          <a href="agenda.html#digital-divide">
+            <div class="schedule-entry-content">
+              <p class="schedule-entry-name">
+                <span>Digital divide</span>
+                <span>talk + discussione</span>
+              </p>
+              <p class="schedule-entry-time">h 15.30</p>
+            </div>
+          </a>
+        </li>
+        <li class="schedule-entry schedule-break">
+          <a href="agenda.html#coffee-break">
+            <div class="schedule-entry-content">
+              <p class="schedule-entry-name">
+                <span>coffee break</span>
+              </p>
+              <p class="schedule-entry-time">h 16.30</p>
+            </div>
+          </a>
+        </li>
+        <li class="schedule-entry">
+          <a href="agenda.html#antropologia-digitale">
+            <div class="schedule-entry-content">
+              <p class="schedule-entry-name">
+                <span>Antropologia digitale</span>
+                <span>talk + discussione</span>
+              </p>
+              <p class="schedule-entry-time">h 17.00</p>
+            </div>
+          </a>
+        </li>
+        <li class="schedule-entry">
+          <a href="agenda.html#ringraziamenti">
+            <div class="schedule-entry-content">
+              <p class="schedule-entry-name">
+                <span>Chiusura</span>
+              </p>
+              <p class="schedule-entry-time">h 18.00</p>
+            </div>
+          </a>
+        </li>
+        <li class="schedule-entry">
+          <a href="agenda.html#cena">
+            <div class="schedule-entry-content">
+              <p class="schedule-entry-name">
+                <span>Apericena\DjSet</span>
+              </p>
+              <p class="schedule-entry-time">h 19.00</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <main>
+    <div class="tab-container">
+      <div class="tab tab-collapsed">
+        <a name="accredito"></a>
+        <div class="tab-main">
+          <p class="tab-title">Accredito</p>
+          <p class="tab-time">h 9.00</p>
+        </div>
+      </div>
+      <div class="tab tab-collapsed">
+        <a name="apertura"></a>
+        <div class="tab-main">
+          <p class="tab-title">Apertura e benvenuto</p>
+          <p class="tab-time">h 10.00</p>
+        </div>
+      </div>
+      <div class="tab tab-collapsed tab-content">
+        <a name="internet-oggetti"></a>
+        <div class="tab-main">
+          <p class="tab-title">Internet degli oggetti</p>
+          <p class="tab-subtitle">Intro di Dario Cottafava, ricercatore IoT e co-fondatore di CREA</p>
+          <p class="tab-time">h 11.00</p>
+        </div>
+        <div class="tab-collapse">
+          <p class="tab-description">
+            Computer e smartphone, ma anche lavatrici, telecamere e semafori: circa 15 miliardi di dispositivi
+            intelligenti connessi tra loro e capaci di
+            pensare, apprendere e comunicare.
+          </p>
+        </div>
+      </div>
+      <div class="tab tab-collapsed tab-content">
+        <a name="tecnologie"></a>
+        <div class="tab-main">
+          <p class="tab-title">Tecnologie di comunicazione</p>
+          <p class="tab-subtitle"></p>
+          <p class="tab-time">h 12.00</p>
+        </div>
+        <div class="tab-collapse">
+          <p class="tab-description">
+            Gli smartphone sono destinati a sparire e a loro succederà la possibilità di vivere in un mondo in cui la
+            vita reale e la tecnologia saranno
+            mescolate senza soluzione di continuità.
+          </p>
+        </div>
+      </div>
+      <div class="tab tab-collapsed">
+        <a name="pausa-pranzo"></a>
+        <div class="tab-main">
+          <p class="tab-title">Pausa pranzo</p>
+          <p class="tab-time">h 13.00</p>
+        </div>
+      </div>
+      <div class="tab tab-collapsed tab-content">
+        <a name="internet-fiducia"></a>
+        <div class="tab-main">
+          <p class="tab-title">Internet della fiducia</p>
+          <p class="tab-subtitle">Intro di Francesca Bosco, cybercriminologa e programme officer UNICRI</p>
+          <p class="tab-time">h 14.30</p>
+        </div>
+        <div class="tab-collapse">
+          <p class="tab-description">
+            Firewall, attacchi DDoS, influenze governative e dati centralizzati: la promessa degli esordi di una rete
+            sicura, aperta, democratica e
+            decentralizzata, rimane ancora un obiettivo futuribile.
+          </p>
+        </div>
+      </div>
+      <div class="tab tab-collapsed tab-content">
+        <a name="digital-divide"></a>
+        <div class="tab-main">
+          <p class="tab-title">Digital divide</p>
+          <p class="tab-subtitle">Intro di Federico Morello, Young Advisor UE e Digital Trasformation Manager</p>
+          <p class="tab-time">h 15.30</p>
+        </div>
+        <div class="tab-collapse">
+          <p class="tab-description">
+            Il 57% della popolazione mondiale è esclusa da Internet: la sfida è trasformare l’accesso alla rete e alle
+            informazioni da privilegio a diritto
+            fondamentale, come l’acqua potabile?
+          </p>
+        </div>
+      </div>
+      <div class="tab tab-collapsed">
+        <a name="coffee-break"></a>
+        <div class="tab-main">
+          <p class="tab-title">Coffee break</p>
+          <p class="tab-time">h 16.30</p>
+        </div>
+      </div>
+      <div class="tab tab-collapsed tab-content">
+        <a name="antropologia-digitale"></a>
+        <div class="tab-main">
+          <p class="tab-title">Antropologia digitale</p>
+          <p class="tab-subtitle">Intro di Massimo Temporelli, divulgatore scientifico e fondatore di The Fablab</p>
+          <p class="tab-time">h 17.00</p>
+        </div>
+        <div class="tab-collapse">
+          <p class="tab-description">
+            Cosa vuol dire essere “umani” e comunicare in un'epoca dove siamo circondati dalla tecnologia, ci
+            incontriamo online più che offline e dialoghiamo
+            con degli oggetti.
+          </p>
+        </div>
+      </div>
+      <div class="tab tab-collapsed">
+        <a name="ringraziamenti"></a>
+        <div class="tab-main">
+          <p class="tab-title">Chiusura</p>
+          <p class="tab-time">h 18.00</p>
+        </div>
+      </div>
+      <div class="tab tab-collapsed">
+        <a name="cena"></a>
+        <div class="tab-main">
+          <p class="tab-title">Apericena\DjSet</p>
+          <p class="tab-time">h 19.00</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <nav class="navbar">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <ul id="footer-items">
+            <li>
+              <a href="https://www.facebook.com/visionarydays/" target="_blank">Facebook</a>
+            </li>
+            <li>
+              <a href="https://medium.com/@visionarydays" target="_blank">Medium</a>
+            </li>
+            <li>
+              <a href="https://in.linkedin.com/company/visionary-days" target="_blank">LinkedIn</a>
+            </li>
+            <li>
+              <a href="files/visionarydays_press_kit.zip">Press Kit</a>
+            </li>
+          </ul>
+        </div>
+        <div class="nav navbar-nav navbar-right">
+          <div class="footer-partner-wrapper">
+            <div class="footer-partner-intro">
+              <p>con il patrocinio di</p>
+            </div>
+            <div class="footer-partner-container">
+              <div class="footer-partner">
+                <a href="http://www.comune.torino.it" target="_blank">
+                  <img src="assets/partners/comune%20torino%20nero-07.png" alt="Città di Torino" />
+                </a>
+              </div>
+              <div class="footer-partner">
+                <a href="http://www.agid.gov.it" target="_blank">
+                  <img src="assets/partners/agenda%20digitale%20grigio-08.png" alt="AgID" />
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="nav navbar-nav navbar-right">
+          <div class="footer-partner-group">
             <div class="footer-partner-wrapper">
               <div class="footer-partner-intro">
-                <p>con il patrocinio di</p>
+                <p>evento promosso da</p>
               </div>
               <div class="footer-partner-container">
                 <div class="footer-partner">
-                  <a href="http://www.comune.torino.it" target="_blank">
-                    <img src="assets/partners/comune%20torino%20nero-07.png" alt="Città di Torino" />
-                  </a>
-                </div>
-                <div class="footer-partner">
-                  <a href="http://www.agid.gov.it" target="_blank">
-                    <img src="assets/partners/agenda%20digitale%20grigio-08.png" alt="AgID" />
+                  <a href="http://www.polito.it" target="_blank">
+                    <img src="assets/partners/polito.png" alt="Politecnico di Torino" />
                   </a>
                 </div>
               </div>
             </div>
-            <div class="footer-partner-group">
-              <div class="footer-partner-wrapper">
-                <div class="footer-partner-intro">
-                  <p>evento promosso da</p>
-                </div>
-                <div class="footer-partner-container">
-                  <div class="footer-partner">
-                    <a href="http://www.polito.it" target="_blank">
-                      <img src="assets/partners/polito.png" alt="Politecnico di Torino" />
-                  </a>
-                  </div>
-                </div>
+            <div class="footer-partner-wrapper">
+              <div class="footer-partner-intro">
+                <p>con il sostegno di</p>
               </div>
-              <div class="footer-partner-wrapper">
-                <div class="footer-partner-intro">
-                  <p>con il sostegno di</p>
-                </div>
-                <div class="footer-partner-container">
-                  <div class="footer-partner">
-                    <a href="http://www.compagniadisanpaolo.it" target="_blank">
-                      <img src="assets/partners/compagniasanpaolo.png" alt="Compagnia di San Paolo" />
-                    </a>
-                  </div>
+              <div class="footer-partner-container">
+                <div class="footer-partner">
+                  <a href="http://www.compagniadisanpaolo.it" target="_blank">
+                    <img src="assets/partners/compagniasanpaolo.png" alt="Compagnia di San Paolo" />
+                  </a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </nav>
-      <div id="isMobile"></div>
-      <div id="isTablet"></div>
-    </footer>
+      </div>
+    </nav>
+    <div id="isMobile"></div>
+    <div id="isTablet"></div>
+  </footer>
 
-    <style>
-      .demo-bar {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 30px;
-        text-align: center;
-        color: black;
-        font-weight: bold;
-        font-family: sans-serif;
-        background-color: white;
-        z-index: 2000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
+  <style>
+    .demo-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 30px;
+      text-align: center;
+      color: black;
+      font-weight: bold;
+      font-family: sans-serif;
+      background-color: white;
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-      body.demo {
-        padding-top: 30px !important;
-      }
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/shared.js"></script>
-    <script src="js/animation.js"></script>
-    <script>
-      var el = document.createElement('div');
-      el.classList.add('demo-bar');
-      el.textContent = 'For demo purposes only';
-      document.body.prepend(el);
-      document.body.classList.add('demo');
-    </script>
-  </body>
+    body.demo {
+      padding-top: 30px !important;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/animation.js"></script>
+  <script>
+    var el = document.createElement('div');
+    el.classList.add('demo-bar');
+    el.textContent = 'For demo purposes only';
+    document.body.prepend(el);
+    document.body.classList.add('demo');
+  </script>
+</body>
+
 </html>
