@@ -1,0 +1,505 @@
+/* Author: Kevin Corizi */
+/* kevincorizi@outlook.com */
+
+@font-face {
+  font-family: 'FortesqueRegular';
+  src: url('/me/visionarydays2017/assets/fonts/FortescueProRegular.otf');
+}
+
+@font-face {
+  font-family: 'FortesqueBold';
+  src: url('/me/visionarydays2017/assets/fonts/FortescueProBold.otf');
+}
+
+@media (max-width: 480px) {
+  :root {
+    font-size: 6px !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  :root {
+    font-size: 8px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  :root {
+    font-size: 9px !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1499px) {
+  :root {
+    font-size: 8px !important;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1799px) {
+  :root {
+    font-size: 11px !important;
+  }
+}
+
+@media (min-width: 1800px) {
+  :root {
+    font-size: 12px !important;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  width: 100%;
+  background-image: url("/me/visionarydays2017/background/background.png");
+  background-size: cover;
+  user-select: none;
+}
+
+.noscroll {
+  height: 100%;
+  overflow: hidden;
+}
+
+#isMobile {
+  display: none;
+  color: black;
+}
+
+#isTablet {
+  display: none;
+  color: black;
+}
+
+header > nav {
+  padding: 4rem 8rem;
+}
+
+.anchor-disabled {
+  pointer-events: none;
+}
+
+/* NAVBAR */
+#menu-social {
+  display: none;
+}
+.navbar-brand {
+  padding: 1rem 0px !important;
+  max-width: 20rem;
+  margin-right: 4rem;
+  margin-left: 0 !important;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+nav li {
+  min-height: 3rem;
+  margin: 0 1.5rem;
+  transition: margin 0.5s linear;
+}
+
+nav li > a {
+  color: white;
+  font-size: 1.5rem;
+  font-family: 'Karla', sans-serif;
+  letter-spacing: 2px;
+  padding-top: 0.75rem !important;
+  padding-bottom: 0.75rem !important;
+}
+
+nav li > a:focus,
+nav li > a:hover {
+  text-decoration: underline !important;
+  background-color: transparent !important;
+  color: white;
+}
+
+nav li:nth-child(5) {
+  min-width: 1px;
+  background-color: #6772a0;
+  flex-grow: 0;
+}
+
+header nav li img {
+  max-width: 100% !important;
+}
+
+header .navbar-sub {
+  display: none;
+}
+
+/* MAIN SECTION */
+main {
+  width: calc(100% - 16rem);
+  overflow: hidden;
+  margin: 0 8rem;
+  padding-top: 30rem;
+  margin-bottom: 10rem;
+}
+
+.tab-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.tab {
+  color: white;
+  width: 100%;
+  overflow: hidden;
+  transition: margin-left 1s cubic-bezier(0.9, 0, 0.15, 1);
+  display: flex;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.tab-disable {
+  pointer-events: none !important;
+}
+
+.tab * {
+  color: #dddddd;
+}
+
+/* IL MARGINE TRA TERZO E QUARTO E' TROPPO GRANDE */
+.tab:nth-child(3),
+.tab:nth-child(4) {
+  margin-bottom: 2.5rem;
+}
+
+.tab > a {
+  display: inline-block;
+  position: absolute;
+  top: -30rem;
+}
+
+.tab .tab-main {
+  position: relative;
+  cursor: pointer;
+}
+
+.tab-collapsed {
+  margin-left: 50%;
+}
+
+.tab-collapsed .tab-main {
+  text-align: left;
+}
+
+.tab > div {
+  min-width: 50%;
+  display: inline-block;
+}
+
+.tab-title {
+  font-family: 'FortesqueBold', serif;
+  font-size: 5.5rem;
+  line-height: 5.5rem;
+  font-weight: bolder;
+  color: white;
+}
+
+.tab .tab-main {
+  transition: padding-left 1s cubic-bezier(0.9, 0, 0.15, 1);
+  padding-left: 19rem;
+}
+
+.tab-collapsed .tab-main {
+  padding-left: 0;
+}
+
+.tab-subtitle {
+  font-family: 'Karla', sans-serif;
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
+  transition: opacity 1s;
+  text-align: left;
+}
+
+.tab:nth-child(1) .tab-subtitle {
+  height: 7rem;
+}
+.tab:nth-child(2) .tab-subtitle {
+  height: 14rem;
+}
+.tab:nth-child(3) .tab-subtitle {
+  height: 17.5rem;
+}
+.tab:nth-child(4) .tab-subtitle {
+  height: 17.5rem;
+}
+.tab:nth-child(5) .tab-subtitle {
+  height: 14rem;
+}
+
+.tab .tab-subtitle {
+  opacity: 0;
+}
+
+.tab-collapsed .tab-subtitle {
+  opacity: 1;
+}
+
+.tab-actions {
+  margin-top: 2rem;
+}
+
+.tab-action {
+  font-family: 'Karla', sans-serif;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  cursor: pointer;
+  margin: 0;
+  align-items: center;
+}
+
+.tab-action a:hover,
+.tab-action a:active,
+.tab-action a:visited,
+.tab-action a:focus {
+  color: white;
+  text-decoration: none;
+}
+
+.tab-action-symbol {
+  max-width: 5rem;
+  margin-right: 1.5rem;
+}
+
+.tab-action:hover .tab-action-text,
+.tab-action:active .tab-action-text {
+  color: white;
+  text-decoration: underline;
+}
+
+.tab .tab-arrow {
+  opacity: 0;
+}
+
+.tab-collapsed .tab-arrow {
+  display: block;
+  position: absolute;
+  bottom: 0.5rem;
+  opacity: 0.8;
+  transition: opacity 0.5s 0.5s linear;
+}
+
+.tab-arrow {
+  width: 35%;
+  margin: 0;
+}
+
+.tab-arrow > img {
+  max-width: 100%;
+}
+
+.tab-arrow-small {
+  max-width: 25%;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.tab-arrow-small > img {
+  max-width: 100%;
+}
+
+.tab-collapse {
+  transition: margin-left 1s cubic-bezier(0.9, 0, 0.15, 1);
+  padding-left: 5rem;
+  padding-top: 1.5rem;
+  position: relative;
+  height: 100%;
+}
+
+.tab .tab-collapse {
+  margin-left: 0;
+}
+
+.tab-collapsed .tab-collapse {
+  margin-left: 100%;
+}
+
+.tab-description {
+  font-family: 'Karla', sans-serif;
+  font-size: 2rem;
+}
+
+.tab-description-container {
+  overflow: hidden;
+}
+
+.tab-descriptions {
+  width: 500%;
+  overflow: hidden;
+  margin-left: 0%;
+}
+.tab-descriptions .tab-description {
+  display: inline-block;
+  width: 20%;
+  float: left;
+}
+.tab-description-navigators {
+  float: right;
+  font-family: 'Karla', sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+}
+.tab-description-navigators > div {
+  display: inline-block;
+}
+.tab-navigator-index {
+  margin: 0 1.5rem;
+}
+.tab-navigator-symbol {
+  width: 2rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+#index-candidati {
+  display: none;
+}
+/* FOOTER */
+footer {
+  background-color: #ededf9;
+  padding: 8rem 8rem;
+}
+footer > nav {
+  margin-bottom: 0 !important;
+}
+footer .container-fluid {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+footer .navbar-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+footer .navbar-brand > img {
+  max-width: 100%;
+}
+footer #footer-items {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0 !important;
+}
+footer #footer-items > li {
+  margin: 0rem 2rem;
+}
+footer #footer-items > li:first-child {
+  margin-left: 0;
+}
+footer #footer-items > li > a {
+  color: #3d3d3d;
+  font-weight: 700;
+  line-height: 3rem;
+  font-size: 1.5rem;
+}
+footer .navbar-right {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  flex-grow: 1;
+  justify-content: flex-end;
+  display: flex;
+}
+
+footer .navbar-right p {
+  margin: 0;
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  align-items: center;
+}
+footer .navbar-right p span {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  height: 3rem;
+  display: inline-block;
+}
+footer .navbar-right p a {
+  display: inline-block;
+}
+
+footer .navbar-right img {
+  max-height: 7rem;
+  margin-left: 8rem;
+}
+
+footer .footer-partner-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+footer .footer-partner-wrapper {
+  display: inline-block;
+  margin: 0 2rem;
+}
+
+footer .footer-partner-intro {
+  border-bottom: 1px solid #3d3d3d;
+  padding-bottom: 1rem;
+}
+
+footer .footer-partner-container {
+  padding-top: 4rem;
+}
+
+footer .nav > .footer-partner-wrapper:first-child .footer-partner:first-child {
+  padding-right: 2rem;
+  max-width: 100%;
+  width: 50%;
+}
+footer .nav > .footer-partner-wrapper:first-child .footer-partner:last-child {
+  padding-left: 2rem;
+}
+
+footer .footer-partner {
+  display: inline-block;
+  overflow: hidden;
+}
+footer .footer-partner a {
+  overflow: hidden;
+  display: block;
+}
+footer .nav > .footer-partner-wrapper:first-child .footer-partner {
+  max-width: 50%;
+  float: left;
+  max-width: 50%;
+}
+
+footer .footer-partner img {
+  float: right;
+  margin: 0;
+  max-width: 100%;
+}
+
+@media (max-width: 1200px) {
+  footer .navbar-right img {
+    margin-left: 0;
+  }
+  footer #footer-items > li {
+    margin: 0rem 1rem;
+  }
+  footer #footer-items > li:first-child {
+    margin-left: 0;
+  }
+  .navbar-brand {
+    margin-right: 2rem;
+  }
+}
+.partner > a > img {
+  max-width: 100%;
+}

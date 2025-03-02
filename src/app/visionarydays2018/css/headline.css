@@ -1,0 +1,213 @@
+#headline-section {
+  height: calc(100vh - 160px);
+  margin-top: 40px;
+  position: relative;
+}
+#headline-section .headline-image-container {
+  width: 400%;
+  height: 100%;
+  margin-left: -150%;
+}
+#headline-section img {
+  max-width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+#headline-section .col-12 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+#headline-section .col-8 {
+  overflow: hidden;
+  height: 100%;
+  opacity: 0;
+}
+body.active:not(.no-animation) #headline-section .col-8 {
+  transition: opacity 1s 3.5s ease;
+  opacity: 0.5;
+}
+body.active.no-animation #headline-section .col-8 {
+  opacity: 0.5;
+}
+#hero-text-container {
+  width: 45vw;
+  min-width: 600px;
+}
+#hero-date {
+  font-family: KamerikBold;
+  font-size: 20px;
+  margin-bottom: 15px;
+  letter-spacing: 0.2px;
+}
+#hero-text {
+  overflow: hidden;
+}
+#hero-text > div {
+  position: relative;
+  padding: 6px 15px;
+  margin-bottom: 5px;
+  float: left;
+  clear: both;
+  font-size: 35px;
+  /* transition: font-size 0.5s linear; */
+}
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  width: 100%;
+  background-color: #7500d8;
+}
+#hero-text div:last-child .hero-background {
+  background-color: #ff494d;
+}
+#hero-action .hero-background {
+  background-color: white;
+}
+body.active:not(.no-animation) .hero-background {
+  left: 0;
+}
+body.active:not(.no-animation) #hero-text > div:first-child .hero-background {
+  transition: left 1s 1.5s ease;
+}
+body.active:not(.no-animation) #hero-text > div:nth-child(2) .hero-background {
+  transition: left 1s 2.5s ease;
+}
+body.active:not(.no-animation) #hero-text > div:last-child .hero-background {
+  transition: left 1s 3.5s ease;
+}
+body.active:not(.no-animation) #hero-action .hero-background {
+  transition: left 1s 4.5s ease;
+}
+body.no-animation .hero-background {
+  left: 0;
+}
+#hero-text span {
+  opacity: 0;
+  width: 100%;
+  font-family: KamerikBold;
+  position: relative;
+  font-weight: normal;
+  letter-spacing: 0.6px;
+  display: inline-block;
+}
+body.active #hero-text span {
+  opacity: 1;
+}
+body.active:not(.no-animation) #hero-text div:first-child span {
+  transition: opacity 1s 1.5s ease;
+}
+body.active:not(.no-animation) #hero-text div:nth-child(2) span {
+  transition: opacity 1s 2.5s ease;
+}
+body.active:not(.no-animation) #hero-text div:last-child span {
+  transition: opacity 1s 3.5s ease;
+}
+#hero-action {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: border 0.1s 5.5s linear;
+}
+#hero-action button {
+  position: relative;
+  background-color: transparent;
+  color: black;
+  opacity: 0;
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: font-size 0.5s linear, color 0.5s ease;
+}
+body.active #hero-action {
+  border: 1px solid white;
+}
+body.active:not(.no-animation) #hero-action button {
+  transition: opacity 1s 4.5s ease;
+}
+body.active #hero-action button {
+  opacity: 1;
+}
+.hero-button-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  background-color: #171717;
+  transition: 0.5s left ease;
+}
+body.active #hero-action:hover .hero-button-background {
+  left: 0;
+}
+body.active #hero-action:hover button {
+  transition: color 0.5s ease;
+  color: white;
+}
+@media (max-width: 949px) {
+  #hero-text-container {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  #headline-section {
+    height: 100vh;
+    margin-top: 0;
+  }
+
+  #headline-section .col-4 {
+    display: none;
+  }
+
+  #headline-section .col-8 {
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    right: -20px;
+    height: auto;
+    flex: 0 0 100%;
+    max-width: 200%;
+    width: calc(100% + 40px);
+    padding: 0;
+  }
+
+  #headline-section .headline-image-container {
+    max-width: 100%;
+    margin: 0;
+    height: auto;
+  }
+
+  #headline-section img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #hero-text > div {
+    font-size: 5.8vw;
+    padding: 6px 10px;
+  }
+
+  #hero-action button {
+    font-size: 2.7vw;
+    padding: 10px;
+  }
+  #hero-date {
+    font-size: 4.2vw;
+    margin-bottom: 10px;
+  }
+}

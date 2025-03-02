@@ -1,0 +1,54 @@
+@media (max-width: 1750px) {
+  main {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  header > div {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 1310px) {
+  .event-section-content {
+    width: 100%;
+  }
+  .paper-row-answer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .agenda-row {
+    flex-direction: column;
+  }
+
+  .agenda-row > div {
+    width: 100%;
+  }
+  .agenda-row-left p {
+    margin-top: 1em !important;
+    margin-bottom: 0 !important;
+  }
+  .agenda-row-right p:first-child {
+    margin-top: 0.5em !important;
+    margin-bottom: 0em !important;
+  }
+  .agenda-row-right p:last-child {
+    margin-top: 0.5em !important;
+    margin-bottom: 1em !important;
+  }
+}
+
+@media (max-device-width: 1800px) and (orientation: landscape) {
+  main,
+  #header-top,
+  footer {
+    zoom: 0.8;
+  }
+}
+
+@media (max-device-width: 1400px) and (orientation: landscape) {
+  main {
+    zoom: 0.7;
+  }
+}

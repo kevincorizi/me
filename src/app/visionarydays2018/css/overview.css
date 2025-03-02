@@ -1,0 +1,208 @@
+#panoramica {
+  max-width: 1800px;
+  margin: auto;
+  display: none;
+}
+
+#panoramica .row:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+#panoramica h1 {
+  display: inline;
+  line-height: 2;
+  box-decoration-break: clone;
+  font-weight: normal;
+  font-family: KamerikBold;
+  letter-spacing: 0.5px;
+  font-size: 29px;
+}
+
+#panoramica .row:nth-child(odd) h1 {
+  background-color: #ff494d;
+  box-shadow: 0px 0px 0px 12px #ff494d, -12px 0 0 #ff494d;
+}
+
+#panoramica .row:nth-child(even) h1 {
+  background-color: #7500d8;
+  box-shadow: 0px 0px 0px 12px #7500d8, -12px 0 0 #7500d8;
+}
+
+#panoramica .col-6 {
+  overflow: hidden;
+}
+
+.overview-description-container,
+.overview-image-container {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.overview-description-container p {
+  margin-left: -12px;
+  padding-top: 20px;
+  font-family: Karla;
+  color: #eeeeee;
+  line-height: 1.6;
+  font-size: 104%;
+  letter-spacing: 0.2px;
+}
+
+#panoramica .row:not(:last-child):not(:first-child) {
+  margin-bottom: 80px;
+}
+
+.overview-image {
+  overflow: hidden;
+  height: 100%;
+  width: 400%;
+  margin-left: -150%;
+}
+
+.overview-image img {
+  height: 100%;
+  margin: auto;
+  display: block;
+}
+
+/* OVERVIEW ENTRY 1 */
+#panoramica .row:nth-child(3) {
+  padding: 0 70px;
+}
+#panoramica .row:nth-child(2) .overview-image-container {
+  height: 75vh;
+  margin-right: 2%;
+  margin-left: 9%;
+  flex: 0 0 39%;
+}
+#panoramica .row:nth-child(2) .overview-description-container {
+}
+#panoramica .row:nth-child(2) .overview-description-container > div {
+  max-width: 400px;
+}
+
+/* OVERVIEW ENTRY 2 */
+#panoramica .row:nth-child(3) .overview-image-container {
+  max-height: 50vh;
+  padding: 0;
+}
+#panoramica .row:nth-child(3) .overview-description-container {
+  align-items: flex-end;
+  padding-right: 45px;
+}
+#panoramica .row:nth-child(3) .overview-description-container > div {
+  max-width: 400px;
+}
+#panoramica .row:nth-child(3) .overview-image {
+  width: 100%;
+  margin-left: 0;
+}
+#panoramica .row:nth-child(3) .overview-image img {
+  margin-left: 0;
+}
+
+/* OVERVIEW ENTRY 3 */
+#panoramica .row:nth-child(4) .overview-image-container {
+  margin-left: 5%;
+}
+#panoramica .row:nth-child(4) .overview-image {
+  max-width: 100%;
+  margin-left: 0;
+}
+#panoramica .row:nth-child(4) .overview-image img {
+  height: auto;
+  max-width: 100%;
+}
+#panoramica .row:nth-child(4) {
+  padding: 0 20px;
+}
+#panoramica .row:nth-child(4) .overview-description-container {
+  flex: 0 0 45%;
+  max-width: 640px;
+  padding-left: 50px;
+}
+#panoramica .row:nth-child(4) .overview-description-container > div {
+  width: 90%;
+}
+
+@media (max-width: 1199px) {
+  #panoramica .row:nth-child(4) .overview-image-container {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 949px) {
+  #panoramica .row:nth-child(2),
+  #panoramica .row:nth-child(3),
+  #panoramica .row:nth-child(4),
+  #panoramica .row:nth-child(2) .overview-image-container,
+  #panoramica .row:nth-child(3) .overview-image-container,
+  #panoramica .row:nth-child(4) .overview-image-container,
+  #panoramica .row:nth-child(2) .overview-description-container,
+  #panoramica .row:nth-child(3) .overview-description-container,
+  #panoramica .row:nth-child(4) .overview-description-container {
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 0;
+    margin-left: 0;
+    flex: 0 0 50%;
+  }
+
+  #panoramica .row:nth-child(2) .overview-description-container > div,
+  #panoramica .row:nth-child(3) .overview-description-container > div,
+  #panoramica .row:nth-child(4) .overview-description-container > div {
+    width: 100%;
+    max-width: 100%;
+    padding-left: 30px;
+  }
+
+  #panoramica .row:nth-child(3) .overview-description-container > div {
+    padding-left: 15px;
+  }
+  #panoramica .row:nth-child(3) .overview-image img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+#panoramica img {
+  opacity: 0.7;
+}
+
+@media (max-width: 767px) {
+  #panoramica {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  #panoramica > .row:not(:first-child) {
+    display: block;
+  }
+
+  #panoramica > .row:not(:first-child) > .col-6 {
+    display: block;
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #panoramica > .row:not(:first-child) .overview-description-container > div {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 100%;
+    padding-left: 15px;
+  }
+
+  #panoramica .row:nth-child(4) .overview-image-container {
+    height: auto;
+  }
+
+  #panoramica h1 {
+    font-size: 23px;
+    line-height: 2.3;
+  }
+}

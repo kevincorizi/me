@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "KamerikBold";
+  src: url("assets/Kamerik_205/Kamerik 205 Bold.ttf");
+}
+html,
+body {
+  background-color: #171717;
+  color: white;
+  font-family: KamerikBold;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+#countdown {
+  font-size: 60px;
+}

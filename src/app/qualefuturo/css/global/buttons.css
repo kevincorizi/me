@@ -1,0 +1,325 @@
+.button {
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: GTAmerica, sans-serif;
+  font-stretch: semi-expanded;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 60px;
+  color: #ffffff;
+  border-radius: 4px;
+  min-width: 150px;
+  text-align: center;
+  font-size: 1.75rem;
+  white-space: nowrap;
+}
+
+.button-form {
+  border: 2px solid #004bd9;
+  padding: 10px 40px;
+  overflow: hidden;
+}
+
+.button.button-form > span {
+  position: relative;
+  z-index: 1;
+}
+
+.button.button-form:hover, .button.button-form:focus {
+  border-color: #004bd9!important;
+  box-shadow: 0 5px 16px rgba(10, 188, 255, 0.3);
+}
+
+.button.button-form::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: calc(100% + 2px);
+  top: -1px;
+  left: 0;
+  background: #004bd9;
+  transform: translateX(-101%);
+  transition: all 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.button.button-form:hover::before, .button.button-form:focus::before {
+  transform: translateX(0);
+}
+
+.button-square {
+  min-width: unset;
+  width: 6rem;
+  height: 6rem;
+  padding: 0;
+  background-color: #004bd9;
+  border-radius: 0;
+  font-stretch: normal;
+  font-size: 1.25rem;
+  font-weight: normal;
+  transition: background-color 0.35s ease;
+}
+
+.button-square:disabled {
+  cursor: not-allowed;
+  background-color: #707070;
+}
+
+.button-square.button-close {
+  background-color: white;
+  color: #004bd9;
+}
+
+.button-large-mutable {
+  min-width: unset;
+  width: 13rem;
+  height: 3.75rem;
+  padding: 0;
+  border: 3px solid #004bd9;
+  border-radius: 0;
+  font-stretch: normal;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  font-weight: normal;
+  transition: background-color 0.35s ease;
+}
+
+.button.button-large-mutable:not(:disabled):hover {
+  border-color: #004bd9 !important;
+}
+
+.button-large-mutable:disabled {
+  cursor: not-allowed;
+  background-color: #707070;
+  border-color: #707070;
+}
+
+.button-large-mutable:disabled:hover {
+  border-color: #707070 !important;
+}
+
+.button-large-mutable::before {
+  content: 'RISULTATI';
+}
+
+.button-square.button-close {
+  background-color: white;
+  color: #004bd9;
+}
+
+.button-icon img {
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.button-chevron {
+  position: relative;
+}
+
+.button-chevron:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: block;
+  background: url("/me/qualefuturo/assets/symbols/chevron.svg") center no-repeat;
+  width: 3rem;
+}
+
+.button-chevron-left {
+  position: relative;
+}
+
+.button-chevron-left:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: block;
+  background: url("/me/qualefuturo/assets/symbols/chevron.svg") center no-repeat;
+  width: 4rem;
+}
+
+.button-chevron-bottom-right {
+  position: relative;
+}
+
+.button-chevron-bottom-right:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: block;
+  background: url("/assets/symbols/arrow-bottom-right.png") center no-repeat;
+  background-size: contain;
+  width: 1.2rem;
+  margin: 0 1rem;
+}
+
+.button-large-mutable:not(:disabled):not(.button-chevron-bottom-right):hover, .button-large-mutable:not(:disabled):not(.button-chevron-bottom-right):focus {
+  padding-left: 0!important;
+}
+
+.button-large-mutable:not(:disabled):not(.button-chevron-bottom-right):hover::before, .button-large-mutable:not(:disabled):not(.button-chevron-bottom-right):focus::before {
+  content: 'SCOPRI';
+}
+
+.button-large-mutable:not(:disabled):not(.button-chevron-bottom-right):hover::after, .button-large-mutable:not(:disabled):not(.button-chevron-bottom-right):focus::after {
+  display: none;
+}
+
+.button-border {
+  border: 2px solid #ffffff;
+}
+
+.button-download {
+  position: relative;
+  min-width: 250px;
+  width: 300px;
+  font-size: 2rem;
+  line-height: 2rem;
+  padding: 1.5rem;
+}
+
+.button-download:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  display: block;
+  background-image: url("/assets/symbols/download.png");
+  background-size: contain;
+  width: 2rem;
+  margin-right: 2rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.button:not(.button-small):not(.button-download):not(.button-large-mutable):after {
+  width: 5rem;
+}
+
+.button-circle {
+  padding: 0;
+  width: 16rem;
+  height: 16rem;
+  background-color: #004bd9;
+  border-radius: 50%;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-circle img {
+  width: 25%;
+  margin-bottom: 1.5rem;
+}
+
+.button-circle span {
+  font-family: GTAmerica, sans-serif;
+  font-weight: normal;
+  font-stretch: normal;
+  display: block;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.button-link {
+  font-size: 1.75rem;
+  text-transform: none;
+  font-stretch: semi-expanded;
+  font-weight: bold;
+  padding: 10px 30px;
+}
+
+.button-link.button-link-primary {
+  border: 2px solid #04a2d2;
+  border-radius: 0;
+}
+
+.button-link.button-chevron {
+  color: #d5d5d5;
+  padding-right: 50px;
+  font-weight: 600;
+}
+
+.button-grid-book {
+  border: 2px solid white;
+  border-radius: 0;
+  padding: 20px;
+  color: white !important;
+  font-weight: 600;
+  letter-spacing: 0;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.button:hover,
+.button:focus,
+a:hover,
+a:focus {
+  color: #fff !important;
+  border-color: #fff !important;
+  text-decoration: none !important;
+  outline: none !important;
+}
+
+@media (max-width: 991px) {
+  .button.button-chevron:after {
+    width: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .button-form {
+    display: block;
+    width: 100%;
+  }
+
+  .button-download {
+    font-size: 1.5rem;
+  }
+
+  .button.button-chevron {
+    width: 100%;
+    font-size: 1.25rem;
+    padding: 20px;
+  }
+
+  .button-link.button-link-primary {
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+  }
+
+  .button-link.button-link-primary:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 1.5rem;
+    height: 100%;
+    display: block;
+    background: url("/assets/symbols/chevron-down.png") center no-repeat;
+    width: 1.5rem !important;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 425px) {
+  .button-link.button-link-primary {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .button-link.button-link-primary {
+    font-size: 1.15rem;
+  }
+}

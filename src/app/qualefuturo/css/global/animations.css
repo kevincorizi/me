@@ -1,0 +1,57 @@
+.qualefuturo-slide {
+  animation: qualefuturo-slide 45s infinite linear;
+}
+
+@-webkit-keyframes qualefuturo-slide {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-66.6666667%);
+  }
+}
+
+@-ms-keyframes qualefuturo-slide {
+  0% {
+    -ms-transform: translateX(0);
+  }
+  100% {
+    -ms-transform: translateX(-66.6666667%);
+  }
+}
+
+@keyframes qualefuturo-slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-66.6666667%);
+  }
+}
+
+@-webkit-keyframes qualefuturo-carousel {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@-ms-keyframes qualefuturo-carousel {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}
+
+@keyframes qualefuturo-carousel {
+  0% {
+    -webkit-transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(-100%);
+  }
+}

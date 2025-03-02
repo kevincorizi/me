@@ -1,0 +1,66 @@
+/*
+ * Copyright Davide Taddei (c) 2019.
+ */
+
+.back {
+  position: absolute;
+  cursor: pointer;
+}
+
+.back p {
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.article-content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.article-content .head-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.article-content .head-container p.text {
+  font-weight: 500;
+}
+
+.article-content .head-container a {
+  color: #eee;
+  font-weight: 700;
+}
+
+#section-press {
+  position: relative;
+}
+
+#section-press .article-content h1 {
+  margin-bottom: 2rem;
+  font-size: 2.1rem;
+}
+
+.article-content a {
+  color: #9b9b9b;
+}
+
+.article-content a:hover {
+  color: #fff;
+}
+.article-content p.date {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .article-content {
+    width: 100%;
+    margin-top: 8rem;
+  }
+  .head-container .text {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}

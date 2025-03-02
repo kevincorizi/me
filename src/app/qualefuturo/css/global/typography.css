@@ -1,0 +1,434 @@
+.text-header {
+  font-size: 1rem;
+  font-family: GTAmerica, sans-serif;
+  font-stretch: semi-expanded;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+.text-hero {
+  font-size: 14vw;
+  line-height: 14vw;
+  font-family: "IBM Plex Serif", serif;
+  color: white;
+  letter-spacing: -0.1rem;
+  margin-left: -0.7vw;
+}
+
+.text-hero-sub {
+  font-size: 1.7rem;
+  line-height: 2.3rem;
+  font-family: GTAmerica, sans-serif;
+  letter-spacing: 0.2rem;
+  font-weight: regular;
+  color: #797979;
+}
+
+.text-bar-title {
+  font-family: GTAmerica, sans-serif;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 0.15rem;
+}
+
+.text-theme-title {
+  font-size: 8.6vw;
+  line-height: 8.5vw;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: lighter;
+  color: white;
+  letter-spacing: -0.1rem;
+}
+
+.text-theme-description {
+  font-size: 2.75rem;
+  line-height: 3.3rem;
+  font-family: GTAmerica, sans-serif;
+  font-stretch: semi-expanded;
+  color: #d3d3d3;
+  letter-spacing: -0.05rem;
+}
+
+.text-theme-description .text-pre-line,
+.text-theme-description .text-more {
+  font-family: GTAmerica, sans-serif;
+  font-stretch: normal;
+  font-size: 1.5rem;
+  line-height: 4rem;
+  letter-spacing: 0.15rem;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  height: 3rem;
+  vertical-align: top;
+}
+
+.text-theme-description .text-pre-line,
+.text-theme-description .text-base {
+  padding-right: 2rem;
+}
+
+.text-theme-description .text-pre-hidden {
+  padding-right: 1rem;
+  display: inline-block;
+  margin-left: -1rem;
+}
+
+.text-theme-description .text-hidden span:not(.text-pre-hidden) {
+  color: white;
+  font-weight: bold;
+}
+
+.text-theme-description .text-more {
+  color: #05bbf2;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.text-theme-description .text-more {
+  display: none;
+}
+
+.text-theme-description .text-more.collapsed {
+  display: inline;
+  white-space: nowrap;
+}
+
+.text-theme-description .text-more ~ .text-more {
+  display: inline;
+}
+
+.text-theme-description .text-more.collapsed ~ .text-more {
+  display: none;
+}
+
+.text-theme-description .text-more img {
+  margin-left: 5px;
+  height: 1rem;
+  margin-bottom: 5px;
+}
+
+.text-bar-label {
+  font-family: GTAmerica, sans-serif;
+  font-weight: 600;
+  color: #b2b2b2;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.text-grid-title {
+  font-size: 4.9rem;
+  line-height: 4.9rem;
+  color: white;
+  font-family: GTAmerica, sans-serif;
+  font-weight: bold;
+  font-stretch: semi-expanded;
+  text-transform: uppercase;
+}
+
+.text-grid-description {
+  font-size: 1.75rem;
+  color: #d0d0d0;
+  font-family: GTAmerica, sans-serif;
+}
+
+.text-grid-content-small {
+  font-size: 1.5rem;
+  color: white;
+  font-family: GTAmerica, sans-serif;
+}
+
+.text-form-title {
+  font-family: GTAmerica, sans-serif;
+  font-weight: bold;
+  font-stretch: semi-expanded;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  color: white;
+}
+
+.text-link-privacy {
+  font-size: 1rem;
+  font-family: GTAmerica, sans-serif;
+  color: #797979;
+  letter-spacing: 0.1rem;
+}
+
+.text-faq-question {
+  font-size: 3.5rem;
+  font-family: GTAmerica, sans-serif;
+  font-stretch: semi-expanded;
+  font-weight: bold;
+  color: white;
+}
+
+.text-faq-answer {
+  font-size: 1.8rem;
+  font-family: GTAmerica, sans-serif;
+  color: #797979;
+  letter-spacing: 0.1rem;
+}
+
+.text-form-subtitle {
+  font-size: 2rem;
+  font-family: GTAmerica, sans-serif;
+  color: #797979;
+  letter-spacing: 0.1rem;
+}
+
+.text-footer-title {
+  font-size: 1.25rem;
+  letter-spacing: 1.5px;
+  color: #797979;
+  font-family: GTAmerica, sans-serif;
+  text-transform: uppercase;
+}
+
+.text-footer-page {
+  font-size: 1.25rem;
+  letter-spacing: 1.5px;
+  color: #797979;
+  font-family: GTAmerica, sans-serif;
+  font-stretch: expanded;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.text-footer-social {
+  font-size: 1.25rem;
+  letter-spacing: 1.5px;
+  color: #797979;
+  font-family: GTAmerica, sans-serif;
+}
+
+.text-footer-small {
+  font-size: 1.25rem;
+  font-family: GTAmerica, sans-serif;
+  letter-spacing: 1.5px;
+  color: #797979;
+}
+
+.text-page-title {
+  font-size: 3.1rem;
+  line-height: 1.1;
+  color: #3c3c3c;
+  font-family: GTAmerica, sans-serif;
+  font-stretch: expanded;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.text-small {
+  font-size: 1.25rem;
+  letter-spacing: 1.5px;
+  font-family: GTAmerica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-stretch: expanded;
+}
+
+.text-xsmall {
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  font-family: GTAmerica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-stretch: expanded;
+}
+
+.text-secondary {
+  color: #7b7b7b !important;
+}
+
+.text-description {
+  font-family: "GTAmerica", serif;
+  color: #c3c3c3;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.text-description a {
+  color: #c3c3c3;
+  word-break: break-word;
+}
+
+.text-heading {
+  font-size: 2.85rem;
+  color: #ffffff;
+  font-family: GTAmerica, sans-serif;
+  font-stretch: expanded;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+a.text-button {
+  font-family: GTAmerica, sans-serif;
+  letter-spacing: 0.2rem;
+  color: #797979;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.text-button:hover {
+  color: #d5d5d5;
+}
+
+@media (max-width: 1200px) {
+  .text-bar-label {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .text-bar-label {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .text-bar-label {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .text-hero {
+    font-size: 4rem;
+    line-height: 4rem;
+    font-weight: 600;
+    margin-left: 0;
+  }
+
+  .text-hero-sub {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .text-bar-title .collapse-icon > span {
+    font-size: 2.5rem;
+    line-height: 2rem;
+  }
+
+  .text-theme-title {
+    font-size: 4.5rem;
+    line-height: 4.6rem;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: lighter;
+    color: white;
+    letter-spacing: -0.1rem;
+  }
+
+  .text-theme-description {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    font-family: GTAmerica, sans-serif;
+    font-stretch: semi-expanded;
+    color: #d3d3d3;
+    letter-spacing: 0;
+  }
+
+  .text-theme-description .text-pre-line {
+    display: block;
+  }
+
+  .text-theme-description .text-more {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 2.5rem;
+  }
+
+  .text-theme-description .text-more img {
+    height: 0.9rem;
+    margin-bottom: 3px;
+  }
+
+  .text-grid-title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+
+  .text-grid-description {
+    font-size: 1.5rem;
+    font-family: GTAmerica, sans-serif;
+    font-stretch: semi-expanded;
+  }
+
+  .text-form-title {
+    font-size: 4.5rem;
+    line-height: 4.7rem;
+    font-family: "IBM Plex Serif", serif;
+    font-weight: lighter;
+    color: white;
+    letter-spacing: -0.1rem;
+  }
+
+  .text-faq-question {
+    font-size: 2rem;
+  }
+
+  .text-faq-answer {
+    font-size: 1.5rem;
+  }
+
+  .text-description {
+    font-size: 1.5rem;
+  }
+
+  .text-heading {
+    font-size: 1.7rem;
+    word-break: break-word;
+  }
+
+  .text-button {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .text-page-title {
+    font-size: 2.5rem;
+  }
+
+  .text-grid-title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
+@media (max-width: 359px) {
+  .text-hero {
+    font-size: 3.4rem;
+    line-height: 3.4rem;
+  }
+
+  .text-theme-title {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+
+  .text-form-title {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media (min-width: 1900px) {
+  .text-hero {
+    font-size: 266px;
+    line-height: 266px;
+    margin-left: -14px;
+  }
+
+  .text-theme-title {
+    font-size: 165px;
+    line-height: 160px;
+  }
+}

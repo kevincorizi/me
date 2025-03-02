@@ -1,0 +1,19 @@
+#intro-mobile-container {
+  height: calc(var(--window-height) - var(--header-mobile-height));
+  max-height: calc(100vh - var(--header-mobile-height));
+  display: flex;
+  flex-direction: column;
+}
+
+#intro-mobile-picture {
+  margin-left: calc(-1 * var(--qf-container-mobile-padding-x));
+  width: calc(100% + 2 * var(--qf-container-mobile-padding-x));
+  flex: 1 0 0;
+  display: flex;
+  overflow: hidden;
+}
+
+#intro-mobile-picture img {
+  object-fit: cover;
+  width: 100%;
+}

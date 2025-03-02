@@ -1,0 +1,236 @@
+/*
+ * Copyright Davide Taddei (c) 2019.
+ */
+
+/* Load Fonts */
+
+/* Stretch Normal */
+
+@font-face {
+  font-family: 'GTAmerica';
+  src: url('/me/visionarydays2020/assets/fonts/GT-America/GT-America-Regular.OTF');
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+/* Stretch Extended (semi-expanded) */
+
+@font-face {
+  font-family: 'GTAmerica';
+  src: url('/me/visionarydays2020/assets/fonts/GT-America/GT-America-Extended-Light.OTF');
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: semi-expanded;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GTAmerica';
+  src: url('/me/visionarydays2020/assets/fonts/GT-America/GT-America-Extended-Regular.OTF');
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: semi-expanded;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GTAmerica';
+  src: url('/me/visionarydays2020/assets/fonts/GT-America/GT-America-Extended-Medium.OTF');
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: semi-expanded;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GTAmerica';
+  src: url('/me/visionarydays2020/assets/fonts/GT-America/GT-America-Extended-Bold.OTF');
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: semi-expanded;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GTAmerica';
+  src: url('/me/visionarydays2020/assets/fonts/GT-America/GT-America-Extended-Black.OTF');
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: semi-expanded;
+  font-display: swap;
+}
+
+/* Stretch Expanded */
+
+@font-face {
+  font-family: 'GTAmerica';
+  src: url('/me/visionarydays2020/assets/fonts/GT-America/GT-America-Expanded-Black.OTF');
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: expanded;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GTAmerica';
+  src: url('/me/visionarydays2020/assets/fonts/GT-America/GT-America-Expanded-Bold.OTF');
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: expanded;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GTAmerica';
+  src: url('/me/visionarydays2020/assets/fonts/GT-America/GT-America-Expanded-Medium.OTF');
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: expanded;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GTAmerica';
+  src: url('/me/visionarydays2020/assets/fonts/GT-America/GT-America-Expanded-Regular.OTF');
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: expanded;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GTAmerica';
+  src: url('/me/visionarydays2020/assets/fonts/GT-America/GT-America-Expanded-Light.OTF');
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: expanded;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GTAmerica';
+  src: url('/me/visionarydays2020/assets/fonts/GT-America/GT-America-Expanded-Thin.OTF');
+  font-style: normal;
+  font-weight: 200;
+  font-stretch: expanded;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GTAmerica';
+  src: url('/me/visionarydays2020/assets/fonts/GT-America/GT-America-Expanded-Ultra-Light.OTF');
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: expanded;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GTAmerica Mono';
+  src: url('/me/visionarydays2020/assets/fonts/GT-America Mono/GT-America-Mono-Regular.OTF');
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GTAmerica Mono';
+  src: url('/me/visionarydays2020/assets/fonts/GT-America Mono/GT-America-Mono-Medium.OTF');
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'GTAmerica Mono';
+  src: url('/me/visionarydays2020/assets/fonts/GT-America Mono/GT-America-Mono-Bold.OTF');
+  font-style: normal;
+  font-weight: bold;
+  font-stretch: normal;
+  font-display: swap;
+}
+
+/* Define font styles */
+
+h1.title,
+h2.title_h1 {
+  font-family: 'GTAmerica';
+  font-stretch: expanded;
+  font-weight: 900;
+  color: #fff;
+  font-size: 3.375rem;
+
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Titoli più grandi di tutti */
+h2.title {
+  font-family: 'GTAmerica';
+  font-stretch: expanded;
+  font-weight: 900;
+  color: #fff;
+  font-size: 3.375rem;
+
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Titoli leggermente più piccoli */
+h3.title {
+  font-family: 'GTAmerica';
+  font-stretch: expanded;
+  font-weight: 900;
+  color: #fff;
+  font-size: 2.1rem;
+
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Sottotitoli */
+
+/* Paragrafi */
+p.text {
+  font-family: 'GTAmerica';
+  font-stretch: semi-expanded;
+  font-weight: 600;
+  color: #cccccc;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.font-border-only {
+  color: white;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: white;
+}
+
+@media screen and (max-width: 650px) {
+  h2.title,
+  h3.title {
+    font-size: 28px;
+  }
+
+  h1.title,
+  h2.title_h1 {
+    font-size: 2.72rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  h2.title,
+  h3.title {
+    font-size: 21px;
+  }
+
+  h1.title,
+  h2.title_h1 {
+    font-size: 2.72rem;
+  }
+}

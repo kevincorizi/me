@@ -1,0 +1,78 @@
+@media (max-width: 768px) {
+  main {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 40px;
+  }
+  #header-top {
+    padding-top: 30px;
+  }
+  #header-button {
+    font-size: 20px;
+  }
+  header > div {
+    padding: 0 30px;
+  }
+  .header-action {
+    padding: 0 10px;
+  }
+
+  #header-actions {
+    text-align: center;
+  }
+
+  .header-action:first-child {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .header-action:last-child {
+    padding-right: 2vw;
+    padding-left: 2vw;
+  }
+
+  #logo-desktop {
+    display: none;
+  }
+  #logo-mobile {
+    display: block;
+    max-width: 30px;
+  }
+  .event-section-description,
+  .event-section-content {
+    float: none;
+    max-width: 100%;
+  }
+  .event-section-container {
+    margin-bottom: 50px;
+  }
+  .agenda-row p {
+    min-width: unset;
+  }
+  .paper-row {
+    margin-bottom: 50px;
+  }
+  .paper-row-question {
+    font-size: 35px;
+    line-height: 40px;
+    max-width: 100%;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  #event-title {
+    font-size: 15vw;
+    line-height: 11vw;
+  }
+  #event-subtitle {
+    font-size: 8vw;
+  }
+  .paper-row-answer {
+    column-count: 1;
+  }
+}

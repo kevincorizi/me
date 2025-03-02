@@ -1,0 +1,142 @@
+header {
+  position: relative;
+  z-index: 2;
+}
+
+#qa-list {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.answer-container a {
+  color: #c3c3c3;
+  word-break: break-word;
+}
+
+.answer-container p,
+.answer-container li,
+.answer-container span,
+.answer-container strong,
+.answer-container u {
+  color: #8b8b8b !important;
+}
+
+.answer-container span:not(.text-regular),
+.answer-container ul,
+.answer-container ol {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.answer-container ol {
+  list-style-type: lower-latin;
+}
+
+#qa-quick-links a {
+  display: block;
+  position: relative;
+  color: #c3c3c3;
+}
+
+#qa-quick-links a:after {
+  content: " ";
+  width: 2rem;
+  height: 100%;
+  background: url("/assets/symbols/chevron-gray.svg") center no-repeat;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+#qa-quick-links a:hover:after,
+#qa-quick-links a:focus:after {
+  background: url("/me/qualefuturo/assets/symbols/chevron.svg") center no-repeat;
+}
+
+.qa-quick-links-hidden {
+  position: absolute;
+  visibility: hidden;
+}
+
+.qa-container {
+  position: relative;
+}
+
+.anchor-placeholder {
+  position: absolute;
+  top: -55px;
+}
+
+/** DESKTOP LAYOUT **/
+@media (min-width: 1200px) {
+  #qa-left {
+    position: fixed;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 130px;
+    padding-bottom: 40px;
+    width: 400px;
+    justify-content: space-between;
+  }
+
+  #qa-center {
+    padding-top: 130px;
+    padding-left: 450px;
+    padding-right: 320px;
+  }
+
+  .qa-title {
+    padding-top: 40px;
+  }
+
+  #qa-title-wrapper {
+    width: 180px;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid #3c3c3c;
+  }
+
+  #qa-quick-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+  }
+
+  #qa-last-update-mobile {
+    display: none;
+  }
+}
+
+/** MOBILE AND TABLET LAYOUT **/
+@media (max-width: 1199px) {
+  #qa-section {
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  #qa-last-update {
+    display: none;
+  }
+
+  #qa-last-update-mobile {
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+  }
+
+  #qa-left {
+    height: calc(var(--window-height) - var(--header-mobile-height));
+    max-height: calc(100vh - var(--header-mobile-height));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 575px) {
+  .anchor-placeholder {
+    top: -25px;
+  }
+}

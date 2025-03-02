@@ -1,0 +1,271 @@
+#team #team-wrapper {
+  max-width: 1800px;
+  margin: auto;
+  padding-left: 25vw;
+}
+
+#team #intro {
+  width: 45vw;
+  min-width: 600px;
+}
+
+#team #text-intro {
+  color: #8c8c8c;
+  height: 100vh;
+  position: relative;
+  font-size: 17.5px;
+  font-family: Kamerik;
+  margin-top: -40px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#team #text-box {
+  max-width: 510px;
+}
+
+#team .white {
+  color: white;
+  font-style: normal;
+  font-weight: normal;
+  font-family: KamerikBold;
+}
+
+#people {
+  font-family: Kamerik;
+  font-size: 75%;
+  color: #a6a6a6;
+  background-color: #171717;
+  position: relative;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.people-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: calc(100% - 18vw);
+}
+
+.person-wrapper {
+  width: 19%;
+  margin-right: 8%;
+  margin-bottom: 5%;
+  min-width: 110px;
+}
+
+.person-content {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.person-content img {
+  max-width: 100%;
+  filter: opacity(0);
+  transition: filter 2s ease-in-out;
+  -webkit-transition: filter 2s ease-in-out;
+}
+
+.person-content .name {
+  margin: 8% auto 4% auto;
+  display: block;
+  width: fit-content;
+  text-transform: uppercase;
+  font-family: KamerikBold;
+  font-size: 0.85vw;
+}
+
+.person-content .bio {
+  text-align: center;
+  font-size: 0.8vw;
+}
+
+#team #section-title {
+  color: #8c8c8c;
+  height: 50vh;
+  position: relative;
+  font-size: 17.5px;
+  font-family: Kamerik;
+  margin-top: -40px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#names {
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+  width: calc(100% - 12vw);
+}
+
+#names .names-wrapper {
+  position: absolute;
+  width: 300%;
+  transform: translate3d(0, 0, 0);
+
+  animation: movenames 40s linear infinite;
+  -webkit-animation: movenames 40s linear infinite;
+  -moz-animation: movenames 40s linear infinite;
+  -o-animation: movenames 40s linear infinite;
+}
+
+#names .name {
+  width: fit-content;
+  font-family: KamerikBold;
+  color: #a6a6a6;
+}
+
+@keyframes movenames {
+  100% {
+    transform: translateX(-66.6666%);
+  }
+}
+
+@-webkit-keyframes movenames {
+  100% {
+    transform: translateX(-66.6666%);
+  }
+}
+@-moz-keyframes movenames {
+  100% {
+    transform: translateX(-66.6666%);
+  }
+}
+@-o-keyframes movenames {
+  100% {
+    transform: translateX(-66.6666%);
+  }
+}
+
+@media screen and (min-width: 1950px) {
+  .person-content .name {
+    font-size: 16.5px;
+  }
+  .people-wrapper {
+    width: 980px;
+  }
+  .person-content .bio {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #team #text-intro {
+    text-align: left;
+    font-size: 2rem;
+  }
+  .people-wrapper:last-child {
+    margin-bottom: 10%;
+  }
+  #people {
+    margin-top: calc(50vh - 3vw - 70px);
+  }
+  #team #text-box {
+    width: calc((100% - 12vw) * 0.5);
+  }
+  #names {
+    margin-bottom: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .person-wrapper:nth-child(4n) {
+    margin-right: 0;
+  }
+  #team #text-intro {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  #team #intro {
+    min-width: 100%;
+  }
+}
+
+@media (max-width: 1199px) {
+  #team #team-wrapper {
+    max-width: 1000px;
+    padding-left: 0;
+  }
+  #team #text-intro {
+    margin-top: 0;
+  }
+  #team .people-wrapper {
+    width: 100%;
+  }
+  .person-content .name {
+    font-size: 1.1rem;
+  }
+  .person-content .bio {
+    font-size: 0.8rem;
+  }
+  #names {
+    width: 100%;
+  }
+  #people {
+    margin-top: 15vh;
+  }
+}
+
+@media (max-width: 1050px) {
+  .person-content .name {
+    font-size: 1.6vw;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+  .person-wrapper {
+    width: 28%;
+    margin-right: 8%;
+  }
+  .person-wrapper:nth-child(3n) {
+    margin-right: 0;
+  }
+  .person-content .name {
+    font-size: calc((100vw - 40px) * 0.025);
+  }
+}
+
+@media screen and (max-width: 534px) {
+  .people {
+    margin-top: 2.5vh;
+  }
+
+  .people-wrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 499px) {
+  .person-wrapper {
+    width: 42%;
+  }
+  .person-wrapper:nth-child(2n) {
+    margin-right: 0;
+  }
+  .person-content .name {
+    font-size: calc((100vw - 40px) * 0.038);
+  }
+}
+
+@media (max-width: 279px) {
+  .person-wrapper {
+    margin-right: 4%;
+    margin-left: 4%;
+    width: 60%;
+  }
+
+  .person-wrapper:nth-child(2n) {
+    margin-right: 4%;
+  }
+  .person-content .name {
+    font-size: calc((100vw - 40px) * 0.054);
+  }
+}

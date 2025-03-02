@@ -1,0 +1,20 @@
+#event-container .bar-color {
+  height: 1.5rem;
+}
+
+#event-container .bar-color > div {
+  height: 100%;
+}
+
+#event-container .event-bar-container .icon-collapse,
+#event-container .event-bar-container .icon-expand {
+  display: none;
+}
+
+#event-container .event-bar-container p.collapsed .icon-expand {
+  display: inline;
+}
+
+#event-container .event-bar-container p:not(.collapsed) .icon-collapse {
+  display: inline;
+}

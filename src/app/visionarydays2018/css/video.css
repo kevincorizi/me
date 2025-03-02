@@ -1,0 +1,51 @@
+#video-section {
+  min-height: 70vh;
+  display: flex;
+}
+
+#video-section .col-12 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#video-content {
+  text-align: center;
+  color: white;
+  font-size: 37px;
+  font-family: KamerikBold;
+  letter-spacing: 0.5px;
+}
+
+#video-content div {
+  line-height: 1.3;
+}
+
+#video-content button {
+  background: none;
+  color: #eeeeee;
+  border: 1px solid #808080;
+  border-radius: 9px;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 8px 15px 8px 20px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 19px;
+  font-family: Karla;
+}
+
+#video-content button span.action-arrow {
+  padding-left: 8px;
+}
+
+@media (max-width: 767px) {
+  #video-content {
+    font-size: 26px;
+  }
+  #video-content button {
+    margin-top: 15px;
+  }
+}

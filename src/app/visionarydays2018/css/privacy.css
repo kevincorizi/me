@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+}
+header {
+  opacity: 1;
+}
+footer {
+  display: block;
+}
+#wrapper {
+  max-width: 700px;
+  margin: auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#copyright-container {
+  opacity: 1;
+}
+* {
+  font-family: Karla;
+  color: #aaa;
+}
+h1 {
+  margin-bottom: 120px;
+}
+h2 {
+  font-size: 1.3em;
+  padding-top: 35px;
+}
+h1,
+h2,
+h3,
+h4,
+strong {
+  font-family: Kamerik;
+  letter-spacing: 2px;
+  color: white;
+}
+h4 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  padding-top: 10px;
+  color: #aaa;
+}
+h4 + p {
+  margin-top: 5px;
+}
+h3 {
+  margin-top: 30px;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+strong {
+  margin-top: 50px;
+  display: block;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+p {
+  font-size: 1.2em;
+}
