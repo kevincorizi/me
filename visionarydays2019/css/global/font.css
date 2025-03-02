@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'GTAmerica';
-  src: url('../../assets/fonts/GT-America/GT-America-Regular.OTF');
+  src: url('/me/visionarydays2019/assets/fonts/GT-America/GT-America-Regular.OTF');
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'GTAmerica';
-  src: url('../../assets/fonts/GT-America/GT-America-Extended-Light.OTF');
+  src: url('/me/visionarydays2019/assets/fonts/GT-America/GT-America-Extended-Light.OTF');
   font-style: normal;
   font-weight: 300;
   font-stretch: semi-expanded;
@@ -26,7 +26,7 @@
 
 @font-face {
   font-family: 'GTAmerica';
-  src: url('../../assets/fonts/GT-America/GT-America-Extended-Regular.OTF');
+  src: url('/me/visionarydays2019/assets/fonts/GT-America/GT-America-Extended-Regular.OTF');
   font-style: normal;
   font-weight: normal;
   font-stretch: semi-expanded;
@@ -34,7 +34,7 @@
 
 @font-face {
   font-family: 'GTAmerica';
-  src: url('../../assets/fonts/GT-America/GT-America-Extended-Medium.OTF');
+  src: url('/me/visionarydays2019/assets/fonts/GT-America/GT-America-Extended-Medium.OTF');
   font-style: normal;
   font-weight: 600;
   font-stretch: semi-expanded;
@@ -42,7 +42,7 @@
 
 @font-face {
   font-family: 'GTAmerica';
-  src: url('../../assets/fonts/GT-America/GT-America-Extended-Bold.OTF');
+  src: url('/me/visionarydays2019/assets/fonts/GT-America/GT-America-Extended-Bold.OTF');
   font-style: normal;
   font-weight: bold;
   font-stretch: semi-expanded;
@@ -50,7 +50,7 @@
 
 @font-face {
   font-family: 'GTAmerica';
-  src: url('../../assets/fonts/GT-America/GT-America-Extended-Black.OTF');
+  src: url('/me/visionarydays2019/assets/fonts/GT-America/GT-America-Extended-Black.OTF');
   font-style: normal;
   font-weight: 900;
   font-stretch: semi-expanded;
@@ -60,7 +60,7 @@
 
 @font-face {
   font-family: 'GTAmerica';
-  src: url('../../assets/fonts/GT-America/GT-America-Expanded-Black.OTF');
+  src: url('/me/visionarydays2019/assets/fonts/GT-America/GT-America-Expanded-Black.OTF');
   font-style: normal;
   font-weight: 900;
   font-stretch: expanded;
@@ -68,7 +68,7 @@
 
 @font-face {
   font-family: 'GTAmerica';
-  src: url('../../assets/fonts/GT-America/GT-America-Expanded-Bold.OTF');
+  src: url('/me/visionarydays2019/assets/fonts/GT-America/GT-America-Expanded-Bold.OTF');
   font-style: normal;
   font-weight: bold;
   font-stretch: expanded;
@@ -76,7 +76,7 @@
 
 @font-face {
   font-family: 'GTAmerica';
-  src: url('../../assets/fonts/GT-America/GT-America-Expanded-Medium.OTF');
+  src: url('/me/visionarydays2019/assets/fonts/GT-America/GT-America-Expanded-Medium.OTF');
   font-style: normal;
   font-weight: 600;
   font-stretch: expanded;
@@ -84,7 +84,7 @@
 
 @font-face {
   font-family: 'GTAmerica';
-  src: url('../../assets/fonts/GT-America/GT-America-Expanded-Regular.OTF');
+  src: url('/me/visionarydays2019/assets/fonts/GT-America/GT-America-Expanded-Regular.OTF');
   font-style: normal;
   font-weight: normal;
   font-stretch: expanded;
@@ -92,7 +92,7 @@
 
 @font-face {
   font-family: 'GTAmerica';
-  src: url('../../assets/fonts/GT-America/GT-America-Expanded-Light.OTF');
+  src: url('/me/visionarydays2019/assets/fonts/GT-America/GT-America-Expanded-Light.OTF');
   font-style: normal;
   font-weight: 300;
   font-stretch: expanded;
@@ -100,7 +100,7 @@
 
 @font-face {
   font-family: 'GTAmerica';
-  src: url('../../assets/fonts/GT-America/GT-America-Expanded-Thin.OTF');
+  src: url('/me/visionarydays2019/assets/fonts/GT-America/GT-America-Expanded-Thin.OTF');
   font-style: normal;
   font-weight: 200;
   font-stretch: expanded;
@@ -108,7 +108,7 @@
 
 @font-face {
   font-family: 'GTAmerica';
-  src: url('../../assets/fonts/GT-America/GT-America-Expanded-Ultra-Light.OTF');
+  src: url('/me/visionarydays2019/assets/fonts/GT-America/GT-America-Expanded-Ultra-Light.OTF');
   font-style: normal;
   font-weight: 100;
   font-stretch: expanded;
@@ -116,7 +116,7 @@
 
 @font-face {
   font-family: 'GTAmerica Mono';
-  src: url('../../assets/fonts/GT-America%20Mono/GT-America-Mono-Regular.OTF');
+  src: url('/me/visionarydays2019/assets/fonts/GT-America%20Mono/GT-America-Mono-Regular.OTF');
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
@@ -124,7 +124,7 @@
 
 @font-face {
   font-family: 'GTAmerica Mono';
-  src: url('../../assets/fonts/GT-America%20Mono/GT-America-Mono-Medium.OTF');
+  src: url('/me/visionarydays2019/assets/fonts/GT-America%20Mono/GT-America-Mono-Medium.OTF');
   font-style: normal;
   font-weight: 600;
   font-stretch: normal;
@@ -132,7 +132,7 @@
 
 @font-face {
   font-family: 'GTAmerica Mono';
-  src: url('../../assets/fonts/GT-America%20Mono/GT-America-Mono-Bold.OTF');
+  src: url('/me/visionarydays2019/assets/fonts/GT-America%20Mono/GT-America-Mono-Bold.OTF');
   font-style: normal;
   font-weight: bold;
   font-stretch: normal;

@@ -1,11 +1,11 @@
 @font-face {
   font-family: "FortesqueRegular";
-  src: url("assets/fonts/FortescueProRegular.otf");
+  src: url("/me/visionarydays2018/assets/fonts/FortescueProRegular.otf");
 }
 
 @font-face {
   font-family: "FortesqueBold";
-  src: url("assets/fonts/FortescueProBold.otf");
+  src: url("/me/visionarydays2018/assets/fonts/FortescueProBold.otf");
 }
 
 html,
